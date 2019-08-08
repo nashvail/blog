@@ -1,0 +1,19 @@
+import Typography from "typography"
+// import fariyGateTheme from "typography-theme-fairy-gates";
+
+const typography = new Typography({
+  baseFontSize: '18px',
+  baseLineHeight: 1.6666,
+  headerFontFamily: ['Avenir Next', 'Helvetica Neue', 'Segoe UI', 'Helvetica', 'Arial', 'sans-serif'],
+  bodyFontFamily: ['Nunito Sans', 'Georgia', 'serif'],
+  // The “scale ratio” for the theme. 
+  // This value is the ratio between the h1 font size and the baseFontSize. 
+  // So if the scale ratio is 2 and the baseFontSize is 16px then the h1 font size is 32px.
+  scaleRatio: 2
+  
+});
+
+export const { scale, rhythm, options } = typography;
+
+export default typography;
+
