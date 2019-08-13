@@ -1,4 +1,30 @@
 import React from "react";
+import styled from 'styled-components';
 
-// This is also what is called the sub component lol, why didn't I use this from the very beginning of time
-export default () => <h1>This is the header</h1>
+import Nav from './nav';
+
+// Import nashvail logo
+import Logo from '../assets/nv.svg';
+
+const Container = styled.header`
+  padding: 0.5rem;
+  width: 100vw;
+  height: 80px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 6px 0 rgba(0,0,0,0.07);
+`;
+
+class Header extends React.Component {
+  render() {
+    return (
+      <Container>
+        <center>
+          <img src={Logo} height="22"/>
+        </center>
+        <Nav/>
+      </Container>
+    );
+  }
+};
+
+export default Header;

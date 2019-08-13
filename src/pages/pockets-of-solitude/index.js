@@ -6,12 +6,15 @@ import "../../utils/global.css"
 import "./styles.css"
 
 import Hero from "./hero"
+import Header from '../../components/header';
 
 class PocketsOfSolitude extends React.Component {
   render() {
     return (
+      <div>
+      <Header/>
       <main>
-        <Hero />
+          <Hero />
         <article>
           <div></div>
           <p>
@@ -46,6 +49,7 @@ class PocketsOfSolitude extends React.Component {
           </p>
         </article>
       </main>
+      </div>
     )
   }
 }

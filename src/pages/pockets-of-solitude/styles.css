@@ -9,6 +9,7 @@ main {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 800px auto;
+  margin: 0 auto;
 }
 
 main article {
@@ -16,11 +17,11 @@ main article {
   grid-row-end: 3;
   /* Column */
   grid-column: span 8;
-  margin-top: -400px;
+  margin-top: -250px;
 }
 
 article > div {
-  shape-outside: ellipse(200px 200px at 80% 15%);;
+  shape-outside: ellipse(200px 200px at 70% 8%);;
   width: 500px;
   height: 500px;
   float: right;
@@ -52,10 +53,33 @@ article p:first-child:first-letter {
 
 .text {
   grid-column: span 4;
+  align-self: center;
   /* background: red; */
 }
+
+.hero-text-1 {
+  display: block;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  font-size: 3rem;
+}
+
+.hero-text-2 {
+  display: block;
+  margin-top: -2rem;
+  font-family: Raleway;
+  font-size: 5rem;
+  font-weight: lighter;
+}
+
+.publish-date {
+  font-family: 'Input mono';
+  font-weight: bold;
+  color: grey;
+}
+
 .image {
-  /* background: green; */
+  margin-top: 2rem;
 }
 
 .firstcharacter {
