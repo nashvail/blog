@@ -1,5 +1,12 @@
-/* body {
-  --pink: rgb(255, 167, 196);
-  background-color: var(--pink);
+* {
+  margin: 0;
+  padding: 0;
 }
- */
+
+ body {
+  /* --pink: rgb(255, 167, 196); */
+  /* background-color: var(--pink); */
+  color: #121212;
+}
+
+

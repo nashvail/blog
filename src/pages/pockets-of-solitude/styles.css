@@ -5,7 +5,7 @@ body {
 
 main {
   /* background: yellow; */
-  width: 80vw;
+  width: 1140px;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 800px auto;
@@ -26,17 +26,6 @@ article > div {
   height: 500px;
   float: right;
   opacity: 0.2;
-}
-
-article p:first-child:first-letter {
-  color: #903;
-  float: left;
-  font-family: Georgia;
-  font-size: 75px;
-  line-height: 60px;
-  padding-top: 4px;
-  padding-right: 8px;
-  padding-left: 3px;
 }
 
 .hero {
@@ -86,7 +75,7 @@ article p:first-child:first-letter {
   color: #903;
   float: left;
   font-weight: bolder;
-  font-size: 5rem;
-  line-height: 2rem;
-  padding: 1.2rem 0.7rem 0.8rem 0;
+  font-size: 6rem;
+  line-height: 3rem;
+  padding: 1.2rem 0.7rem 0.4rem 0;
 }

@@ -2,8 +2,8 @@ import Typography from "typography"
 // import fariyGateTheme from "typography-theme-fairy-gates";
 
 const typography = new Typography({
-  baseFontSize: '20px',
-  baseLineHeight: 1.666,
+  baseFontSize: '21px',
+  baseLineHeight: 1.5,
   headerFontFamily: ['Georgia', 'serif'],
   bodyFontFamily: ['Spectral', 'sans-serif'],
 
