@@ -7,8 +7,12 @@ import Constants from "../utils/constants"
 // Import nashvail logo
 import LogoImage from "../assets/nv.svg"
 
+
+// Styled components 
+
 const Container = styled.header`
   width: 100vw;
+  background: white;
   height: ${Constants.HEADER_HEIGHT};
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.07);
   display: grid;

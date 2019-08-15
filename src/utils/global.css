@@ -9,4 +9,10 @@
   color: #121212;
 }
 
+main.home {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
+}
+
 

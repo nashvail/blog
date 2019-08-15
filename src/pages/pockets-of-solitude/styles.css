@@ -21,7 +21,7 @@ main article {
 }
 
 article > div {
-  shape-outside: ellipse(200px 200px at 70% 8%);;
+  shape-outside: ellipse(200px 200px at 75% 10%);;
   width: 500px;
   height: 500px;
   float: right;
