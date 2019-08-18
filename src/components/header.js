@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 
-import Nav from "./nav"
+import Nav from "./Nav"
 import Constants from "../utils/constants"
 
 // Import nashvail logo
