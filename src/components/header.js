@@ -3,15 +3,10 @@ import styled from "styled-components"
 
 import Nav from "./Nav"
 import Constants from "../utils/constants"
+import Logo from './Logo';
 
-// Import nashvail logo
-import LogoImage from "../assets/nv.svg"
-
-
-// Styled components 
 
 const Container = styled.header`
-
   width: 100vw;
   background: white;
   height: ${Constants.HEADER_HEIGHT};
@@ -27,17 +22,6 @@ const Inner = styled.div`
   grid-template-columns: repeat(3, 1fr);
 `;
 
-const LogoContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  & img {
-    height: 24px;
-    margin: 0;
-  }
-`;
-
 class Header extends React.Component {
   render() {
     return (
@@ -49,12 +33,7 @@ class Header extends React.Component {
       </Container>
     )
   }
-}
+};
 
-const Logo = () => (
-  <LogoContainer>
-    <img src={LogoImage} />
-  </LogoContainer>
-)
 
 export default Header
