@@ -16,6 +16,12 @@ const HomePage = styled.main`
   display: grid;
   grid-template-columns: repeat(12, 77px);
   grid-gap: 1rem;
+  margin: 0 auto;
+  max-width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    max-width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
+  }
 `;
 
 export default () => (

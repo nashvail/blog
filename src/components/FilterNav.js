@@ -15,11 +15,15 @@ const Navigation = styled.nav`
 `;
 
 const Inner = styled.div`
-  width: ${Constants.BODY_WIDTH};
+  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   display: flex;
   align-items: center;
   font-family: 'Roboto';
   font-size: 0.8rem;
+
+  @media screen and (max-width: 1200px) {
+    width: ${Constants.BODY_WIDTH["after_first_breakpoint"]}
+  }
 `;
 
 class FilterNav extends React.Component {

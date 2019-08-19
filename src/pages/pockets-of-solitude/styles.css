@@ -1,9 +1,4 @@
-body {
-  display: grid;
-  justify-content: center;
-}
-
-main {
+.POSMain {
   /* background: yellow; */
   width: 1140px;
   display: grid;

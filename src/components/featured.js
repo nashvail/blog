@@ -8,20 +8,29 @@ import Constants from '../utils/Constants';
 const Featured = styled.div`
   margin-top: 3rem;
   grid-column: span 12;
-  height: 600px;
-  /* background: red; */
+  /* height: 600px; */
   display: flex;
   justify-content: space-between;
-`
+  max-width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}){
+    flex-direction: column;
+    max-width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
+  }
+
+`;
 
 const FeaturedText = styled.div`
   /* background: yellow; */
   width: 40%;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   p {
     font-size: 1rem;
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}){
+    width: 100%;
   }
 `
 
@@ -36,8 +45,14 @@ const FeaturedSpoiler = styled.p``
 
 const FeaturedCover = styled.div`
   width: 55%;
-  background: url(${props => props.cover});
-  background-size: cover;
+  img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}){
+    width: 100%;
+  }
 `;
 
 export default ({ link, title, spoiler, cover }) => (
@@ -48,6 +63,8 @@ export default ({ link, title, spoiler, cover }) => (
       </FeaturedHeading>
       <FeaturedSpoiler>{spoiler}</FeaturedSpoiler>
     </FeaturedText>
-    <FeaturedCover cover={cover}></FeaturedCover>
+    <FeaturedCover>
+      <img src={cover}/>
+    </FeaturedCover>
   </Featured>
 )

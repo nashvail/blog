@@ -17,9 +17,13 @@ const Container = styled.header`
 `;
 
 const Inner = styled.div`
-  width: ${Constants.BODY_WIDTH};
+  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+
+  @media screen and (max-width: 1200px) {
+    width: 1000px;
+  }
 `;
 
 class Header extends React.Component {

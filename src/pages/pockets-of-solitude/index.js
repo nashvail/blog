@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "gatsby"
 
 import "../../utils/global.css"
-// You can override page specific things here
 import "./styles.css"
 
 import Hero from "./hero"
@@ -13,7 +12,7 @@ class PocketsOfSolitude extends React.Component {
     return (
       <div>
         <Header />
-        <main>
+        <main className="POSMain">
           <Hero />
           <article>
             <div></div>
