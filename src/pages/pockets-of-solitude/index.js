@@ -1,4 +1,5 @@
 import React from "react"
+import styled from "styled-components";
 import { Link } from "gatsby"
 
 import "../../utils/global.css"
@@ -7,14 +8,31 @@ import "./styles.css"
 import Hero from "./hero"
 import Header from "../../components/header"
 
+// Styled components
+const Container = styled.main`
+  width: 1140px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 800px auto;
+  margin: 0 auto;
+`;
+
+const Article = styled.article`
+  grid-row-start: 2;
+  grid-row-end: 3;
+  /* Column */
+  grid-column: span 8;
+  margin-top: -250px;
+`;
+
 class PocketsOfSolitude extends React.Component {
   render() {
     return (
       <div>
         <Header />
-        <main className="POSMain">
+        <Container>
           <Hero />
-          <article>
+          <Article>
             <div></div>
             <p>
               <span class="firstcharacter">I</span> love early mornings. The
@@ -74,15 +92,11 @@ class PocketsOfSolitude extends React.Component {
               answer to puke out and our conversation will quickly turn into an
               argument of me insisting YES, mostly just to save my pride.
             </p>
-          </article>
-        </main>
+          </Article>
+        </Container>
       </div>
     )
   }
 }
 
 export default PocketsOfSolitude
-
-// export default () => (
-//   <h1>This is nice right?</h1>
-// );
