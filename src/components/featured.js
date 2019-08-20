@@ -38,6 +38,10 @@ const FeaturedHeading = styled.h1`
   a {
     text-decoration: none;
     color: ${Constants.COLORS.BLACK[1]};
+
+    &:hover {
+      text-decoration: underline;
+    } 
   }
 `
 

@@ -1,6 +1,7 @@
 
+/* To create the effect of text wrapping around image*/
 article > div {
-  shape-outside: ellipse(200px 200px at 75% 10%);;
+  shape-outside: ellipse(200px 200px at 80% 4%);
   width: 500px;
   height: 500px;
   float: right;
@@ -11,12 +12,9 @@ article > div {
   display: flex;
   justify-content: space-between;
   /* Position inside the main grid */
-  grid-row-start: 1;
-  grid-row-end: 2;
+  /* grid-row-start: 1; */
+  /* grid-row-end: 2; */
   grid-column: span 12;
-  /* grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 7px; */
 }
 
 .text {
@@ -47,7 +45,12 @@ article > div {
 }
 
 .image {
-  margin-top: 2rem;
+  /* margin-top: 2rem; */
+  /* height: 750px; */
+  /* background: red; */
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 
 .firstcharacter {
@@ -57,4 +60,28 @@ article > div {
   font-size: 6rem;
   line-height: 3rem;
   padding: 1.2rem 0.7rem 0.4rem 0;
+}
+
+/* First break point */
+
+@media screen and (max-width: 1200px) {
+  article > div {
+    display: none;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    grid-column-start: 3;
+    grid-column-end: 11;
+    margin-top: 2rem;
+  }
+
+  .text {
+    margin-top: 1rem;
+  }
+
+  .image img {
+    width: 100%;
+  }
+  
 }

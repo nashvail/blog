@@ -1,28 +1,43 @@
 import React from "react"
-import styled from "styled-components";
+import styled from "styled-components"
 import { Link } from "gatsby"
 
+// Constants
+import Constants from '../../utils/Constants';
+
+// Assets
 import "../../utils/global.css"
 import "./styles.css"
+import heroImage from "./assets/bubble.png"
 
-import Hero from "./hero"
+// Components
 import Header from "../../components/header"
 
 // Styled components
 const Container = styled.main`
-  width: 1140px;
+  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 800px auto;
+  /* grid-template-rows: 800px auto; */
   margin: 0 auto;
+
+  @media screen and (max-width: 1200px) {
+    width: 1000px;
+  }
 `;
 
 const Article = styled.article`
-  grid-row-start: 2;
-  grid-row-end: 3;
+  /* grid-row-start: 2; */
+  /* grid-row-end: 3; */
   /* Column */
   grid-column: span 8;
   margin-top: -250px;
+
+  @media screen and (max-width: 1200px) {
+    margin-top: 0px;
+    grid-column-start: 3;
+    grid-column-end: 11;
+  }
 `;
 
 class PocketsOfSolitude extends React.Component {
@@ -98,5 +113,18 @@ class PocketsOfSolitude extends React.Component {
     )
   }
 }
+
+const Hero = () => (
+  <section className="hero">
+    <div className="text">
+      <span className="publish-date">August 15, 2019</span>
+      <span className="hero-text-1">Pockets of</span>
+      <span className="hero-text-2">Solitude</span>
+    </div>
+    <div className="image">
+      <img src={heroImage} />
+    </div>
+  </section>
+)
 
 export default PocketsOfSolitude
