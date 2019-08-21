@@ -1,4 +1,4 @@
-* {
+*, body {
   margin: 0;
   padding: 0;
 }
@@ -8,12 +8,4 @@
   /* background-color: var(--pink); */
   color: #121212;
 }
-
-main.home {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-gap: 1rem;
-  width: 80%;
-}
-
 
