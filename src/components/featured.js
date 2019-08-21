@@ -4,6 +4,9 @@ import { Link } from "gatsby";
 
 import Constants from '../utils/Constants';
 
+// Components
+import Pill from '../components/Pill';
+
 // Styled
 const Featured = styled.div`
   margin-top: 3rem;
@@ -17,7 +20,6 @@ const Featured = styled.div`
     flex-direction: column;
     max-width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
   }
-
 `;
 
 const FeaturedText = styled.div`
@@ -32,7 +34,7 @@ const FeaturedText = styled.div`
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}){
     width: 100%;
   }
-`
+`;
 
 const FeaturedHeading = styled.h1`
   a {
@@ -43,15 +45,19 @@ const FeaturedHeading = styled.h1`
       text-decoration: underline;
     } 
   }
-`
+`;
 
-const FeaturedSpoiler = styled.p``
+const FeaturedSpoiler = styled.p``;
 
 const FeaturedCover = styled.div`
   width: 55%;
+  /* remove this */
+  background-color: cyan;
   img {
     width: 100%;
     max-width: 100%;
+    /* and this, once you have a proper cover image*/
+    visibility: hidden;
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}){
@@ -62,6 +68,7 @@ const FeaturedCover = styled.div`
 export default ({ link, title, spoiler, cover }) => (
   <Featured>
     <FeaturedText>
+      <Pill type="NEW" />
       <FeaturedHeading>
         <Link to={link}>{title}</Link>
       </FeaturedHeading>
@@ -71,4 +78,4 @@ export default ({ link, title, spoiler, cover }) => (
       <img src={cover}/>
     </FeaturedCover>
   </Featured>
-)
+);

@@ -24,10 +24,17 @@ const HomePage = styled.main`
   }
 `;
 
+const Articles = styled.section`
+  grid-column: span 12;
+  width: 100%;
+  background: yellow;
+  margin-top: 2rem;
+`;
+
 export default () => (
   <div>
     <Helmet>
-      <title>My awesome site</title>
+      <title>Nash Vail</title>
     </Helmet>
     <Header />
     <FilterNav />
@@ -38,6 +45,9 @@ export default () => (
         cover={cover}
         spoiler={spoiler}
       />
+      <Articles>
+        This is where the rest of the articles will be listed right?
+      </Articles>
     </HomePage>
   </div>
 )

@@ -21,8 +21,8 @@ const Container = styled.main`
   /* grid-template-rows: 800px auto; */
   margin: 0 auto;
 
-  @media screen and (max-width: 1200px) {
-    width: 1000px;
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
   }
 `;
 
@@ -33,7 +33,7 @@ const Article = styled.article`
   grid-column: span 8;
   margin-top: -250px;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     margin-top: 0px;
     grid-column-start: 3;
     grid-column-end: 11;
