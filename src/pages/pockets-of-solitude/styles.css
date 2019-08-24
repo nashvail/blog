@@ -1,4 +1,5 @@
 
+
 /* To create the effect of text wrapping around image*/
 article > div {
   shape-outside: ellipse(200px 200px at 80% 4%);
@@ -6,21 +7,6 @@ article > div {
   height: 500px;
   float: right;
   opacity: 0.2;
-}
-
-.hero {
-  display: flex;
-  justify-content: space-between;
-  /* Position inside the main grid */
-  /* grid-row-start: 1; */
-  /* grid-row-end: 2; */
-  grid-column: span 12;
-}
-
-.text {
-  grid-column: span 4;
-  align-self: center;
-  /* background: red; */
 }
 
 .hero-text-1 {
@@ -74,19 +60,12 @@ article > div {
     display: none;
   }
 
-  .hero {
-    flex-direction: column-reverse;
-    grid-column-start: 3;
-    grid-column-end: 11;
-    margin-top: 2rem;
-  }
-
   .text {
     margin-top: 1rem;
   }
 
   .image img {
-    width: 100%;
+    width: 75%;
   }
 
   .fullwidth {

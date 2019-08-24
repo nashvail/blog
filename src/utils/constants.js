@@ -2,7 +2,8 @@ export default {
   // Full width
   BODY_WIDTH: {
     before_first_breakpoint: "1140px",
-    after_first_breakpoint: "1000px"
+    after_first_breakpoint: "1000px",
+    after_second_breakpoint: "800px"
   },
   HEADER_HEIGHT: "90px",
   FILTER_NAV_HEIGHT: "60px",
@@ -17,6 +18,8 @@ export default {
     }
   },
   BREAKPOINTS: [
-    "1200px"
+    "1200px", // First breakpoint
+    "1045px", // Second breakpoint
+    "850px"
   ]
 };

@@ -16,20 +16,55 @@ import Header from "../../components/header"
 
 // Styled components
 const Container = styled.main`
+  /* background: red; */
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  /* grid-template-rows: 800px auto; */
   margin: 0 auto;
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
   }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    max-width: ${Constants.BODY_WIDTH["after_second_breakpoint"]};
+  }
+
+  @media screen and (max-width: 840px) {
+    min-width: 400px;
+    width: 90%;
+  }
 `
 
+const Article = styled.article`
+  max-width: 750px;
+  margin-top: -250px;
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    margin-top: 0px;
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    margin-top: 0px;
+    grid-column: span 12;
+  }
+`
+
+const HeroContainer = styled.section`
+  display: flex;
+  justify-content: space-between;
+  /* background: yellow; */
+
+  /* First Breakpoint */
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+  }
+`;
+
+
 const Hero = () => (
-  <section className="hero">
-    <div className="text">
+  <HeroContainer>
+    <div className="text" style={{ alignSelf: "center" }}>
       <span className="publish-date">August 15, 2019</span>
       <span className="hero-text-1">Pockets of</span>
       <span className="hero-text-2">Solitude</span>
@@ -37,22 +72,9 @@ const Hero = () => (
     <div className="image">
       <img src={heroImage} />
     </div>
-  </section>
+  </HeroContainer>
 )
 
-const Article = styled.article`
-  /* grid-row-start: 2; */
-  /* grid-row-end: 3; */
-  /* Column */
-  grid-column: span 8;
-  margin-top: -250px;
-
-  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
-    margin-top: 0px;
-    grid-column-start: 3;
-    grid-column-end: 11;
-  }
-`
 
 class PocketsOfSolitude extends React.Component {
   render() {
@@ -203,9 +225,9 @@ class PocketsOfSolitude extends React.Component {
               from all the noise. How in the constant chaos you can find for
               yourself small pockets of solitude.
             </p>
-            <h2>There is a party in my head and no one's invited</h2>
+            {/* <h2>There is a party in my head and no one's invited</h2> */}
             <p>
-              It is believed that forming a habit is easier if you anchor it to
+              <span className="firstcharacter">I</span>t is believed that forming a habit is easier if you anchor it to
               something existing, like meditating after you've taken a shower or
               reading a book before going to sleep e.t.c e.t.c e.t.c. A while
               ago I decided I'll check my phone in the morning only after I have
