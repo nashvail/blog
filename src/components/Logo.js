@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
 
 // Import nashvail logo
 import LogoImage from "../assets/nv.svg"
@@ -14,11 +14,12 @@ const LogoContainer = styled.div`
     height: 24px;
     margin: 0;
   }
-`;
-
+`
 
 export default () => (
   <LogoContainer>
-    <img src={LogoImage} />
+    <Link to="/" style={{ margin: 0, padding: 0 }}>
+      <img src={LogoImage} />
+    </Link>
   </LogoContainer>
-);
+)

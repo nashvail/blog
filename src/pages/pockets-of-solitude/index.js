@@ -86,7 +86,7 @@ class PocketsOfSolitude extends React.Component {
           <Article>
             <div></div>
             <p>
-              <span class="firstcharacter">I</span> love early mornings. The
+              <span className="firstcharacter">I</span> love early mornings. The
               loud mating calls of the birds, the smoke from yesterday, all
               settled on the tar and the cold fresh air that I can pull in
               through my nostrils and into my lungs. But really, the best part
