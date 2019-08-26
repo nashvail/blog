@@ -3,6 +3,7 @@ import styled from "styled-components"
 
 // Components
 import Logo from "./Logo"
+import NavLink from './NavLink';
 
 const Container = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ const Container = styled.div`
 const Hamburger = styled.button`
   border: none;
   z-index: 99999; /* cuz */
+  cursor: pointer;
 `
 
 const Overlay = styled.div`
@@ -59,7 +61,11 @@ class MobileNavigation extends React.Component {
     const { expanded } = this.state;
     return (
       <Container>
-        <Overlay expanded={expanded}/>
+        <Overlay expanded={expanded}>
+          <ul>
+            <NavLink to="/" text="Home"/>
+          </ul>
+        </Overlay>
         <Logo />
         <Hamburger onClick={this.toggleMenu}>Menu</Hamburger>
       </Container>

@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+// Components
+import NavLink from './NavLink';
+
 // Constants
 const ActiveNavLinkStyle = {
   fontWeight: 700,
@@ -9,7 +12,6 @@ const ActiveNavLinkStyle = {
 }
 
 // Styled components
-
 const Navigation = styled.nav`
   grid-column-start: 1;
   grid-column-end: 2;
@@ -37,14 +39,6 @@ const NavigationLI = styled.li`
     color: #616161;
   }
 `
-
-const NavLink = ({ to, text }) => (
-  <NavigationLI>
-    <Link to={to} activeStyle={ActiveNavLinkStyle}>
-      {text}
-    </Link>
-  </NavigationLI>
-)
 
 export default () => (
   <Navigation>
