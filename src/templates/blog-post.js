@@ -1,20 +1,91 @@
 import React from "react"
 import { graphql } from "gatsby"
+import styled from "styled-components"
+import Img from "gatsby-image"
+
+// Utils
+import Constants from "../utils/Constants"
+
+// Components
+import Header from "../components/Header"
+
+// Styled components
+const Container = styled.main`
+  width: 55%;
+  display: grid;
+  justify-content: center;
+  margin: 0 auto;
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    width: 60%;
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    width: 75%;
+  }
+
+  
+  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
+    width: 85%;
+  }
+
+`
+
+const Main = styled.main`
+  /* width: ${Constants.BODY_WIDTH["before_first_breakpoint"]}; */
+  color: #121212;
+  display: grid;
+  margin-top: 3rem;
+`
+
+const Title = styled.h1`
+  /* margin: 3rem 0 2rem 0; */
+  /* text-align: center; */
+  font-size: 3rem;
+`
+
+const Article = styled.article`
+  p:first-child:first-letter {
+    color: #903;
+    float: left;
+    font-weight: bolder;
+    font-size: 6rem;
+    line-height: 3rem;
+    padding: 1.2rem 0.7rem 0.4rem 0;
+  }
+`
+
+const PublishDate = styled.span`
+  font-family: 'Input mono';
+  font-weight: bold;
+  color: grey;
+  display: block;
+  margin-bottom: 0.5rem;
+`;
+
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
+  let featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
+  console.log(data)
   return (
-    <div className="blog-post-container">
-      <div className="blog-post">
-        <h1>{frontmatter.title}</h1>
-        <h2>{frontmatter.date}</h2>
-        <div
-          className="blog-post-content"
-          dangerouslySetInnerHTML={{ __html: html }}
-        />
-      </div>
+    <div>
+      <Header />
+      <Container>
+        <Main>
+          <Img style={{}} fluid={featuredImgFluid} />
+          <div style={{
+            marginTop: "3rem",
+            marginBottom: "1rem"
+          }}>
+          <PublishDate>August 15, 2019</PublishDate>
+          <Title>{frontmatter.title}</Title>
+          </div>
+          <Article dangerouslySetInnerHTML={{ __html: html }} />
+        </Main>
+      </Container>
     </div>
   )
 }
@@ -26,6 +97,13 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        featuredImage {
+          childImageSharp {
+            fluid(maxWidth: 800) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
