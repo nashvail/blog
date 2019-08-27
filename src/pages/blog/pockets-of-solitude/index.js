@@ -12,7 +12,7 @@ import heroImage from "./assets/bubble.png"
 import connectedImage from "./assets/connected.png"
 
 // Components
-import Header from "../../../components/header"
+import Header from "../../../components/Header"
 
 // Styled components
 const Container = styled.main`

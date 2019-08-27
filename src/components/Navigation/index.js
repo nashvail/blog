@@ -3,12 +3,12 @@ import Media from "react-media"
 import styled from "styled-components"
 
 // Constants
-import Constants from '../utils/Constants';
+import Constants from '../../utils/Constants';
 
 // Components
 import MobileNavigaiton from "./NavMobile"
 import NormalNavigation from "./NavNormal"
-import Logo from "./Logo"
+import Logo from "../Logo"
 
 const Inner = styled.div`
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};

@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 import Navigation from './Navigation';
-import Constants from "../utils/constants"
+import Constants from "../utils/Constants"
 
 const Container = styled.header`
   background: white;

@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 // Local stuff
-import Constants from "../utils/constants"
+import Constants from "../utils/Constants"
 
 const Navigation = styled.nav`
   position: relative;

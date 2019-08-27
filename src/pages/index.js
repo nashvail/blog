@@ -5,7 +5,7 @@ import Helmet from "react-helmet";
 
 import Header from "../components/Header"
 import FilterNav from "../components/FilterNav";
-import Constants from "../utils/constants";
+import Constants from "../utils/Constants";
 import Featured from '../components/Featured';
 
 // Featured article stuff

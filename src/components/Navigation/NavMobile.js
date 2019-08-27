@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 
 // Components
-import Logo from "./Logo"
+import Logo from "../Logo"
 import NavLink from './NavLink';
 
 const Container = styled.div`

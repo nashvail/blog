@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Link } from 'gatsby';
 
 // Constants
-import Constants from '../utils/Constants';
+import Constants from '../../utils/Constants';
 
 const ActiveNavLinkStyle = {
   fontWeight: 700,
