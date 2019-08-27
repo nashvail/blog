@@ -3,16 +3,16 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 // Constants
-import Constants from "../../utils/Constants"
+import Constants from "../../../utils/Constants";
 
 // Assets
-import "../../utils/global.css"
+import "../../../utils/global.css"
 import "./styles.css"
 import heroImage from "./assets/bubble.png"
 import connectedImage from "./assets/connected.png"
 
 // Components
-import Header from "../../components/header"
+import Header from "../../../components/header"
 
 // Styled components
 const Container = styled.main`
