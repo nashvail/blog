@@ -12,10 +12,12 @@ import Header from "../components/Header"
 // Styled components
 const Container = styled.main`
   width: 50%;
-  display: grid;
+  max-width: 800px;
   justify-content: center;
   /* background: red; */
-  margin-left: calc((100vw - ${Constants.BODY_WIDTH["before_first_breakpoint"]})/2);
+  margin-left: calc(
+    (100vw - ${Constants.BODY_WIDTH["before_first_breakpoint"]}) / 2
+  );
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     width: 60%;
@@ -27,12 +29,10 @@ const Container = styled.main`
     margin: 0 auto;
   }
 
-  
   @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
     width: 85%;
     margin: 0 auto;
   }
-
 `
 
 const Main = styled.main`
@@ -60,11 +60,34 @@ const Article = styled.article`
 `
 
 const PublishDate = styled.span`
-  font-family: 'Input mono';
+  font-family: "Input mono";
   /* font-weight: bold; */
   color: grey;
   display: block;
   margin-bottom: 0.5rem;
+`
+
+const Wrapper = styled.div`
+  display: flex;
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    flex-direction: column;
+  }
+`;
+
+const RightContainer = styled.div`
+  width: 350px;
+  height: 500px;
+  position: sticky;
+  top: 8rem;
+  background: #273339;
+  margin-left: 3rem;
+  /* border-radius: 8px; */
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    margin: 3rem auto 3rem auto;
+    width: 50%;
+  }
 `;
 
 export default function Template({
@@ -77,19 +100,24 @@ export default function Template({
   return (
     <div>
       <Header />
-      <Container>
-        <Main>
-          <div style={{
-            marginTop: "3rem",
-            marginBottom: "1rem"
-          }}>
-          <PublishDate>August 15, 2019</PublishDate>
-          <Title>{frontmatter.title}</Title>
-          </div>
-          <Img fluid={featuredImgFluid} />
-          <Article dangerouslySetInnerHTML={{ __html: html }} />
-        </Main>
-      </Container>
+      <Wrapper>
+        <Container>
+          <Main>
+            <div
+              style={{
+                marginTop: "3rem",
+                marginBottom: "1rem",
+              }}
+            >
+              <PublishDate>August 15, 2019</PublishDate>
+              <Title>{frontmatter.title}</Title>
+            </div>
+            <Img fluid={featuredImgFluid} />
+            <Article dangerouslySetInnerHTML={{ __html: html }} />
+          </Main>
+        </Container>
+        <RightContainer/>
+      </Wrapper>
     </div>
   )
 }
