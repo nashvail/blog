@@ -11,6 +11,8 @@ After two months, which one of you will be a better Parisian? As in which one of
 
 I recently finished reading [Turning Pro](https://amzn.to/2WAV2vh). There's this one idea in the book that had me pondering long after I had flipped the book close. I'd like to discuss that idea with you.
 
+![Turning Pro](./turning_pro.png)
+
 In Turning Pro, Steven Pressfield— the author— talks about something called **incapacity**. Incapacity starts with addiction. Addiction not *just* to substance, but to love, to distraction, to sex, to failure, money or trouble. To quote exact words from the [book](https://amzn.to/2WAV2vh):
 
 All addictions share two primary qualities:
@@ -35,6 +37,8 @@ Looking at this way, and I digress, you'll agree that by signing up for college 
 It's a different thing when you don't know what you want to do with your life yet, in that case, college gives you enough breathing room to figure that out but if you do and you still choose to not skip college, you're just an incapacity hugging coward. Okay, that was a little too extreme, don't take my advice on college I am just salty because I couldn't complete mine. Now, getting back to the agenda.
 
 What was your answer to the question I asked at the beginning? Who'll be a better Parisian? You reading books or your friend roaming around in Paris. It's common sense, to know Paris, you have to be in Paris, on the streets eating dust. Because if you don't, you will miss the synergy and the magic that happens when you’re in the arena. You have to get out there.
+
+![](./closing_cover.png)
 
 Often I have to interview people for engineering and design roles. More often than not all I find on their profiles are Udacity Nanodegrees, College degrees, Udemy course certificates and a myriad of other certifications with 0 real-world projects. That’s when I know that this person is soaked in incapacity to their bones. They won't take charge, they are not brave enough to face the discomfort of starting, creating something new and sending it out to the world. 
 

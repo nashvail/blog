@@ -1,9 +1,8 @@
 ---
-path: "/blog/tester-blog"
+path: "/blog/kill-your-heroes"
 title: 'Kill your heroes'
 date: '2019-03-02'
 featuredImage: ./cover.png
-spoiler: 'Sometimes I can’t fall asleep.'
 ---
 
 In December 2014, reads professor [Walter Lewin's Wikipedia](https://en.wikipedia.org/wiki/Walter_Lewin),  "MIT revoked Lewin's Professor Emeritus title after an investigation determined that Lewin had violated university policy by sexually harassing an online student."

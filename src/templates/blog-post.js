@@ -14,7 +14,6 @@ const Container = styled.main`
   width: 50%;
   max-width: 800px;
   justify-content: center;
-  /* background: red; */
   margin-left: calc(
     (100vw - ${Constants.BODY_WIDTH["before_first_breakpoint"]}) / 2
   );
