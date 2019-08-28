@@ -11,22 +11,26 @@ import Header from "../components/Header"
 
 // Styled components
 const Container = styled.main`
-  width: 55%;
+  width: 50%;
   display: grid;
   justify-content: center;
-  margin: 0 auto;
+  /* background: red; */
+  margin-left: calc((100vw - ${Constants.BODY_WIDTH["before_first_breakpoint"]})/2);
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     width: 60%;
+    margin: 0 auto;
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
     width: 75%;
+    margin: 0 auto;
   }
 
   
   @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
     width: 85%;
+    margin: 0 auto;
   }
 
 `
@@ -35,7 +39,6 @@ const Main = styled.main`
   /* width: ${Constants.BODY_WIDTH["before_first_breakpoint"]}; */
   color: #121212;
   display: grid;
-  margin-top: 3rem;
 `
 
 const Title = styled.h1`
@@ -45,6 +48,7 @@ const Title = styled.h1`
 `
 
 const Article = styled.article`
+  margin-top: 2rem;
   p:first-child:first-letter {
     color: #903;
     float: left;
@@ -57,7 +61,7 @@ const Article = styled.article`
 
 const PublishDate = styled.span`
   font-family: 'Input mono';
-  font-weight: bold;
+  /* font-weight: bold; */
   color: grey;
   display: block;
   margin-bottom: 0.5rem;
@@ -75,7 +79,6 @@ export default function Template({
       <Header />
       <Container>
         <Main>
-          <Img style={{}} fluid={featuredImgFluid} />
           <div style={{
             marginTop: "3rem",
             marginBottom: "1rem"
@@ -83,6 +86,7 @@ export default function Template({
           <PublishDate>August 15, 2019</PublishDate>
           <Title>{frontmatter.title}</Title>
           </div>
+          <Img fluid={featuredImgFluid} />
           <Article dangerouslySetInnerHTML={{ __html: html }} />
         </Main>
       </Container>
