@@ -11,12 +11,11 @@ import Featured from '../components/Featured';
 // Featured article stuff
 import { link, title, cover, spoiler } from './blog/pockets-of-solitude/featured-content';
 
+// This is everything below the header
 const HomePage = styled.main`
-  display: grid;
-  grid-template-columns: repeat(12, 77px);
-  grid-gap: 1rem;
   margin: 0 auto;
-  max-width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
+  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
+  /* background: blue; */
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     max-width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
@@ -24,9 +23,10 @@ const HomePage = styled.main`
 `;
 
 const Articles = styled.section`
-  grid-column: span 12;
   width: 100%;
-  background: yellow;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 1rem;
   margin-top: 2rem;
 `;
 
@@ -45,7 +45,20 @@ export default () => (
         spoiler={spoiler}
       />
       <Articles>
-        This is where the rest of the articles will be listed right?
+        <div style={{
+          background: "yellow",
+          gridColumnStart: "1",
+          gridColumnEnd: "7"
+        }}>
+          First article
+        </div>
+        <div style={{
+          background: "green",
+          gridColumnStart: "7",
+          gridColumnEnd: "13"
+        }}>
+          Second article
+        </div>
       </Articles>
     </HomePage>
   </div>

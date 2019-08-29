@@ -43,18 +43,16 @@ const Main = styled.main`
 const Title = styled.h1`
   /* margin: 3rem 0 2rem 0; */
   /* text-align: center; */
-  font-size: 3rem;
+  font-size: 3.5rem;
 `
 
+// We'll figure this later, the issue is that it is displayed differently in mozilla and chrome
 const Article = styled.article`
-  margin-top: 2rem;
   p:first-child:first-letter {
-    color: #903;
-    float: left;
+    /* float: left;
     font-weight: bolder;
-    font-size: 6rem;
-    line-height: 3rem;
-    padding: 1.2rem 0.7rem 0.4rem 0;
+    font-size: 5rem;
+    line-height: 1.5rem; */
   }
 `
 
@@ -72,7 +70,7 @@ const Wrapper = styled.div`
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     flex-direction: column;
   }
-`;
+`
 
 const RightContainer = styled.div`
   width: 350px;
@@ -87,15 +85,16 @@ const RightContainer = styled.div`
     margin: 3rem auto 3rem auto;
     width: 50%;
   }
-`;
+`
 
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
   const { markdownRemark } = data // data.markdownRemark holds our post data
   const { frontmatter, html } = markdownRemark
-  let featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
-  console.log(data)
+  let featuredImgFluid
+  if (frontmatter.featuredImage)
+    featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
   return (
     <div>
       <Header />
@@ -105,17 +104,20 @@ export default function Template({
             <div
               style={{
                 marginTop: "3rem",
-                marginBottom: "1rem",
               }}
             >
               <PublishDate>August 15, 2019</PublishDate>
               <Title>{frontmatter.title}</Title>
             </div>
-            <Img fluid={featuredImgFluid} />
+            {featuredImgFluid && 
+              <div style={{ margin: "1rem 0 2rem 0" }}>
+                <Img fluid={featuredImgFluid} />
+              </div>
+            }
             <Article dangerouslySetInnerHTML={{ __html: html }} />
           </Main>
         </Container>
-        <RightContainer/>
+        <RightContainer />
       </Wrapper>
     </div>
   )
