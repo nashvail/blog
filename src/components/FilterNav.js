@@ -21,9 +21,18 @@ const Inner = styled.div`
   font-family: 'Roboto';
   font-size: 0.8rem;
 
-  @media screen and (max-width: 1200px) {
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     width: ${Constants.BODY_WIDTH["after_first_breakpoint"]}
   }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    width: ${Constants.BODY_WIDTH["after_second_breakpoint"]}
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
+    width: 90%;
+  }
+
 `;
 
 class FilterNav extends React.Component {

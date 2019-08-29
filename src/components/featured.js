@@ -5,25 +5,22 @@ import { Link } from "gatsby";
 import Constants from '../utils/Constants';
 
 // Components
-import Pill from '../components/Pill';
+import Pill from './Pill';
 
 // Styled
 const Featured = styled.div`
   margin-top: 3rem;
-  grid-column: span 12;
-  /* height: 600px; */
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  max-width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}){
-    flex-direction: column;
+    flex-direction: column-reverse;
     max-width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
   }
 `;
 
 const FeaturedText = styled.div`
-  /* background: yellow; */
   width: 40%;
   display: flex;
   flex-direction: column;
@@ -33,10 +30,12 @@ const FeaturedText = styled.div`
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}){
     width: 100%;
+    margin-top: 2rem;
   }
 `;
 
 const FeaturedHeading = styled.h1`
+  margin-bottom: 0.5rem;
   a {
     text-decoration: none;
     color: ${Constants.COLORS.BLACK[1]};
@@ -47,7 +46,7 @@ const FeaturedHeading = styled.h1`
   }
 `;
 
-const FeaturedSpoiler = styled.p``;
+const FeaturedSpoiler = styled.p` `;
 
 const FeaturedCover = styled.div`
   width: 55%;

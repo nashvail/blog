@@ -12,16 +12,18 @@ const TYPE_TEXT = {
   FEATURED: 'FEATURED'
 };
 
-const Container = styled.span`
+const TYPE_WIDTH = {
+  NEW: '4rem',
+  FEATURED: '5rem'
+};
+
+const Container = styled.label`
   color: white;
+  width: ${props => TYPE_WIDTH[props.type]};
   font-family: 'Roboto';
   font-size: 0.8rem;
-  /* TODO */
-  /* This needs to be dynamic depending on the text */
-  width: 20%;
-  max-width: 100px;
-  padding: 0.2rem;
-  margin-bottom: 0.5rem;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 1rem;
   display: flex;
   justify-content: center;
   align-items: center;

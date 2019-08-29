@@ -20,12 +20,20 @@ const HomePage = styled.main`
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     max-width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
   }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    max-width: ${Constants.BODY_WIDTH["after_second_breakpoint"]}
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
+    width: 90%;
+  }
 `;
 
 const Articles = styled.section`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
   grid-gap: 1rem;
   margin-top: 2rem;
 `;
