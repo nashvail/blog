@@ -1,8 +1,9 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "nashvail.me",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Nash's thoughts on life, art, design, code and philosophy",
   "version": "0.1.0",
+  "author": "Nash Vail <howdynash@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
@@ -41,9 +42,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
+    "url": "https://github.com/nashvail/blog"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/nashvail/blog/issues"
   }
 }
