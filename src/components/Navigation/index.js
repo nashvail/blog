@@ -23,10 +23,10 @@ const Inner = styled.div`
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
-    width: 750px;
+    width: 800px;
   }
 
-  @media screen and (max-width: 845px) {
+  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
     display: none;
     opacity: 0;
     visibility: hidden;

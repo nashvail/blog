@@ -24,9 +24,6 @@ const FeaturedText = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;
-  p {
-    font-size: 1rem;
-  }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}){
     width: 100%;
@@ -46,7 +43,9 @@ const FeaturedHeading = styled.h1`
   }
 `;
 
-const FeaturedSpoiler = styled.p` `;
+const FeaturedSpoiler = styled.p`
+  font-size: 1.2rem;
+`;
 
 const FeaturedCover = styled.div`
   width: 55%;

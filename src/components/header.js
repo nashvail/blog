@@ -14,10 +14,6 @@ const Container = styled.header`
   top: 0;
   position: sticky;
   overflow: hidden;
-
-  @media screen and (max-width: 845px) {
-    width: 100%;
-  }
 `
 
 class Header extends React.Component {

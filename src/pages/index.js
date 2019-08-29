@@ -1,15 +1,21 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-import Helmet from "react-helmet";
+import Helmet from "react-helmet"
 
 import Header from "../components/Header"
-import FilterNav from "../components/FilterNav";
-import Constants from "../utils/Constants";
-import Featured from '../components/Featured';
+import FilterNav from "../components/FilterNav"
+import Constants from "../utils/Constants"
+import Featured from "../components/Featured"
+import ArticlePreview from "../components/ArticlePreview"
 
 // Featured article stuff
-import { link, title, cover, spoiler } from './blog/pockets-of-solitude/featured-content';
+import {
+  link,
+  title,
+  cover,
+  spoiler,
+} from "./blog/pockets-of-solitude/featured-content"
 
 // This is everything below the header
 const HomePage = styled.main`
@@ -22,21 +28,23 @@ const HomePage = styled.main`
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
-    max-width: ${Constants.BODY_WIDTH["after_second_breakpoint"]}
+    max-width: ${Constants.BODY_WIDTH["after_second_breakpoint"]};
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
     width: 90%;
   }
-`;
+`
 
 const Articles = styled.section`
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(autofit, minmax(300px, 1fr));
-  grid-gap: 1rem;
+  /* auto-fit is like you decide the number of columns based on the viewport width*/
+  /* auto-fit is magic */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   margin-top: 2rem;
-`;
+  grid-gap: 1em;
+`
 
 export default () => (
   <div>
@@ -46,27 +54,14 @@ export default () => (
     <Header />
     <FilterNav />
     <HomePage>
-      <Featured 
-        link={link}
-        title={title}
-        cover={cover}
-        spoiler={spoiler}
-      />
+      <Featured link={link} title={title} cover={cover} spoiler={spoiler} />
       <Articles>
-        <div style={{
-          background: "yellow",
-          gridColumnStart: "1",
-          gridColumnEnd: "7"
-        }}>
-          First article
-        </div>
-        <div style={{
-          background: "green",
-          gridColumnStart: "7",
-          gridColumnEnd: "13"
-        }}>
-          Second article
-        </div>
+        <ArticlePreview />
+        <ArticlePreview />
+        <ArticlePreview />
+        <ArticlePreview />
+        <ArticlePreview />
+        <ArticlePreview />
       </Articles>
     </HomePage>
   </div>
