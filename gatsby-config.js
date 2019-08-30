@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
@@ -39,5 +40,12 @@ module.exports = {
         ],
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `./src/data/`
+      }
+    }
   ],
 }
