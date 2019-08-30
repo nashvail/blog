@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import Helmet from "react-helmet"
 
@@ -46,6 +46,41 @@ const Articles = styled.section`
   grid-gap: 1em;
 `
 
+function renderArticlePreviews(articles) {
+  // articles is an array of json article objects
+  let articlesArray = []; 
+  articles.forEach(article => 
+    articlesArray.push(<ArticlePreview title={article.node.title} link={article.node.link}/>)
+  );
+  console.log(articles);
+  return articlesArray;
+}
+
+const ArticlesGrid = ({ children }) => (
+  <StaticQuery
+    query={graphql`
+      query ArticlesQuery {
+        allArticlesJson {
+          edges {
+            node {
+              title
+              link
+              category
+            }
+          }
+        }
+      }
+    `}
+    render={ (data) => {
+      return (
+        <Articles>
+          {renderArticlePreviews(data.allArticlesJson.edges)}
+        </Articles>
+      );
+    }}
+  />
+);
+
 export default () => (
   <div>
     <Helmet>
@@ -55,14 +90,7 @@ export default () => (
     <FilterNav />
     <HomePage>
       <Featured link={link} title={title} cover={cover} spoiler={spoiler} />
-      <Articles>
-        <ArticlePreview />
-        <ArticlePreview />
-        <ArticlePreview />
-        <ArticlePreview />
-        <ArticlePreview />
-        <ArticlePreview />
-      </Articles>
+      <ArticlesGrid/>
     </HomePage>
   </div>
 )

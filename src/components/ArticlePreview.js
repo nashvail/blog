@@ -34,12 +34,14 @@ const Spoiler = styled.p`
 
 class ArticlePreview extends React.Component {
   render() {
+    let { link, title } = this.props;
+    console.log(link,title);
     return (
       <Container>
         <PreviewImage>
 
         </PreviewImage>
-        <Title><Link to="/blog/kill-your-heroes">Kill your hereos</Link></Title>
+        <Title><Link to={link}>{title}</Link></Title>
         <Spoiler>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed
           sapien quam. Sed dapibus est id enim facilisis, at posuere turpis

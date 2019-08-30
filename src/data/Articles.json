@@ -1,0 +1,23 @@
+[
+  {
+    "title": "Kill your heroes",
+    "publishDate": "11/04/1995",
+    "cover": "./cover.png",
+    "link": "/blog/kill-your-heroes",
+    "category": ["philosophy"]
+  },
+  {
+    "title": "Stop learning",
+    "publishDate": "11/04/1995",
+    "cover": "./cover.png",
+    "link": "/blog/stop-learning",
+    "category": ["philosophy"]
+  },
+  {
+    "title": "Go, fail again",
+    "publishDate": "11/04/1995",
+    "cover": "./cover.png",
+    "link": "/blog/please-fail",
+    "category": ["philosophy"]
+  }
+]
