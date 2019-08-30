@@ -10,6 +10,8 @@ import MobileNavigaiton from "./NavMobile"
 import NormalNavigation from "./NavNormal"
 import Logo from "../Logo"
 
+const MediaQuery = `(max-width:${Constants.BREAKPOINTS[2]})`;
+
 const Inner = styled.div`
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   display: grid;
@@ -36,7 +38,7 @@ const Inner = styled.div`
 // Conditionally render Full Navigation or Mobile navigation
 
 export default () => (
-  <Media query="(max-width:845px)">
+  <Media query={MediaQuery}>
     {matches =>
       matches ? (
         <MobileNavigaiton />

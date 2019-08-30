@@ -8,6 +8,8 @@ import Constants from "../utils/Constants"
 
 // Components
 import Header from "../components/Header"
+import FilterNav from "../components/FilterNav"
+import SideCard from "../components/SideCard"
 
 // Styled components
 const Container = styled.main`
@@ -46,13 +48,15 @@ const Title = styled.h1`
   font-size: 3.5rem;
 `
 
-// We'll figure this later, the issue is that it is displayed differently in mozilla and chrome
+// TODO: We'll figure this later, the issue is that it is displayed differently in mozilla and chrome
 const Article = styled.article`
   p:first-child:first-letter {
-    /* float: left;
+    color: #903;
+    float: left;
     font-weight: bolder;
-    font-size: 5rem;
-    line-height: 1.5rem; */
+    font-size: 3rem;
+    line-height: 0.7rem;
+    padding: 1.2rem 0.7rem 0.4rem 0;
   }
 `
 
@@ -72,21 +76,6 @@ const Wrapper = styled.div`
   }
 `
 
-const RightContainer = styled.div`
-  width: 350px;
-  height: 500px;
-  position: sticky;
-  top: 8rem;
-  background: #273339;
-  margin-left: 3rem;
-  /* border-radius: 8px; */
-
-  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
-    margin: 3rem auto 3rem auto;
-    width: 50%;
-  }
-`
-
 export default function Template({
   data, // this prop will be injected by the GraphQL query below.
 }) {
@@ -98,6 +87,7 @@ export default function Template({
   return (
     <div>
       <Header />
+      <FilterNav />
       <Wrapper>
         <Container>
           <Main>
@@ -109,15 +99,20 @@ export default function Template({
               <PublishDate>August 15, 2019</PublishDate>
               <Title>{frontmatter.title}</Title>
             </div>
-            {featuredImgFluid && 
+            {featuredImgFluid && (
               <div style={{ margin: "1rem 0 2rem 0" }}>
                 <Img fluid={featuredImgFluid} />
               </div>
-            }
+            )}
             <Article dangerouslySetInnerHTML={{ __html: html }} />
           </Main>
         </Container>
-        <RightContainer />
+        <div css={`
+          background: transparent;
+          position: relative;
+        `}>
+          <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} />
+        </div>
       </Wrapper>
     </div>
   )
