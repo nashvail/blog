@@ -10,6 +10,7 @@ import Constants from "../utils/Constants"
 import Header from "../components/Header"
 import FilterNav from "../components/FilterNav"
 import SideCard from "../components/SideCard"
+import Footer from "../components/Footer"
 
 // Styled components
 const Container = styled.main`
@@ -114,6 +115,7 @@ export default function Template({
           <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} />
         </div>
       </Wrapper>
+        <Footer />
     </div>
   )
 }

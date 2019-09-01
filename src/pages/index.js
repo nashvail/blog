@@ -8,6 +8,7 @@ import FilterNav from "../components/FilterNav"
 import Constants from "../utils/Constants"
 import Featured from "../components/Featured"
 import ArticlePreview from "../components/ArticlePreview"
+import Footer from "../components/Footer"
 
 // Featured article stuff
 import {
@@ -91,6 +92,7 @@ export default () => (
     <HomePage>
       <Featured link={link} title={title} cover={cover} spoiler={spoiler} />
       <ArticlesGrid/>
+      <Footer />
     </HomePage>
   </div>
 )
