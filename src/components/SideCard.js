@@ -5,7 +5,8 @@ import Media from "react-media"
 //Constants
 import Constants from "../utils/Constants"
 
-const SCROLLING_STOP_THRESHOLD = 160
+// This should be coming through props, but anyway.
+const SCROLLING_STOP_THRESHOLD = 150;
 const MediaQuery = `(min-width:${Constants.BREAKPOINTS[0]})`;
 
 const Container = styled.aside`

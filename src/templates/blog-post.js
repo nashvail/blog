@@ -50,13 +50,19 @@ const Title = styled.h1`
 
 // TODO: We'll figure this later, the issue is that it is displayed differently in mozilla and chrome
 const Article = styled.article`
-  p:first-child:first-letter {
+  & > p:first-child:first-letter {
     color: #903;
     float: left;
     font-weight: bolder;
     font-size: 3rem;
     line-height: 0.7rem;
     padding: 1.2rem 0.7rem 0.4rem 0;
+  }
+
+  blockquote p {
+    color: ${Constants.COLORS.BLACK[2]};
+    font-style: italic;
+    font-size: 1.2rem;
   }
 `
 
@@ -107,10 +113,12 @@ export default function Template({
             <Article dangerouslySetInnerHTML={{ __html: html }} />
           </Main>
         </Container>
-        <div css={`
-          background: transparent;
-          position: relative;
-        `}>
+        <div
+          css={`
+            background: transparent;
+            position: relative;
+          `}
+        >
           <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} />
         </div>
       </Wrapper>

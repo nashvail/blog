@@ -42,7 +42,7 @@ const NavigationLI = styled.li`
 export default () => (
   <Navigation>
     <NavigationUL>
-      <NavLink to="/" text="Home" />
+      <NavLink to="/" text="Articles" />
       <NavLink to="/about" text="About" />
       <NavLink to="/about" text="Work" />
       <NavLink to="/about" text="Shop" />

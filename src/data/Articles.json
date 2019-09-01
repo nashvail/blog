@@ -19,5 +19,12 @@
     "cover": "./cover.png",
     "link": "/blog/please-fail",
     "category": ["philosophy"]
+  },
+  {
+    "title": "Insights from Deep Work",
+    "publishDate": "11/04/1995",
+    "cover": "./cover.png",
+    "link": "/blog/deep-work",
+    "category": ["philosophy"]
   }
 ]
