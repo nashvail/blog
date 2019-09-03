@@ -14,18 +14,18 @@ const Container = styled.main`
   margin: 0 auto;
 `;
 
-class CodeMathArticles extends React.Component {
+class DesignArticles extends React.Component {
   render() {
     return (
       <>
         <Header />
         <FilterNav />
         <Container>
-          <h1>Code and math articles</h1>
+          <h1>Design articles</h1>
         </Container>
       </>
     )
   }
 }
 
-export default CodeMathArticles
+export default DesignArticles

@@ -20,7 +20,7 @@ const FILTERS = [
   },
   {
     name: "Life & Philospohy",
-    link: "/filter/phil"
+    link: "/filter/life-philosophy"
   }
 ];
 
@@ -85,7 +85,7 @@ class FilterNav extends React.Component {
         <Inner>
           <span 
             style={{ 
-              color: Constants.COLORS.BLACK[3]
+              color: Constants.COLORS.BLACK[4]
             }}
           >Filter Articles</span>
           <Filters/>
