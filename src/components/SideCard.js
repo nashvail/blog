@@ -8,10 +8,11 @@ import Constants from "../utils/Constants"
 const SCROLLING_STOP_THRESHOLD = 160
 const MediaQuery = `(min-width:${Constants.BREAKPOINTS[0]})`;
 
-const Container = styled.aside`
+const Container = styled.div`
   position: static;
-  width: 300px;
+  width: 100%;
   height: 500px;
+  float: right;
   background: ${Constants.COLORS.BLACK[2]};
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
@@ -20,13 +21,13 @@ const Container = styled.aside`
   }
 `
 
+
 class SideCard extends React.Component {
   state = {
     sticky: false,
   }
 
   componentDidMount() {
-    console.log("sidecard ready")
     window.addEventListener("scroll", this.handleScroll, true)
   }
 
@@ -65,8 +66,8 @@ class SideCard extends React.Component {
     if (sticky) {
       newStyle = {
         ...style,
-        position: "fixed",
-        top: "0",
+        position: "sticky",
+        top: SCROLLING_STOP_THRESHOLD
       }
     } else {
       newStyle = {
@@ -78,6 +79,13 @@ class SideCard extends React.Component {
     return newStyle;
   };
 
+  getResponsiveSideCardStyles = () => (
+    {
+      ...this.props.style,
+      width: "100%",
+      margin: "0"
+    }
+  );
 
   render() {
     let { style } = this.props
@@ -87,7 +95,7 @@ class SideCard extends React.Component {
           matches ? (
             <Container style={{ ...this.getConditionalStickyStyles()}}>So, like hellow</Container>
           ) : (
-            <Container {...style}/>
+            <Container style={{...this.getResponsiveSideCardStyles()}}/>
           )
         }
       </Media>

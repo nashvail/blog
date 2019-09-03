@@ -13,36 +13,6 @@ import SideCard from "../components/SideCard"
 import Footer from "../components/Footer"
 
 // Styled components
-const Container = styled.main`
-  width: 50%;
-  max-width: 800px;
-  justify-content: center;
-  margin-left: calc(
-    (100vw - ${Constants.BODY_WIDTH["before_first_breakpoint"]}) / 2
-  );
-
-  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
-    width: 75%;
-    margin: 0 auto;
-  }
-
-  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
-    width: 85%;
-    margin: 0 auto;
-  }
-`
-
-const Main = styled.main`
-  /* width: ${Constants.BODY_WIDTH["before_first_breakpoint"]}; */
-  color: #121212;
-  display: grid;
-`
-
 const Title = styled.h1`
   /* margin: 3rem 0 2rem 0; */
   /* text-align: center; */
@@ -69,12 +39,29 @@ const PublishDate = styled.span`
   margin-bottom: 0.5rem;
 `
 
-const Wrapper = styled.div`
-  display: flex;
+const Container = styled.main`
+  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 72ch 1fr;
+  grid-gap: 3rem;
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
-    flex-direction: column;
+    grid-template-columns: auto;
+    grid-gap: 2rem;
+    width: 60%;
   }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    width: 75%;
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
+    width: 85%;
+  }
+`
+const Sidebar = styled.aside`
+  position: relative;
 `
 
 export default function Template({
@@ -86,37 +73,32 @@ export default function Template({
   if (frontmatter.featuredImage)
     featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
   return (
-    <div>
+    <>
       <Header />
       <FilterNav />
-      <Wrapper>
-        <Container>
-          <Main>
-            <div
-              style={{
-                marginTop: "3rem",
-              }}
-            >
-              <PublishDate>August 15, 2019</PublishDate>
-              <Title>{frontmatter.title}</Title>
+      <Container>
+        <main>
+          <div
+            style={{
+              marginTop: "3rem",
+            }}
+          >
+            <PublishDate>August 15, 2019</PublishDate>
+            <Title>{frontmatter.title}</Title>
+          </div>
+          {featuredImgFluid && (
+            <div style={{ margin: "1rem 0 2rem 0" }}>
+              <Img fluid={featuredImgFluid} />
             </div>
-            {featuredImgFluid && (
-              <div style={{ margin: "1rem 0 2rem 0" }}>
-                <Img fluid={featuredImgFluid} />
-              </div>
-            )}
-            <Article dangerouslySetInnerHTML={{ __html: html }} />
-          </Main>
-        </Container>
-        <div css={`
-          background: transparent;
-          position: relative;
-        `}>
+          )}
+          <Article dangerouslySetInnerHTML={{ __html: html }} />
+        </main>
+        <Sidebar>
           <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} />
-        </div>
-      </Wrapper>
+        </Sidebar>
         <Footer />
-    </div>
+      </Container>
+    </>
   )
 }
 export const pageQuery = graphql`

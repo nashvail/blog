@@ -1,7 +1,7 @@
 
 
 /* To create the effect of text wrapping around image*/
-article > div {
+.shaper {
   shape-outside: ellipse(200px 200px at 80% 4%);
   width: 500px;
   height: 500px;
@@ -9,14 +9,14 @@ article > div {
   opacity: 0.2;
 }
 
-.hero-text-1 {
+.heroText1 {
   display: block;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder;
   font-size: 3rem;
 }
 
-.hero-text-2 {
+.heroText2 {
   display: block;
   margin-top: -2rem;
   font-family: Raleway;
@@ -24,7 +24,7 @@ article > div {
   font-weight: lighter;
 }
 
-.publish-date {
+.publishDate {
   font-family: 'Input mono';
   color: grey;
 }

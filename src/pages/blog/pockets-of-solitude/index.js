@@ -7,7 +7,7 @@ import Constants from "../../../utils/Constants";
 
 // Assets
 import "../../../utils/global.css"
-import "./styles.css"
+import s_ from "./styles.module.css"
 import heroImage from "./assets/bubble.png"
 import connectedImage from "./assets/connected.png"
 
@@ -65,11 +65,11 @@ const HeroContainer = styled.section`
 const Hero = () => (
   <HeroContainer>
     <div className="text" style={{ alignSelf: "center" }}>
-      <span className="publish-date">August 15, 2019</span>
-      <span className="hero-text-1">Pockets of</span>
-      <span className="hero-text-2">Solitude</span>
+      <span className={s_.publishDate}>August 15, 2019</span>
+      <span className={s_.heroText1}>Pockets of</span>
+      <span className={s_.heroText2}>Solitude</span>
     </div>
-    <div className="image">
+    <div className={s_.image}>
       <img src={heroImage} />
     </div>
   </HeroContainer>
@@ -84,10 +84,10 @@ class PocketsOfSolitude extends React.Component {
         <Container>
           <Hero />
           <Article>
-            <div></div>
+            <div className={s_.shaper}></div>
             <h3>Unpublished Draft----------</h3>
             <p>
-              <span className="firstcharacter">I</span> love early mornings. The
+              <span className={s_.firstcharacter}>I</span> love early mornings. The
               loud mating calls of the birds, the smoke from yesterday, all
               settled on the tar and the cold fresh air that I can pull in
               through my nostrils and into my lungs. But really, the best part
@@ -228,7 +228,7 @@ class PocketsOfSolitude extends React.Component {
             </p>
             {/* <h2>There is a party in my head and no one's invited</h2> */}
             <p>
-              <span className="firstcharacter">I</span>t is believed that forming a habit is easier if you anchor it to
+              <span className={s_.firstcharacter}>I</span>t is believed that forming a habit is easier if you anchor it to
               something existing, like meditating after you've taken a shower or
               reading a book before going to sleep e.t.c e.t.c e.t.c. A while
               ago I decided I'll check my phone in the morning only after I have

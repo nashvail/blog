@@ -5,7 +5,6 @@ import styled from "styled-components"
 import Constants from "../utils/Constants"
 
 const Footer = styled.footer`
-  margin-top: 2rem;
   margin-bottom: 2rem;
   color: ${Constants.COLORS.BLACK[3]};
   span {
