@@ -1,7 +1,7 @@
 ---
 path: "/blog/kill-your-heroes"
 title: 'Kill your heroes'
-date: '2019-03-02'
+date: '2019-04-03'
 featuredImage: ./cover.png
 ---
 

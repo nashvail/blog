@@ -29,7 +29,7 @@ const Article = styled.article`
     line-height: 0.7rem;
     padding: 1.2rem 0.7rem 0.4rem 0;
   }
-
+  
   blockquote p {
     color: ${Constants.COLORS.BLACK[2]};
     font-style: italic;
@@ -89,7 +89,7 @@ export default function Template({
               marginTop: "3rem",
             }}
           >
-            <PublishDate>August 15, 2019</PublishDate>
+            <PublishDate>{frontmatter.date}</PublishDate>
             <Title>{frontmatter.title}</Title>
           </div>
           {featuredImgFluid && (

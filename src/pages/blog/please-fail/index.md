@@ -1,7 +1,7 @@
 ---
 path: "/blog/please-fail"
-title: "Go, fail again"
-date: '2019-03-02'
+title: "Please fail"
+date: '2019-02-20'
 ---
 
 When Jon snow accepted his defeat to Ser Davos in trying to unite the night's watch, saying "I don't know how to do that, I thought I did but... I failed". Ser Davos firmly replied, "Good, go fail again". You may not be big on Game of Thrones but regardless, when you hear someone giving the advice to "go fail again" it is sure to short circuit some distant buried part in your nervous system.

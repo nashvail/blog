@@ -1,7 +1,7 @@
 ---
 path: "/blog/deep-work"
 title: 'Insights from Deep Work (and why you need a routine)'
-date: '2019-03-02'
+date: '2019-01-17'
 featuredImage: ./cover.png
 ---
 

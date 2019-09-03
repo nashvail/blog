@@ -34,7 +34,21 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
-              tracedSVG: true
+              tracedSVG: true,
+            },
+          },
+          "@weknow/gatsby-remark-twitter",
+          {
+            resolve: "@weknow/gatsby-remark-twitter",
+            options: {
+              align: 'center'
+            }
+          },
+          {
+            resolve: "gatsby-remark-prismjs",
+            options: {
+              inlineCodeMarker: "÷",
+              showLineNumbers: true
             },
           },
         ],
@@ -44,8 +58,8 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `data`,
-        path: `./src/data/`
-      }
-    }
+        path: `./src/data/`,
+      },
+    },
   ],
 }
