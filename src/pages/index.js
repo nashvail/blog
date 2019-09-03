@@ -44,6 +44,7 @@ const Articles = styled.section`
   /* auto-fit is magic */
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   margin-top: 2rem;
+  margin-bottom: 2rem;
   grid-gap: 1em;
 `
 
