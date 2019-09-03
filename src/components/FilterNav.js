@@ -5,13 +5,32 @@ import { Link } from "gatsby"
 // Local stuff
 import Constants from "../utils/Constants"
 
-const Navigation = styled.nav`
+const FILTERS = [
+  {
+    name: "All",
+    link: "/"
+  },
+  { 
+    name: "Code & Math",
+    link: "/filter/codemath"
+  },
+  {
+    name: "Design",
+    link: "/filter/design"
+  },
+  {
+    name: "Life & Philospohy",
+    link: "/filter/life-philosophy"
+  }
+];
+
+const FilterNavigation = styled.nav`
   position: relative;
   display: flex;
   justify-content: center;
   height: ${Constants.FILTER_NAV_HEIGHT};
   background: ${Constants.COLORS.BLACK[6]};
-  z-index: -1;
+  /* z-index: -1; */
 `;
 
 const Inner = styled.div`
@@ -32,21 +51,46 @@ const Inner = styled.div`
   @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
     width: 90%;
   }
-
 `;
+
+const FiltersContainer = styled.ul`
+  display: flex;
+  list-style-type: none;
+  /* height: ${Constants.FILTER_NAV_HEIGHT}; */
+  margin: 0;
+  padding: 0;
+  margin-left: 0.5rem;
+  li {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    margin-left: 1rem;
+  }
+`;
+
+const Filters = () => (
+  <FiltersContainer>
+    {
+      FILTERS.map(filter => (
+        <li><Link to={filter.link}>{ filter.name }</Link></li>
+      ))
+    }
+  </FiltersContainer>
+);
 
 class FilterNav extends React.Component {
   render() {
     return (
-      <Navigation>
+      <FilterNavigation>
         <Inner>
           <span 
             style={{ 
-              color: Constants.COLORS.BLACK[3]
+              color: Constants.COLORS.BLACK[4]
             }}
           >Filter Articles</span>
+          <Filters/>
         </Inner>
-      </Navigation>
+      </FilterNavigation>
     )
   }
 }
