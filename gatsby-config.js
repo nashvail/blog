@@ -35,9 +35,9 @@ module.exports = {
             options: {
               maxWidth: 800,
               tracedSVG: true,
+              showCaptions: true
             },
           },
-          "@weknow/gatsby-remark-twitter",
           {
             resolve: "@weknow/gatsby-remark-twitter",
             options: {

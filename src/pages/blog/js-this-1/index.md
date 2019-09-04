@@ -92,7 +92,7 @@ function foo() {
   function bar() {  
     console.log(this);   
   }   
-  bar();  
+  bar();
 }
 
 foo();
