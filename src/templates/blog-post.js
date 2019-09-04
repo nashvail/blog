@@ -55,7 +55,8 @@ const Container = styled.main`
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     grid-template-columns: auto;
     grid-gap: 2rem;
-    width: 60%;
+    width: 70%;
+    max-width: 75ch;
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {

@@ -38,7 +38,6 @@ class SideCard extends React.Component {
 
   handleScroll = () => {
     let currentWindowScrollPos = window.scrollY
-    console.log(currentWindowScrollPos);
 
     if (currentWindowScrollPos >= SCROLLING_STOP_THRESHOLD) {
       this.makeSticky()

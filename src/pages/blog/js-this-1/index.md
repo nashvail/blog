@@ -58,7 +58,7 @@ Did you trip? For testing, you can of course copy the code and fire it in a brow
 
 If you run the code above you get the global object logged to the console, thrice. To explain this let me introduce **the very first rule,** **Default Binding.** The rule says that when a function undergoes standalone invocation i.e just `funcName();`, `this` for such functions resolves to the global object.
 
-One thing to understand is that `this` is not bound to a function until the function is invoked, therefore, to find `this` you should pay a close attention to **`how the function is called or invoked and not where`**. All the three function invocations `foo(); bar();` and `baz();` are standalone invocations hence `this` for all the three functions is the global object.
+One thing to understand is that `this` is not bound to a function until the function is invoked, therefore, to find `this` you should pay a close attention to **how the function is called or invoked and not where**. All the three function invocations `foo(); bar();` and `baz();` are standalone invocations hence `this` for all the three functions is the global object.
 
 ## Example #2
 ```js

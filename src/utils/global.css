@@ -188,3 +188,10 @@ pre[data-line] {
   float: left;
   min-width: 100%;
 }
+
+.line-numbers .line-numbers-rows {
+  padding-top: 1.3125rem;
+  padding-left: 1rem;
+  border: none;
+  opacity: 0.4;
+}
