@@ -16,6 +16,7 @@
   "dependencies": {
     "@mdx-js/mdx": "^1.4.0",
     "@mdx-js/react": "^1.4.0",
+    "@weknow/gatsby-remark-codepen": "^0.1.0",
     "@weknow/gatsby-remark-twitter": "^0.2.3",
     "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.14.0",

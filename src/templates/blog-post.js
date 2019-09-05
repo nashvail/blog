@@ -101,7 +101,7 @@ export default function Template({
           <Article dangerouslySetInnerHTML={{ __html: html }} />
         </main>
         <Sidebar>
-          {/* <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} /> */}
+          <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} />
         </Sidebar>
         <Footer />
       </Container>

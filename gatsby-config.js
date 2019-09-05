@@ -51,7 +51,14 @@ module.exports = {
               showLineNumbers: false
             },
           },
-          `gatsby-remark-static-images`
+          `gatsby-remark-static-images`,
+          {
+            resolve:"@weknow/gatsby-remark-codepen",
+            options: {
+              theme: "dark",
+              height: 400
+            }
+          }
         ],
       },
     },

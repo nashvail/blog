@@ -341,3 +341,27 @@ ctx.drawImage(
 ...
 ```
 
+![Squashed Mario](./fig18.png)
+
+
+Hah! See! That's why I was advising you to maintain the aspect ratio and that the values of selection and drawing have no real interconnection.
+
+Okay, back to what we were doing.
+
+So now we have Mario in the canvas, small and little. We need to animate it, or in other words show different frames at the same location in succession and make the illusion of movement happen. Was I too specific? Heck yeah!
+
+We can do that by selecting the grid cells we want to draw in succession. We just need to change the value of `sx` by the multiples of `MARIO_WIDTH`.
+
+Now doing this will require the use of `requestAnimationFrame` and I have been explaining that in a streak in [this](https://uxdesign.cc/how-you-can-use-simple-trigonometry-to-create-better-loaders-32a573577eb4) and [this](https://uxdesign.cc/how-to-fix-dragging-animation-in-ui-with-simple-math-4bbc10deccf7) article.
+
+As a small challenge why don't you go ahead and try accomplishing this on your own? In any case, you can check out this Codepen where I have Mario running like this. The pen has enough comments to help you understand the tiny bit of high school math that's being used to make the animation happen.
+
+https://codepen.io/nashvail/pen/REpWNG
+
+Cute little thing!
+
+And with that, we're done with a very comprehensive explanation of `drawImage`. Hope you enjoyed.
+
+If you have made it this far, how about you shoot me some feedback or #goodvibes on [Twitter](https://twitter.com/nashvail)?
+
+Love you lots!
