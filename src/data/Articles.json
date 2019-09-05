@@ -1,30 +1,44 @@
 [
   {
-    "title": "Kill your heroes",
-    "publishDate": "11/04/1995",
-    "cover": "./cover.png",
-    "link": "/blog/kill-your-heroes",
-    "category": ["philosophy"]
-  },
-  {
     "title": "Stop learning",
-    "publishDate": "11/04/1995",
+    "publishDate": "2019-04-16",
     "cover": "./cover.png",
     "link": "/blog/stop-learning",
     "category": ["philosophy"]
   },
   {
-    "title": "Go, fail again",
-    "publishDate": "11/04/1995",
+    "title": "Kill your heroes",
+    "publishDate": "2019-04-03",
+    "cover": "./cover.png",
+    "link": "/blog/kill-your-heroes",
+    "category": ["philosophy"]
+  },
+  {
+    "title": "Please fail",
+    "publishDate": "2019-02-20",
     "cover": "./cover.png",
     "link": "/blog/please-fail",
     "category": ["philosophy"]
   },
   {
     "title": "Insights from Deep Work",
-    "publishDate": "11/04/1995",
+    "publishDate": "2019-01-17",
     "cover": "./cover.png",
     "link": "/blog/deep-work",
     "category": ["philosophy"]
+  },
+  { 
+    "title": "How displaying an image on HTML5 canvas works",
+    "publishDate": "2019-01-06",
+    "cover": "./cover.png",
+    "link": "/blog/canvas-image",
+    "category": ["code"]
+  },
+  {
+    "title": "Let's settle this - Part One ",
+    "publishDate": "2016-06-22",
+    "cover": "./cover.png",
+    "link": "/blog/js-this-1",
+    "category": ["code"]
   }
 ]

@@ -1,7 +1,7 @@
 ---
 path: "/blog/stop-learning"
 title: 'Stop learning'
-date: '2019-03-02'
+date: '2019-04-16'
 featuredImage: ./cover.png
 spoiler: 'Sometimes I can’t fall asleep.'
 ---

@@ -29,7 +29,7 @@ const Article = styled.article`
     line-height: 0.7rem;
     padding: 1.2rem 0.7rem 0.4rem 0;
   }
-
+  
   blockquote p {
     color: ${Constants.COLORS.BLACK[2]};
     font-style: italic;
@@ -55,7 +55,8 @@ const Container = styled.main`
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     grid-template-columns: auto;
     grid-gap: 2rem;
-    width: 60%;
+    width: 70%;
+    max-width: 75ch;
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
@@ -81,7 +82,7 @@ export default function Template({
   return (
     <>
       <Header />
-      <FilterNav />
+      {/* <FilterNav /> */}
       <Container>
         <main>
           <div
@@ -89,7 +90,7 @@ export default function Template({
               marginTop: "3rem",
             }}
           >
-            <PublishDate>August 15, 2019</PublishDate>
+            <PublishDate>{frontmatter.date}</PublishDate>
             <Title>{frontmatter.title}</Title>
           </div>
           {featuredImgFluid && (
@@ -100,7 +101,7 @@ export default function Template({
           <Article dangerouslySetInnerHTML={{ __html: html }} />
         </main>
         <Sidebar>
-          <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} />
+          {/* <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} /> */}
         </Sidebar>
         <Footer />
       </Container>

@@ -52,10 +52,8 @@
   margin-left: -10%;
 }
 
-/* First break point */
-
 @media screen and (max-width: 1200px) {
-  article > div {
+  .shaper {
     display: none;
   }
 
