@@ -51,6 +51,7 @@ module.exports = {
               showLineNumbers: false
             },
           },
+          `gatsby-remark-static-images`
         ],
       },
     },

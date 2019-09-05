@@ -9,7 +9,7 @@ keywords:
 - nash
 - nash vail
 path: "/blog/js-this-1"
-title: Let’s settle this — Part One
+title: Let’s settle this - Part 1
 description:
   Can’t we all relate to this? At some point ‘this’ has been a thing to think
   about for almost all JavaScript developers. For me, whenever…
@@ -18,11 +18,14 @@ featuredImage: ./cover.png
 ---
 https://twitter.com/bendhalpern/status/578925947245633536
 
+
+
 Can’t we all relate to this? At some point `this` has been a thing to think about for almost all JavaScript developers. For me, whenever `this` started to rear its ugly head I somehow managed to make things work and then forgot about it, and I’d like think you did the same, at some point. But let’s be done with it, today, once and for all *dramatic drumroll* let’s settle `this`.
 
 A couple of days ago while in a library I had an unexpected encounter.
 
 https://twitter.com/nashvail/status/737555366846730244
+
 
 The second chapter of the book is all about `this`, I read it through, felt confident, couple of pages down a scenario pops up where I need to guess what `this` is, and I mess up. That was one hell of a moment for introspection for my dumb self. I reread the chapter and then some and figured this is something every JS developer should know about.
 
