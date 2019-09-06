@@ -3,7 +3,6 @@ path: "/blog/stop-learning"
 title: 'Stop learning'
 date: '2019-04-16'
 featuredImage: ./cover.png
-spoiler: 'Sometimes I can’t fall asleep.'
 ---
 If I were to pick you and a friend of yours and to you give access to the city planners of Paris, the Instagram handles of its most famous architects-so you can DM them...and I'll make sure they respond. I give you the most detailed maps of the city, the exact opposite of what Apple Maps would give you. I bring for you every encyclopedia entry about Paris ever, every book and every tour guide ever written about Paris. And to your friend? I just drop her in Paris with a task to explore every nook and cranny of it.
 
