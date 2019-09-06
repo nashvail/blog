@@ -19,7 +19,7 @@ const LogoContainer = styled.div`
 export default () => (
   <LogoContainer>
     <Link to="/" style={{ margin: 0, padding: 0 }}>
-      <img src={LogoImage} />
+      <img src={LogoImage} alt="Nash vail logo" />
     </Link>
   </LogoContainer>
 )

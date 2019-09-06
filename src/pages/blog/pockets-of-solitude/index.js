@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby"
 
 // Constants
 import Constants from "../../../utils/Constants";
@@ -13,6 +12,7 @@ import connectedImage from "./assets/connected.png"
 
 // Components
 import Header from "../../../components/Header"
+import Footer from "./../../../components/Footer";
 
 // Styled components
 const Container = styled.main`
@@ -70,7 +70,7 @@ const Hero = () => (
       <span className={s_.heroText2}>Solitude</span>
     </div>
     <div className={s_.image}>
-      <img src={heroImage} />
+      <img src={heroImage} alt="" />
     </div>
   </HeroContainer>
 )
@@ -295,6 +295,7 @@ class PocketsOfSolitude extends React.Component {
               his tired eyes, he smiled.
             </p>
           </Article>
+          <Footer />
         </Container>
       </div>
     )

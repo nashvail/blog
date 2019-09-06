@@ -1,14 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from 'gatsby';
+import React from "react"
+import styled from "styled-components"
+import { Link } from "gatsby"
+import PropTypes from "prop-types";
 
 // Constants
-import Constants from '../../utils/Constants';
+import Constants from "../../utils/Constants"
 
 const ActiveNavLinkStyle = {
   fontWeight: 700,
-  color: Constants.COLORS.BLACK[1]
-};
+  color: Constants.COLORS.BLACK[1],
+}
 
 const NavigationLI = styled.li`
   margin: 0;
@@ -21,10 +22,19 @@ const NavigationLI = styled.li`
     text-decoration: none;
     color: #616161;
   }
-`;
+`
 
-export default ({ to, text }) => (
-  <NavigationLI>
-    <Link to={to} activeStyle={ActiveNavLinkStyle}>{text}</Link>
-  </NavigationLI>
-);
+export default function NavLink({ to, text }) {
+  return (
+    <NavigationLI>
+      <Link to={to} activeStyle={ActiveNavLinkStyle}>
+        {text}
+      </Link>
+    </NavigationLI>
+  )
+}
+
+NavLink.propTypes = {
+  to: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired
+}

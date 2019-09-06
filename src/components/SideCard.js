@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Media from "react-media"
+import PropTypes from "prop-types";
 
 //Constants
 import Constants from "../utils/Constants"
@@ -88,7 +89,6 @@ class SideCard extends React.Component {
   );
 
   render() {
-    let { style } = this.props
     return(
       <Media query={MediaQuery}>
         { matches =>
@@ -103,5 +103,9 @@ class SideCard extends React.Component {
     );
   }
 }
+
+SideCard.propTypes = {
+  style: PropTypes.object
+};
 
 export default SideCard

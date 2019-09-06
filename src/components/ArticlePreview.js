@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components";
 import { Link } from "gatsby";
+import PropTypes from "prop-types";
 
 // Constants
 import Constants from "../utils/Constants";
@@ -35,12 +36,9 @@ const Spoiler = styled.p`
 class ArticlePreview extends React.Component {
   render() {
     let { link, title } = this.props;
-    console.log(link,title);
     return (
       <Container>
-        <PreviewImage>
-
-        </PreviewImage>
+        <PreviewImage/>
         <Title><Link to={link}>{title}</Link></Title>
         <Spoiler>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed
@@ -51,5 +49,10 @@ class ArticlePreview extends React.Component {
     );
   }
 }
+
+ArticlePreview.propTypes = {
+  link: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired
+};
 
 export default ArticlePreview

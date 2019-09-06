@@ -54,7 +54,6 @@ function renderArticlePreviews(articles) {
   articles.forEach(article => 
     articlesArray.push(<ArticlePreview title={article.node.title} link={article.node.link}/>)
   );
-  console.log(articles);
   return articlesArray;
 }
 

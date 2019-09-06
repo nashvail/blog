@@ -5,10 +5,6 @@ import styled from "styled-components"
 import NavLink from './NavLink';
 
 // Constants
-const ActiveNavLinkStyle = {
-  fontWeight: 700,
-  color: "#121212",
-}
 
 // Styled components
 const Navigation = styled.nav`
@@ -24,19 +20,6 @@ const NavigationUL = styled.ul`
   margin: 0;
   display: flex;
   align-items: center;
-`
-
-const NavigationLI = styled.li`
-  margin: 0;
-  display: inline-block;
-  margin-right: 1rem;
-  &:last-of-type {
-    margin-right: 0;
-  }
-  a {
-    text-decoration: none;
-    color: #616161;
-  }
 `
 
 export default () => (
