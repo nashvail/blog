@@ -8,22 +8,13 @@ import Constants from "../../utils/constants"
 // Components
 import Header from "../../components/Header"
 import FilterNav from "../../components/FilterNav"
+import ArticleGrid from "../../components/ArticleGrid"
 import ArticlePreview from "../../components/ArticlePreview"
 
 // Styled components
 const Container = styled.main`
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   margin: 0 auto;
-`
-const Articles = styled.section`
-  width: 100%;
-  display: grid;
-  /* auto-fit is like you decide the number of columns based on the viewport width*/
-  /* auto-fit is magic */
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  grid-gap: 1em;
 `
 
 function renderArticlePreviews(articles) {
@@ -32,7 +23,6 @@ function renderArticlePreviews(articles) {
   articles.forEach(article => 
     articlesArray.push(<ArticlePreview title={article.node.title} link={article.node.link}/>)
   );
-  console.log(articles);
   return articlesArray;
 }
 
@@ -57,7 +47,7 @@ const FilteredArticlesGrid = ({ children }) => (
     `}
     render={data => {
       return (
-        <Articles>{renderArticlePreviews(data.allArticlesJson.edges)}</Articles>
+        <ArticleGrid>{renderArticlePreviews(data.allArticlesJson.edges)}</ArticleGrid>
       )
     }}
   />
