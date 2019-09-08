@@ -1,10 +1,11 @@
 ---
 path: "/blog/mindfulness"
-title: 'Everything that insomnia taught me about mindfulness'
+title: 'On mindfulness'
 date: '2019-02-05'
 featuredImage: ./images/cover.png
 ---
 ### When asked "What is enlightenment?" one zen master answered, "Wash your dinner bowl.".
+<br/>
 
 If you ever find yourself curled up on your bed punching into google dot com "how to be mentally strong" at 3 in the afternoon here's what's likely to follow. After 5 minutes of browsing you'll come across mindfulness and meditation and you'll scoff it off. Then just as you are about to switch to YouTube, accidentally, from the corner of your eye, you'll notice that there's an app for meditation. And then maybe you'll install it only to discover that it requires you to pay money and just because you're so desperate and weak and haven't slept in 7 days you'll do it. Even though you have never bought a subscription for Netlifx, or Amazon Prime or any service that's so intangibly online, you'll buy a subscription for a meditation app. Because you want to sleep.
 

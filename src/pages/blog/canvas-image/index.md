@@ -4,7 +4,11 @@ date: "2019-01-06"
 title: "How displaying an image on HTML5 canvas works"
 ---
 
+<br/>
+
 ### A question occurs, "Why do we need an article for this Nash?"
+<br/>
+
 
 Okay, grab a seat.
 
@@ -31,6 +35,8 @@ The way `drawImage` works does seem complex to some extent, but this complexity 
 By the end of this article you'll be able to visualise how `drawImage` will draw any given image on `canvas` just by looking at the values of the 9 parameters. Sounds like a superpower you might wanna have? Okay then, let's dive right in!
 
 ## Loading an image in canvas
+<br/>
+
 
 Let's start simple with an image and an HTML5 `canvas`.
 
@@ -108,6 +114,8 @@ To recap,
 Now it's time for the remaning 8 parameters. Pop your collars! I am gonna learn you some graphics editing first!
 
 ## How to crop a picture
+<br/>
+
 
 Every single, even the most basic of graphics editing programs come with the feature of cropping. It's fairly simple, open an image > select the area you want visible > hit crop. And just like that the naked beer belly of that obnoxious smelling old man is out. Poof!
 
@@ -133,6 +141,8 @@ Let's mark some points on it.
 Yes, about a minute ago! Which leads us to the fleshiest part of the article.
 
 ## Displaying an image on canvas, Step 1: Selection
+<br/>
+
 
 The first task `drawImage` performs--behind the scenes--is it selects a portion of the image based on the four `s` parameters (`sx, sy, sWidth, sHeight`). You can say that s in all the s.. parameters stands for "select".
 
@@ -157,6 +167,8 @@ Once `drawImage` has selected the area of image you asked it to -- and we'll
 Again. `s`election is done, the next step is to `d`raw.
 
 ## Displaying an image on canvas, Step 2: Drawing
+<br/>
+
 
 To draw the selected portion of the image, we again need four parameters.
 
@@ -184,6 +196,8 @@ Awesome! Not so complicated after all is it?
 Now at this point, we're done with all the theory. In rest of the article that follows we'll bake the batter of knowledge spread around your head with a fun and practical example and you'll be good to go. But, before we do that, let's talk about one last important thing concerning `drawImage`.
 
 ## The default values
+<br/>
+
 
 Remember my lecture on "hey keep the aspect ratio and be careful don't take chocolates from strangers…"? Well, as it turns out, you can omit certain values and not worry about the aspect ratio at all. As far as taking chocolates from strangers go, you're the king of your own world.
 
@@ -225,6 +239,8 @@ Good.
 Let's do something fun.
 
 ## Animating Mario with drawImage
+<br/>
+
 
 You see, when Mario moves forward/backward or in any other direction, it appears as if he is walking. His position changes but also there is an accompanying animation of his legs and hands moving.
 

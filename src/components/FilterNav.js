@@ -40,6 +40,10 @@ const Inner = styled.div`
   font-family: 'Roboto';
   font-size: 0.8rem;
 
+  a:hover {
+    text-decoration: none;
+  }
+
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     width: ${Constants.BODY_WIDTH["after_first_breakpoint"]}
   }

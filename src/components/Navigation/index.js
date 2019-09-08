@@ -17,6 +17,10 @@ const Inner = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 
+  a:hover {
+    text-decoration: none;
+  }
+
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
   }

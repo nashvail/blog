@@ -7,10 +7,12 @@ import PropTypes from "prop-types"
 import Constants from "../utils/Constants"
 
 // Helpers
-import { isExternalLink } from "../utils/helpers"
+import { isExternalLink, formatPostDate } from "../utils/helpers"
 
 // Styled Components
 const Container = styled.div`
+  display: flex;
+  flex-direction: column;
   /* padding: 1rem; */
   /* background: lightgrey; */
   /*
@@ -23,20 +25,31 @@ const Container = styled.div`
 
 const PreviewImage = styled.div`
   width: 100%;
-  height: 250px;
-  background: cyan;
+  height: 0.1rem;
+  background: ${Constants.COLORS.BLACK[6]};
 `
 
-const Title = styled.h3`
-  margin-top: 1rem;
-  /* margin-bottom: 1rem; */
-`
+const Title = styled.h3``
 
 const Spoiler = styled.p``
 
-const Category = ({ category }) => {
-  return <span>{category}</span>
-}
+const PublishDate = styled.span`
+  font-family: "Input Mono";
+  font-size: 0.8rem;
+  color: ${Constants.COLORS.BLACK[4]};
+  margin: 0.5rem 0;
+`
+
+const Category = styled.span`
+  margin: 0.8rem 0 0.5rem 0;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-family: Roboto;
+  color: ${Constants.COLORS.BLACK[4]};
+  font-weight: bold;
+`
+
+const Categories = ({ category }) => <Category>{category.join(" / ")}</Category>
 
 class ArticlePreview extends React.Component {
   render() {
@@ -53,10 +66,10 @@ class ArticlePreview extends React.Component {
 
     return (
       <Container>
-        <PreviewImage/>
-        <Category category={category} />
+        <PreviewImage />
+        <Categories category={category} />
         <Title>{articleLink}</Title>
-        {publishDate}
+        <PublishDate>{formatPostDate(publishDate)}</PublishDate>
         <Spoiler>{spoiler}</Spoiler>
       </Container>
     )
@@ -68,7 +81,7 @@ ArticlePreview.propTypes = {
   title: PropTypes.string.isRequired,
   spoiler: PropTypes.string.isRequired,
   category: PropTypes.arrayOf(PropTypes.string),
-  publishDate: PropTypes.string.isRequired
+  publishDate: PropTypes.string.isRequired,
 }
 
 export default ArticlePreview
