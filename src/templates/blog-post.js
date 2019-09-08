@@ -17,6 +17,7 @@ const Title = styled.h1`
   /* margin: 3rem 0 2rem 0; */
   /* text-align: center; */
   font-size: 3.5rem;
+  margin-bottom: 1rem;
 `
 
 // TODO: We'll figure this later, the issue is that it is displayed differently in mozilla and chrome
