@@ -1,5 +1,14 @@
 [
   {
+    "title": "Your feelings are not your feelings",
+    "publishDate": "2019-05-02",
+    "cover": "./cover.png",
+    "link": "/blog/simulacra",
+    "category": [
+      "philosophy"
+    ] 
+  },
+  {
     "title": "Stop learning",
     "publishDate": "2019-04-16",
     "cover": "./cover.png",
