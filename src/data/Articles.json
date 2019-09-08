@@ -4,55 +4,80 @@
     "publishDate": "2019-04-16",
     "cover": "./cover.png",
     "link": "/blog/stop-learning",
-    "category": ["philosophy"]
+    "category": [
+      "philosophy"
+    ]
   },
   {
     "title": "Kill your heroes",
     "publishDate": "2019-04-03",
     "cover": "./cover.png",
     "link": "/blog/kill-your-heroes",
-    "category": ["philosophy"]
+    "category": [
+      "philosophy"
+    ]
+  },
+  {
+    "title": "Designers, maybe inspiration is the wrong word",
+    "publishDate": "2019-03-03",
+    "cover": "./cover.png",
+    "link": "/blog/problem-with-inspiration",
+    "category": [
+      "design"
+    ]
   },
   {
     "title": "Please fail",
     "publishDate": "2019-02-20",
     "cover": "./cover.png",
     "link": "/blog/please-fail",
-    "category": ["philosophy"]
-  },
-  {
-    "title": "Insights from Deep Work",
-    "publishDate": "2019-01-17",
-    "cover": "./cover.png",
-    "link": "/blog/deep-work",
-    "category": ["philosophy"]
-  },
-  { 
-    "title": "How displaying an image on HTML5 canvas works",
-    "publishDate": "2019-01-06",
-    "cover": "./cover.png",
-    "link": "/blog/canvas-image",
-    "category": ["code"]
+    "category": [
+      "philosophy"
+    ]
   },
   {
     "title": "Everything that insomnia taught me about mindfulness",
     "publishDate": "2019-02-05",
     "cover": "./cover.png",
     "link": "/blog/mindfulness",
-    "category": ["philosophy"]
+    "category": [
+      "philosophy"
+    ]
+  },
+  {
+    "title": "Insights from Deep Work",
+    "publishDate": "2019-01-17",
+    "cover": "./cover.png",
+    "link": "/blog/deep-work",
+    "category": [
+      "philosophy"
+    ]
+  },
+  {
+    "title": "How displaying an image on HTML5 canvas works",
+    "publishDate": "2019-01-06",
+    "cover": "./cover.png",
+    "link": "/blog/canvas-image",
+    "category": [
+      "code"
+    ]
   },
   {
     "title": "Let's settle this - Part 1",
     "publishDate": "2016-06-22",
     "cover": "./cover.png",
     "link": "/blog/js-this-1",
-    "category": ["code"]
+    "category": [
+      "code"
+    ]
   },
   {
     "title": "Let's settle this - Part 2",
     "publishDate": "2016-06-22",
     "cover": "./cover.png",
     "link": "/blog/js-this-2",
-    "category": ["code"]
+    "category": [
+      "code"
+    ]
   }
 ]
