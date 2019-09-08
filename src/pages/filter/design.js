@@ -9,22 +9,15 @@ import Constants from "../../utils/constants"
 import Header from "../../components/Header"
 import FilterNav from "../../components/FilterNav"
 import ArticleGrid from "../../components/ArticleGrid"
-import ArticlePreview from "../../components/ArticlePreview"
+
+// Helpers
+import { renderArticlePreviews } from "../../utils/helpers";
 
 // Styled components
 const Container = styled.main`
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   margin: 0 auto;
  `
-
-function renderArticlePreviews(articles) {
-  // articles is an array of json article objects
-  let articlesArray = []; 
-  articles.forEach(article => 
-    articlesArray.push(<ArticlePreview title={article.node.title} link={article.node.link}/>)
-  );
-  return articlesArray;
-}
 
 const FilteredArticlesGrid = ({ children }) => (
   <StaticQuery
@@ -40,6 +33,8 @@ const FilteredArticlesGrid = ({ children }) => (
               title
               link
               category
+              spoiler
+              publishDate
             }
           }
         }

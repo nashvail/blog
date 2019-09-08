@@ -33,17 +33,23 @@ const Spoiler = styled.p`
 
 `;
 
+const Category = ({ category }) => {
+  return <span>{category}</span>
+};
+
 class ArticlePreview extends React.Component {
   render() {
-    let { link, title } = this.props;
+    let { link, title, spoiler, category, publishDate } = this.props;
     return (
       <Container>
         <PreviewImage/>
-        <Title><Link to={link}>{title}</Link></Title>
+        <Category category={category} />
+        {publishDate}
+        <Title>
+          <Link to={link}>{title}</Link>
+        </Title>
         <Spoiler>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed
-          sapien quam. Sed dapibus est id enim facilisis, at posuere turpis
-          adipiscing. Quisque sit amet dui dui.
+          {spoiler}
         </Spoiler>
       </Container>
     );

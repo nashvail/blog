@@ -7,8 +7,10 @@ import Header from "../components/Header"
 import FilterNav from "../components/FilterNav"
 import Constants from "../utils/Constants"
 import Featured from "../components/Featured"
-import ArticlePreview from "../components/ArticlePreview"
 import Footer from "../components/Footer"
+
+// Helpers
+import { renderArticlePreviews } from "../utils/helpers";
 
 // Featured article stuff
 import {
@@ -48,14 +50,6 @@ const Articles = styled.section`
   grid-gap: 1em;
 `
 
-function renderArticlePreviews(articles) {
-  // articles is an array of json article objects
-  let articlesArray = []; 
-  articles.forEach(article => 
-    articlesArray.push(<ArticlePreview title={article.node.title} link={article.node.link}/>)
-  );
-  return articlesArray;
-}
 
 const ArticlesGrid = ({ children }) => (
   <StaticQuery
@@ -67,20 +61,20 @@ const ArticlesGrid = ({ children }) => (
               title
               link
               category
+              spoiler
+              publishDate
             }
           }
         }
       }
     `}
-    render={ (data) => {
+    render={data => {
       return (
-        <Articles>
-          {renderArticlePreviews(data.allArticlesJson.edges)}
-        </Articles>
-      );
+        <Articles>{renderArticlePreviews(data.allArticlesJson.edges)}</Articles>
+      )
     }}
   />
-);
+)
 
 export default () => (
   <div>
@@ -91,7 +85,7 @@ export default () => (
     <FilterNav />
     <HomePage>
       <Featured link={link} title={title} cover={cover} spoiler={spoiler} />
-      <ArticlesGrid/>
+      <ArticlesGrid />
       <Footer />
     </HomePage>
   </div>
