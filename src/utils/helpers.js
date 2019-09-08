@@ -18,3 +18,8 @@ export function renderArticlePreviews(articles) {
   })
   return articlesArray
 }
+
+export function isExternalLink(link) {
+  let re = new RegExp("^(http|https)://", "i");
+  return re.test(link);
+}
