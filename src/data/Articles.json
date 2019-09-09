@@ -1,5 +1,15 @@
 [
   {
+    "title": "Understanding impermanence",
+    "publishDate": "2019-05-15",
+    "cover": "./cover.png",
+    "link": "/blog/impermanence",
+    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "category": [
+      "philosophy"
+    ]
+  },
+  {
     "title": "Your feelings are not your feelings",
     "publishDate": "2019-05-02",
     "cover": "./cover.png",
@@ -27,6 +37,18 @@
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
       "philosophy"
+    ]
+  },
+  {
+    "title": "How to defeat the blank screen",
+    "publishDate": "2019-03-17",
+    "cover": "./cover.png",
+    "link": "/blog/battleplan",
+    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "category": [
+      "code",
+      "philosophy",
+      "design"
     ]
   },
   {
@@ -92,6 +114,18 @@
     ]
   },
   {
+    "title": "How you can use simple Trigonometry to create better loaders",
+    "publishDate": "2018-05-06",
+    "cover": "./cover.png",
+    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "link": "https://uxdesign.cc/how-you-can-use-simple-trigonometry-to-create-better-loaders-32a573577eb4",
+    "category": [
+      "code",
+      "design",
+      "medium"
+    ]
+  },
+  {
     "title": "Let's settle this - Part 1",
     "publishDate": "2016-06-22",
     "cover": "./cover.png",
@@ -106,6 +140,16 @@
     "publishDate": "2016-06-22",
     "cover": "./cover.png",
     "link": "/blog/js-this-2",
+    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "category": [
+      "code"
+    ]
+  },
+  {
+    "title": "Nerding out with Bezier Curves",
+    "publishDate": "2016-05-24",
+    "cover": "./cover.png",
+    "link": "/blog/bezier",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
       "code"

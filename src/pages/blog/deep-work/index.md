@@ -2,7 +2,7 @@
 path: "/blog/deep-work"
 title: 'Insights from Deep Work (and why you need a routine)'
 date: '2019-01-17'
-featuredImage: ./cover.png
+featuredImage: ./images/cover.png
 ---
 
 Steven J wasn't wrong when in what is now the most famous commencement speech on the internet reminded us that, "Your work is going to fill a large part of your life.". The words on passion and love which followed are debatable but the fact that your work actually makes up a large portion of your life is absolutely not. It's a fact both of us are aware of but don't care about enough. The question is, how do you make something better? You start by bettering parts of it. If I am cleaning my room I'll start with my bed, then move to the floor, and then to my desk. Bringing order and cleanliness to something that makes up a large chunk of your life therefore, is also improving your life as a whole, isn't it? 
@@ -46,9 +46,13 @@ As a full disclaimer, the technique I use is about 90% based on Cal's method, no
 
 The way you number the hours is in blocks, like this.
 
+![1 hour = 2 blocks](./images/fig1.jpg)
+
 The hours are numbered on alternate lines so that each hour is made up of two blocks of 30 minutes. 
 
 Once you have the blocks ready you can start assigning tasks to them. For example, I am writing this article because I have assigned "Write" to the 1st, 2nd and the 3rd block. 
+
+![Assign tasks to blocks](./images/fig2.jpg)
 
 It's important that you don't see the blocks as Ball and Chain. If during the day something urgent comes up or I stumble on an insight I readjust the remaining blocks to accommodate that, it's all fluid. Often when there's a little too much to do and priorities are not defined, I list my current ongoing projects on the left page, of them I pick the ones I plan on working on that particular day. Of *those*, I pick the tasks that need my attention and creativity the most. I assign those tasks to the morning blocks because I work best in the mornings.
 
@@ -61,6 +65,8 @@ To keep track of the number of hours and to make sure the hours are deep I use a
 > Do what matters. - Freedom App
 
 As the day rolls on, after each work session I color its respective boxes. At the end of the day, I have an exact count of the hours I have spent working and on what. Then, for example, if I find something that isn't taking off or lying incomplete I know it's because I haven't spent enough time with it.
+
+![Colored boxes](./images/fig3.jpg)
 
 In following this technique you end up creating a scoreboard for your working hours. Maybe it's a psychological quirk but I have found myself trying to keep the score rolling by working more and with more focus. Even if your daily tasks fall under being "creative", waiting for inspiration to begin work is a fallacy. To quote from David Brook's piece [The Good Order](https://www.nytimes.com/2014/09/26/opinion/david-brooks-routine-creativity-and-president-obamas-un-speech.html) in which he goes over the working habits of the most creative people in history, he notes, "creative people organize their lives according to repetitive, disciplined routines. **They think like artists but work like accountants.**”
 
