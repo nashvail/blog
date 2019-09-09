@@ -58,7 +58,7 @@ class ArticlePreview extends React.Component {
     let articleLink
     if (isExternalLink(link))
       articleLink = (
-        <a href={link} target="_blank">
+        <a href={link} target="_blank" rel="noopener noreferrer">
           {title}
         </a>
       )

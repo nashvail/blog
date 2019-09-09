@@ -30,19 +30,19 @@ const SocialLinksList = styled.ul`
   margin-top: 0.5rem;
   display: flex;
   flex-wrap: wrap;
-  
+
   @media screen and (max-width: 630px) {
     flex-direction: column;
   }
 `
 const SocialLink = styled.li`
-          margin: 0;
-          padding: 0 0 0 0.4rem;
+  margin: 0;
+  padding: 0 0 0 0.4rem;
 
   @media screen and (max-width: 630px) {
     padding-left: 0;
   }
-`;
+`
 
 const FooterSeparator = styled.hr``
 
@@ -78,7 +78,7 @@ const SocialLinks = () => (
   <SocialLinksList>
     {Object.keys(Links).map(link => (
       <SocialLink>
-        <a href={Links[link].link} target="_blank">
+        <a href={Links[link].link} target="_blank" rel="noopener noreferrer">
           {Links[link].name}
         </a>
       </SocialLink>
@@ -98,7 +98,13 @@ export default () => {
         `}
       >
         This website is{" "}
-        <a href="https://github.com/nashvail/blog">open source.</a>
+        <a
+          href="https://github.com/nashvail/blog"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          open source.
+        </a>
       </span>
     </Footer>
   )
