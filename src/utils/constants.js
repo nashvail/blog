@@ -5,7 +5,7 @@ export default {
     after_first_breakpoint: "1000px",
     after_second_breakpoint: "800px"
   },
-  HEADER_HEIGHT: "90px",
+  HEADER_HEIGHT: "110px",
   FILTER_NAV_HEIGHT: "60px",
   COLORS: {
     BLACK: {

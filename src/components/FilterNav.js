@@ -1,28 +1,31 @@
 import React from "react"
 import styled from "styled-components"
+import Media from "react-media"
 import { Link } from "gatsby"
 
-// Local stuff
+// Constants
 import Constants from "../utils/Constants"
+
+const MediaQuery = `(max-width:${Constants.BREAKPOINTS[2]})`
 
 const FILTERS = [
   {
     name: "All",
-    link: "/"
+    link: "/",
   },
-  { 
+  {
     name: "Code & Math",
-    link: "/filter/codemath"
+    link: "/filter/codemath",
   },
   {
     name: "Design",
-    link: "/filter/design"
+    link: "/filter/design",
   },
   {
     name: "Life & Philospohy",
-    link: "/filter/life-philosophy"
-  }
-];
+    link: "/filter/life-philosophy",
+  },
+]
 
 const FilterNavigation = styled.nav`
   position: relative;
@@ -31,13 +34,13 @@ const FilterNavigation = styled.nav`
   height: ${Constants.FILTER_NAV_HEIGHT};
   background: ${Constants.COLORS.BLACK[6]};
   /* z-index: -1; */
-`;
+`
 
 const Inner = styled.div`
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   display: flex;
   align-items: center;
-  font-family: 'Roboto';
+  font-family: "Roboto";
   font-size: 0.8rem;
 
   a:hover {
@@ -45,17 +48,17 @@ const Inner = styled.div`
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
-    width: ${Constants.BODY_WIDTH["after_first_breakpoint"]}
+    width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
-    width: ${Constants.BODY_WIDTH["after_second_breakpoint"]}
+    width: ${Constants.BODY_WIDTH["after_second_breakpoint"]};
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
     width: 90%;
   }
-`;
+`
 
 const FiltersContainer = styled.ul`
   display: flex;
@@ -70,31 +73,42 @@ const FiltersContainer = styled.ul`
     padding: 0;
     margin-left: 1rem;
   }
-`;
+`
 
 const Filters = () => (
   <FiltersContainer>
-    {
-      FILTERS.map(filter => (
-        <li><Link to={filter.link}>{ filter.name }</Link></li>
-      ))
-    }
+    {FILTERS.map(filter => (
+      <li>
+        <Link to={filter.link}>{filter.name}</Link>
+      </li>
+    ))}
   </FiltersContainer>
-);
+)
 
 class FilterNav extends React.Component {
   render() {
     return (
-      <FilterNavigation>
-        <Inner>
-          <span 
-            style={{ 
-              color: Constants.COLORS.BLACK[4]
-            }}
-          >Filter Articles</span>
-          <Filters/>
-        </Inner>
-      </FilterNavigation>
+      <Media query={MediaQuery}>
+        {matches =>
+          !matches ? (
+            <FilterNavigation>
+              <Inner>
+                <span
+                  style={{
+                    color: Constants.COLORS.BLACK[4],
+                  }}
+                >
+                  Filter Articles
+                </span>
+                <Filters />
+              </Inner>
+            </FilterNavigation>
+          ) : (
+            // At this point show nothing because I am moving filter nav inside hamburger
+            <></>
+          )
+        }
+      </Media>
     )
   }
 }

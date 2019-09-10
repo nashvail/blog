@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { Link } from "gatsby"
 
 // Import nashvail logo
-import LogoImage from "../assets/nv.svg"
+import LogoImage from "../assets/nv_alter.svg"
 
 const LogoContainer = styled.div`
   display: flex;
@@ -11,7 +11,7 @@ const LogoContainer = styled.div`
   align-items: center;
 
   & img {
-    height: 24px;
+    height: 63px;
     margin: 0;
   }
 `
