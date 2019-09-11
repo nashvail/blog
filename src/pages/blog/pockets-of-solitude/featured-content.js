@@ -1,4 +1,4 @@
-import FeaturedCover from "./assets/featured-cover.png"
+import FeaturedCover from "./assets/featured-cover.gif"
 
 export const title = "Pockets of solitude"
 export const link = "/blog/pockets-of-solitude/"

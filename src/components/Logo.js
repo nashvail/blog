@@ -2,6 +2,9 @@ import React from "react"
 import styled from "styled-components"
 import { Link } from "gatsby"
 
+// Constants
+import Constants from "../utils/Constants";
+
 // Import nashvail logo
 import LogoImage from "../assets/nv_alter.svg"
 
@@ -13,6 +16,9 @@ const LogoContainer = styled.div`
   & img {
     height: 63px;
     margin: 0;
+    @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+      height: 48px;
+    }
   }
 `
 

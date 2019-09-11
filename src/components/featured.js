@@ -50,13 +50,11 @@ const FeaturedSpoiler = styled.p`
 
 const FeaturedCover = styled.div`
   width: 55%;
-  /* remove this */
-  background-color: cyan;
   img {
     width: 100%;
     max-width: 100%;
     /* and this, once you have a proper cover image*/
-    visibility: hidden;
+    /* visibility: hidden; */
   }
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
@@ -75,7 +73,7 @@ export default function FeaturedArticle({ link, title, spoiler, cover }) {
         <FeaturedSpoiler>{spoiler}</FeaturedSpoiler>
       </FeaturedText>
       <FeaturedCover>
-        <img src={cover} alt="" />
+        <img src={cover} alt="Featured image cover" />
       </FeaturedCover>
     </Featured>
   )
