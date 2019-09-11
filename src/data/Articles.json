@@ -46,7 +46,6 @@
     "link": "/blog/battleplan",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
-      "code",
       "philosophy",
       "design"
     ]
@@ -122,6 +121,28 @@
     "category": [
       "code",
       "design",
+      "medium"
+    ]
+  },
+  {
+    "title": "JavaScript's prototypal inheritance explained using CSS",
+    "publishDate": "2017-01-22",
+    "cover": "./cover.png",
+    "link": "https://medium.com/free-code-camp/understanding-prototypal-inheritance-in-javascript-with-css-93b2fcda75e4",
+    "spoiler": "Never heard of protoypal inheritance? Does it confuse you? Well, it was starting right at your face everytime you wrote CSS.",
+    "category": [
+      "code",
+      "medium"
+    ]
+  },
+  {
+    "title": "How CSS pseudo-classes work",
+    "publishDate": "2016-11-06",
+    "cover": "./cover.png",
+    "link": "https://medium.com/free-code-camp/explained-css-pseudo-classes-cef3c3177361",
+    "spoiler": "A visual explanation so that you don't have to ever set background red again when using pseudo classes",
+    "category": [
+      "code",
       "medium"
     ]
   },
