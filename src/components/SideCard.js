@@ -3,6 +3,10 @@ import styled from "styled-components"
 import Media from "react-media"
 import PropTypes from "prop-types"
 
+// Icons
+import TwitterIcon from "../assets/twitter.svg"
+import LinkIcon from "../assets/link.svg"
+
 //Constants
 import Constants from "../utils/Constants"
 
@@ -31,35 +35,39 @@ const SocialShare = styled.div`
   justify-content: space-between;
 `
 
-const TweetButton = styled.button`
+const SocialButton = styled.button`
+  display: flex;
+  justify-content:center;
   width: 49%;
   height: 100%;
   background: #fff;
   border: none;
   font-family: "Roboto";
-  /* font-weight: 500; */
   font-size: 0.8rem;
   background: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
   border-radius: 4px;
   padding: 0.7rem 0.5rem;
+  border: 2px solid white;
   color: ${Constants.COLORS.BLACK[3]};
-`
+  box-sizing: border-box;
+  cursor: pointer;
 
-const CopyLinkButton = styled.button`
-  width: 49%;
-  height: 100%;
-  background: #fff;
-  border: none;
-  font-family: "Roboto";
-  /* font-weight: 500; */
-  font-size: 0.8rem;
-  background: #ffffff;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.05);
-  border-radius: 4px;
-  padding: 0.7rem 0.5rem;
-  color: ${Constants.COLORS.BLACK[3]};
-`
+  &:hover {
+    border: 2px solid #3770ff;
+  }
+
+  img {
+    margin: 0;
+    padding-right: 0.4rem;
+  }
+`;
+
+const TweetButton = styled(SocialButton)`
+`;
+
+const CopyLinkButton = styled(SocialButton)`
+`;
 
 const NewsletterPrompt = styled.div`
   background: #ffffff;
@@ -144,8 +152,14 @@ class SideCard extends React.Component {
           matches ? (
             <Container style={{ ...this.getConditionalStickyStyles() }}>
               <SocialShare>
-                <TweetButton>Tweet</TweetButton>
-                <CopyLinkButton>Copy link</CopyLinkButton>
+                <TweetButton>
+                  <img src={TwitterIcon}/>
+                  Tweet
+                </TweetButton>
+                <CopyLinkButton>
+                  <img src={LinkIcon}/>
+                  Copy link
+                </CopyLinkButton>
               </SocialShare>
               <NewsletterPrompt>Subscribe</NewsletterPrompt>
               <AdSpace>Here is something to buy</AdSpace>
