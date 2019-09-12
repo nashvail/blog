@@ -146,6 +146,11 @@ class SideCard extends React.Component {
     margin: "0",
   })
 
+  copyCurrentLinkToClipboard = () => {
+    // Farily trivial implementation
+    window.prompt("Copy Cmd+C, Enter", "Copy this");
+  };
+
   render() {
     return (
       <Media query={MediaQuery}>
@@ -157,7 +162,7 @@ class SideCard extends React.Component {
                   <img src={TwitterIcon}/>
                   Tweet
                 </TweetButton>
-                <CopyLinkButton>
+                <CopyLinkButton onClick={this.copyCurrentLinkToClipboard}>
                   <img src={LinkIcon}/>
                   Copy link
                 </CopyLinkButton>
