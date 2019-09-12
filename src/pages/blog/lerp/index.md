@@ -66,7 +66,7 @@ The function below draws a green solid circle of radius `radius` at `x` and `y` 
 function drawBall(x, y, radius) {  
   context.beginPath();   
   context.fillStyle = ‘#66DA79’;  
-  context.arc(x, y, radius, 0, 2 \* Math.PI, false);  
+  context.arc(x, y, radius, 0, 2 * Math.PI, false);  
   context.fill();  
 }
 ```
