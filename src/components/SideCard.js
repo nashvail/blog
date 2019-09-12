@@ -35,7 +35,7 @@ const SocialShare = styled.div`
   justify-content: space-between;
 `
 
-const SocialButton = styled.button`
+const SocialButton = styled.a`
   display: flex;
   justify-content:center;
   width: 49%;
@@ -54,7 +54,8 @@ const SocialButton = styled.button`
   cursor: pointer;
 
   &:hover {
-    border: 2px solid #3770ff;
+    border: 2px solid ${Constants.COLORS.BLACK[0]};
+    text-decoration: none;
   }
 
   img {
@@ -152,7 +153,7 @@ class SideCard extends React.Component {
           matches ? (
             <Container style={{ ...this.getConditionalStickyStyles() }}>
               <SocialShare>
-                <TweetButton>
+                <TweetButton href={this.props.tweetLink} target="_blank">
                   <img src={TwitterIcon}/>
                   Tweet
                 </TweetButton>
@@ -179,6 +180,7 @@ class SideCard extends React.Component {
 
 SideCard.propTypes = {
   style: PropTypes.object,
+  tweetLink: PropTypes.string.isRequired
 }
 
 export default SideCard

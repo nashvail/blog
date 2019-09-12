@@ -5,6 +5,7 @@ import Img from "gatsby-image"
 
 // Utils
 import Constants from "../utils/Constants"
+import { generateTweetLink } from "../utils/helpers";
 
 // Components
 import Header from "../components/Header"
@@ -102,7 +103,12 @@ export default function Template({
           <Article dangerouslySetInnerHTML={{ __html: html }} />
         </main>
         <Sidebar>
-          <SideCard style={{ marginTop: "8rem", marginLeft: "3rem" }} />
+          <SideCard 
+            style={{ marginTop: "8rem", marginLeft: "3rem" }} 
+            tweetLink={`https://twitter.com/intent/tweet/?text=${
+              frontmatter.title
+            }&url=https://nashvail.me${frontmatter.path}%2F&via=nashvail`}   
+          />
         </Sidebar>
         <Footer />
       </Container>
