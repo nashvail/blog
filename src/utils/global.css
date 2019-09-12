@@ -28,6 +28,10 @@ h1, h2, h3 {
   margin: 0;
 }
 
+main article a {
+  text-decoration: underline;
+}
+
 /*****************/
 /**
  * Based on copypasta from Remy Bach and Sarah Drasner

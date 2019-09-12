@@ -125,6 +125,16 @@
     ]
   },
   {
+    "title": "Understanding Linear Interpolation in UI Animation",
+    "publishDate": "2017-05-14",
+    "cover": "./cover.png",
+    "link": "/blog/lerp",
+    "spoiler": "Linear interpolation or lerp is a one line function that can draw inbetweens in your animations for you.",
+    "category": [
+      "code"
+    ]
+  },
+  {
     "title": "JavaScript's prototypal inheritance explained using CSS",
     "publishDate": "2017-01-22",
     "cover": "./cover.png",
