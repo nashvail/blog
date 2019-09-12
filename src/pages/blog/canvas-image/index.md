@@ -6,7 +6,7 @@ title: "How displaying an image on HTML5 canvas works"
 
 <br/>
 
-### A question occurs, "Why do we need an article for this Nash?"
+**A question occurs, "Why do we need an article for this Nash?"**
 <br/>
 
 

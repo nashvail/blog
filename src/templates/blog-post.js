@@ -16,7 +16,7 @@ import Footer from "../components/Footer"
 const Title = styled.h1`
   /* margin: 3rem 0 2rem 0; */
   /* text-align: center; */
-  font-size: 3.5rem;
+  font-size: calc(2rem + 2vw);
   margin-bottom: 1rem;
 `
 
