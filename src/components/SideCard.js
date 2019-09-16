@@ -37,7 +37,7 @@ const SocialShare = styled.div`
 
 const SocialButton = styled.a`
   display: flex;
-  justify-content:center;
+  justify-content: center;
   width: 49%;
   height: 100%;
   background: #fff;
@@ -62,13 +62,11 @@ const SocialButton = styled.a`
     margin: 0;
     padding-right: 0.4rem;
   }
-`;
+`
 
-const TweetButton = styled(SocialButton)`
-`;
+const TweetButton = styled(SocialButton)``
 
-const CopyLinkButton = styled(SocialButton)`
-`;
+const CopyLinkButton = styled(SocialButton)``
 
 const NewsletterPrompt = styled.div`
   background: #ffffff;
@@ -148,8 +146,8 @@ class SideCard extends React.Component {
 
   copyCurrentLinkToClipboard = () => {
     // Farily trivial implementation
-    window.prompt("Copy Cmd+C, Enter", "Copy this");
-  };
+    window.prompt("Copy Cmd+C, Enter", "Copy this")
+  }
 
   render() {
     return (
@@ -159,11 +157,11 @@ class SideCard extends React.Component {
             <Container style={{ ...this.getConditionalStickyStyles() }}>
               <SocialShare>
                 <TweetButton href={this.props.tweetLink} target="_blank">
-                  <img src={TwitterIcon}/>
+                  <img src={TwitterIcon} />
                   Tweet
                 </TweetButton>
                 <CopyLinkButton onClick={this.copyCurrentLinkToClipboard}>
-                  <img src={LinkIcon}/>
+                  <img src={LinkIcon} />
                   Copy link
                 </CopyLinkButton>
               </SocialShare>
@@ -185,7 +183,7 @@ class SideCard extends React.Component {
 
 SideCard.propTypes = {
   style: PropTypes.object,
-  tweetLink: PropTypes.string.isRequired
+  tweetLink: PropTypes.string.isRequired,
 }
 
 export default SideCard
