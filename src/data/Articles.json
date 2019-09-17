@@ -219,6 +219,16 @@
     ]
   },
   {
+    "title": "Recreating the Apple TV icons in JavaScript and CSS",
+    "publishDate": "2015-09-14",
+    "cover": "./cover.png",
+    "link": "/blog/apple-tv-icons",
+    "spoiler": "Creating cards that respond to cursor movement or something like this",
+    "category": [
+      "code"
+    ]
+  },
+  {
     "title": "How to being touch typing and why",
     "publishDate": "2014-12-21",
     "cover": "./cover.png",
