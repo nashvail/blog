@@ -199,6 +199,16 @@
     ]
   },
   {
+    "title": "Designing the perfect Wallpaper App",
+    "publishDate": "2016-04-26",
+    "cover": "./cover.png",
+    "link": "/blog/wallpaper-app",
+    "spoiler": "Choosing the right tools and techniques to get you started.",
+    "category": [
+      "design"
+    ]
+  },
+  {
     "title": "A gentle introduction to React Motion",
     "publishDate": "2016-01-10",
     "cover": "./cover.png",
