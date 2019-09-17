@@ -22,8 +22,8 @@ const FILTERS = [
     link: "/filter/design",
   },
   {
-    name: "Life & Philospohy",
-    link: "/filter/life-philosophy",
+    name: "Misc.",
+    link: "/filter/misc",
   },
 ]
 

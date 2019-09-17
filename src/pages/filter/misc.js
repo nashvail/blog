@@ -25,7 +25,7 @@ const FilteredArticlesGrid = ({ children }) => (
       query PhilArticlesQuery {
         allArticlesJson(filter: {
           category: {
-            eq: "philosophy"
+            eq: "misc."
           }
         }){
           edges {
