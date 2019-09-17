@@ -157,6 +157,18 @@
     ]
   },
   {
+    "title": "Upgrading CSS Animation With Motion Curves",
+    "publishDate": "2016-08-25",
+    "cover": "./cover.png",
+    "link": "https://www.smashingmagazine.com/2016/08/css-animations-motion-curves/",
+    "spoiler": "There is UI animation, and then there is good UI animation. It’s smooth, beautiful and, most of all, natural, not blocky, rigid or robotic. Learn about CSS motion curves that make such animations possible.",
+    "category": [
+      "code",
+      "design",
+      "smashing magazine"
+    ]
+  },
+  {
     "title": "Let's settle this - Part 1",
     "publishDate": "2016-06-22",
     "cover": "./cover.png",
