@@ -185,5 +185,15 @@
     "category": [
       "code"
     ]
+  },
+  {
+    "title": "How to being touch typing and why",
+    "publishDate": "2014-12-21",
+    "cover": "./cover.png",
+    "link": "/blog/touch-typing",
+    "spoiler": "Choosing the right tools and techniques to get you started.",
+    "category": [
+      "code"
+    ]
   }
 ]
