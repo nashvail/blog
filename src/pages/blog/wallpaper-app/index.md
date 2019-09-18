@@ -67,15 +67,17 @@ c) To download, double tap anywhere on the image.
 
 Here’s a fancy video I cobbled up showing how the gestures work.
 
-At the time of recording the demo the slider dots were not implemented so ignore that part.
+`video: https://www.youtube.com/embed/6921TjFGg_k`
 
-https://www.youtube.com/watch?v=MT2o7WHpHD4
+At the time of recording the demo the slider dots were not implemented so ignore that part.
 
 After using the app for a while I realised something. Often times the 5 wallpapers that are initially shown didn’t please me, I had to kill the app and relaunch it just to get 5 new wallpapers and I found myself doing this a lot. To solve this issue I thought of increasing the number of wallpapers that are initially shown from 5 to 10. Could’ve worked but I decided to side with a better solution.
 
 I added a shake gesture, now, anytime while within the app you can shake your iPhone to fetch 5 new wallpapers.
 
 Here’s how the app looks and works like.
+
+`video: https://www.youtube.com/embed/MT2o7WHpHD4`
 
 So what do you think? Looks good? What would be your take at designing a wallpaper app?
 
