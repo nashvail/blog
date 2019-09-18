@@ -59,11 +59,9 @@ To continue from where we left off, instead of showing wallpapers in a list to s
 
 But where did the buttons go yo? I decided to replace them with gestures —
 
-a) To show home screen preview tap and hold on the right part of the display.
-
-b) To show lock screen preview tap and hold on the left part.
-
-c) To download, double tap anywhere on the image.
+1. To show home screen preview tap and hold on the right part of the display.
+2. To show lock screen preview tap and hold on the left part.
+3. To download, double tap anywhere on the image.
 
 Here’s a fancy video I cobbled up showing how the gestures work.
 
