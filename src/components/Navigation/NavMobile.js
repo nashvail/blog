@@ -1,10 +1,13 @@
 import React from "react"
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 import styled, { keyframes } from "styled-components"
 import { fadeIn } from "../../utils/KeyframeAnimations"
 
+// Hamburger animation
+import h_ from "../../utils/hamburgers.module.css"
+
 // Constants
-import Constants from "../../utils/Constants";
+import Constants from "../../utils/Constants"
 
 // Components
 import Logo from "../Logo"
@@ -43,11 +46,11 @@ class MobileNavigation extends React.Component {
   }
 
   setOverlayBodyStyles = () => {
-    document.getElementsByTagName('html')[0].style.overflow = "hidden";
+    document.getElementsByTagName("html")[0].style.overflow = "hidden"
   }
 
   unsetOverlaybodyStyles = () => {
-    document.getElementsByTagName('html')[0].style.overflow = "scroll";
+    document.getElementsByTagName("html")[0].style.overflow = "scroll"
   }
 
   toggleMenu = () => {
@@ -61,48 +64,80 @@ class MobileNavigation extends React.Component {
     else this.setOverlayBodyStyles()
   }
 
-  // When a menu item in the overlay is clicked and the user is navigated to a different page
-  // This will register for any click on the overlay, weeeiiird, we have to make it so that it is just from the links
-  onOverlayRegisterClick = (e) => {
-    e.preventDefault();
-    this.toggleMenu();
-    console.log('view', e.view);
-    console.log('metakey', e.metaKey);
-    console.log('type', e.type);
-    console.log('detail', e.detail);
-  }
-
   render() {
     const { expanded } = this.state
+
     return (
       <Container>
-        <Overlay expanded={expanded} onClick={this.onOverlayRegisterClick}>
+        <Overlay expanded={expanded}>
           <ul
             css={`
               list-style-type: none;
               margin: 0;
             `}
           >
-            <li><Link to="/"><h2>Articles</h2></Link></li>
-            <li><Link to="/about"><h2>About</h2></Link></li>
-            <li><h2>Work</h2></li>
+            <li onClick={this.toggleMenu}>
+              <Link to="/">
+                <h2>Articles</h2>
+              </Link>
+            </li>
+            <li onClick={this.toggleMenu}>
+              <Link to="/about">
+                <h2>About</h2>
+              </Link>
+            </li>
+            <li onClick={this.toggleMenu}>
+              <Link to="/work">
+                <h2>Work</h2>
+              </Link>
+            </li>
           </ul>
-          <br/>
-          <hr css={`color: ${Constants.COLORS.BLACK[4]}`}/>
-          <h4 css={`color: ${Constants.COLORS.BLACK[3]}`}>Filter articles</h4>
-          <br/>
-          <ul css={`
-            list-style-type: none;
-            margin: 0;
-          `}>
-            <li><h4>All</h4></li>
-            <li><Link to="/filter/codemath"><h4>Code & Math</h4></Link></li>
-            <li><h4>Life & Philosophy</h4></li>
-            <li><h4>Design</h4></li>
+          <br />
+          <hr
+            css={`
+              color: ${Constants.COLORS.BLACK[4]};
+            `}
+          />
+          <h4
+            css={`
+              color: ${Constants.COLORS.BLACK[3]};
+            `}
+          >
+            Filter articles
+          </h4>
+          <br />
+          <ul
+            css={`
+              list-style-type: none;
+              margin: 0;
+            `}
+          >
+            <li>
+              <h4>All</h4>
+            </li>
+            <li>
+              <Link to="/filter/codemath">
+                <h4>Code & Math</h4>
+              </Link>
+            </li>
+            <li>
+              <h4>Life & Philosophy</h4>
+            </li>
+            <li>
+              <h4>Design</h4>
+            </li>
           </ul>
         </Overlay>
         <Logo />
-        <Hamburger onClick={this.toggleMenu}>Menu</Hamburger>
+        <Hamburger
+          onClick={this.toggleMenu}
+          className={h_.hamburger}
+          type="button"
+        >
+          <span className={h_.hamburger_box}>
+            <span class={h_.hamburger_inner}></span>
+          </span>
+        </Hamburger>
       </Container>
     )
   }
