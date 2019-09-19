@@ -15,7 +15,7 @@ const LogoContainer = styled.div`
   z-index: 99999;
 
   & img {
-    height: 63px;
+    height: 60px;
     margin: 0;
     @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
       height: 48px;
