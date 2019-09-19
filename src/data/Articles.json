@@ -101,6 +101,16 @@
     ]
   },
   {
+    "title": "Designing a better UX for hackathons",
+    "publishDate": "2018-08-31",
+    "cover": "./cover.png",
+    "link": "https://medium.com/devfolio/designing-a-better-ux-for-hackathons-f31a3b0c4ffa",
+    "spoiler": "Choosing the right tools and techniques to get you started.",
+    "category": [
+      "design"
+    ]
+  },
+  {
     "title": "How to fix dragging animation in UI with simple math",
     "publishDate": "2018-06-31",
     "cover": "./cover.png",
