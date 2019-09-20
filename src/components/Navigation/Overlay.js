@@ -1,9 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types";
+import Link from "gatsby";
 
 // Keyframe animations
 import { fadeIn } from "../../utils/KeyframeAnimations"
+
+// Constants
+import Constants from "../../utils/Constants";
 
 const Container = styled.div`
   animation: ${fadeIn} 0.25s;
@@ -16,11 +20,22 @@ const Container = styled.div`
   bottom: 0;
   right: 0;
   left: 0;
+  background: ${Constants.COLORS.BLACK[6]};
 `
+
+const MainMenu = () => (
+  <ul></ul>
+);
+
+const FilterMenu = () => (
+  <ul></ul>
+);
 
 export default function Overlay({ toggle = () => {}, visible, ...props }) {
   return <Container visible={visible}>
-    <h1>This is the overlay yo</h1>
+    {/* Maybe we can make it such that there are subtle illustrations pointing to the page */}
+    <MainMenu />
+    <FilterMenu />
   </Container>
 }
 
