@@ -225,3 +225,8 @@ pre[data-line] {
   width: 100%;
   height: 400px; 
  }
+
+ /* Custom styles */
+ .noscroll {
+   overflow: hidden;
+ }
