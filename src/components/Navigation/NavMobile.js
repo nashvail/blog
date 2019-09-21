@@ -15,10 +15,9 @@ const Container = styled.div`
   padding: 0 1.5rem;
 `
 
-class MobileNavigation extends React.Component {
-  state = {
-    expanded: false,
-  }
+export default function MobileNavigation() {
+
+  const [visible, setVisibility] = React.useState(false);
 
   setOverlayBodyStyles = () => {
     document.getElementsByTagName("html")[0].classList.add('noscroll');
@@ -29,27 +28,18 @@ class MobileNavigation extends React.Component {
   }
 
   toggleMenu = () => {
-    const { expanded } = this.state
-    this.setState({
-      expanded: !expanded,
-    })
+    setVisibility(!visible);
 
-    // Using previous value of expanded so as to not having to access state again
-    if (expanded) this.unsetOverlaybodyStyles()
+    if (visible) this.unsetOverlaybodyStyles()
     else this.setOverlayBodyStyles()
   }
 
-  render() {
-    const { expanded } = this.state
-
     return (
       <Container>
-        <Overlay visible={expanded} toggle={this.toggleMenu} />
+        <Overlay visible={visible} toggle={} />
         <Logo />
-        <HamburgerButton onClick={this.toggleMenu} active={expanded} type="slider"/>
+        <HamburgerButton onClick={this.toggleMenu} active={visible} type="slider"/>
       </Container>
-    )
-  }
+    );
 }
 
-export default MobileNavigation
