@@ -9,8 +9,15 @@ import Constants from "../utils/Constants"
 import Featured from "../components/Featured"
 import Footer from "../components/Footer"
 
+import testPreviewImage from "../pages/blog/canvas-image/preview.png"
+/*
+  Take help from these: https://github.com/gatsbyjs/gatsby/issues/12916
+  and
+  https://egghead.io/lessons/gatsby-create-pages-in-gatsby-using-graphql?pl=why-gatsby-uses-graphql-1c319a1c
+*/
+
 // Helpers
-import { renderArticlePreviews } from "../utils/helpers";
+import { renderArticlePreviews } from "../utils/helpers"
 
 // Featured article stuff
 import {
@@ -49,7 +56,6 @@ const Articles = styled.section`
   grid-gap: 2rem;
 `
 
-
 const ArticlesGrid = ({ children }) => (
   <StaticQuery
     query={graphql`
@@ -62,6 +68,7 @@ const ArticlesGrid = ({ children }) => (
               category
               spoiler
               publishDate
+              cover
             }
           }
         }

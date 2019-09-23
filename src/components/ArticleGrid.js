@@ -8,5 +8,5 @@ export default styled.section`
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   margin-top: 2rem;
   margin-bottom: 2rem;
-  grid-gap: 1em;
+  grid-gap: 1.5rem;
 `
