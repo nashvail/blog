@@ -65,9 +65,7 @@ class ArticlePreview extends React.Component {
 
     return (
       <Container>
-        {/* <PreviewImage> */}
-          <Img fluid={cover} />
-        {/* </PreviewImage> */}
+        <Img fluid={cover} />
         <Categories category={category} />
         <Title>{articleLink}</Title>
         <PublishDate>{formatPostDate(publishDate)}</PublishDate>
