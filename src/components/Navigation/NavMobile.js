@@ -19,26 +19,26 @@ export default function MobileNavigation() {
 
   const [visible, setVisibility] = React.useState(false);
 
-  setOverlayBodyStyles = () => {
+  const setOverlayBodyStyles = () => {
     document.getElementsByTagName("html")[0].classList.add('noscroll');
   }
 
-  unsetOverlaybodyStyles = () => {
+  const unsetOverlaybodyStyles = () => {
     document.getElementsByTagName("html")[0].classList.remove('noscroll');
   }
 
-  toggleMenu = () => {
+  const toggleMenu = () => {
     setVisibility(!visible);
 
-    if (visible) this.unsetOverlaybodyStyles()
-    else this.setOverlayBodyStyles()
+    if (visible) unsetOverlaybodyStyles()
+    else setOverlayBodyStyles()
   }
 
     return (
       <Container>
-        <Overlay visible={visible} toggle={} />
+        <Overlay visible={visible} toggle={toggleMenu} />
         <Logo />
-        <HamburgerButton onClick={this.toggleMenu} active={visible} type="slider"/>
+        <HamburgerButton onClick={toggleMenu} active={visible} type="slider"/>
       </Container>
     );
 }
