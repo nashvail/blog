@@ -35,6 +35,13 @@ const FilteredArticlesGrid = ({ children }) => (
               category
               spoiler
               publishDate
+              cover {
+                childImageSharp {
+                  fluid(maxWidth: 800) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }

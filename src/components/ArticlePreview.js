@@ -1,7 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import Img from "gatsby-image"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 
 // Constants
@@ -50,34 +50,9 @@ const Category = styled.span`
 
 const Categories = ({ category }) => <Category>{category.join(" / ")}</Category>
 
-// function renderImage({ file }) {
-//   return <Img fluid={file.childImageSharp.fluid} />
-// }
-
-// const BetaPreviewImage = () => {
-//   return (
-//     <StaticQuery
-//       query={graphql`
-//         query {
-//           file(relativePath: { eq: "./preveiw.png" }) {
-//             childImageSharp {
-//               fluid(maxWidth: 1000) {
-//                 ...GatsbyImageSharpFluid
-//               }
-//             }
-//           }
-//         }
-//       `}
-//       render={renderImage}
-//     />
-//   )
-// }
-
 class ArticlePreview extends React.Component {
   render() {
     let { link, title, spoiler, category, publishDate, cover } = this.props
-
-    console.log(cover);
 
     let articleLink
     if (isExternalLink(link))
@@ -90,8 +65,9 @@ class ArticlePreview extends React.Component {
 
     return (
       <Container>
-        <PreviewImage />
-        {/* <PreviewImage>{<img src={testPreviewImage} />}</PreviewImage> */}
+        {/* <PreviewImage> */}
+          <Img fluid={cover} />
+        {/* </PreviewImage> */}
         <Categories category={category} />
         <Title>{articleLink}</Title>
         <PublishDate>{formatPostDate(publishDate)}</PublishDate>
