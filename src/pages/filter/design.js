@@ -9,6 +9,7 @@ import Constants from "../../utils/constants"
 import Header from "../../components/Header"
 import FilterNav from "../../components/FilterNav"
 import ArticleGrid from "../../components/ArticleGrid"
+import ArtcileGridContainer from "../../components/ArtcileGridContainer";
 
 // Helpers
 import { renderArticlePreviews } from "../../utils/helpers";
@@ -61,9 +62,9 @@ class DesignArticles extends React.Component {
       <>
         <Header />
         <FilterNav />
-        <Container>
+        <ArtcileGridContainer>
           <FilteredArticlesGrid />
-        </Container>
+        </ArtcileGridContainer>
       </>
     )
   }

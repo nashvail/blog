@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
-import PropTypes from "prop-types";
-import Link from "gatsby";
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 // Keyframe animations
 import { fadeIn } from "../../utils/KeyframeAnimations"
 
 // Constants
-import Constants from "../../utils/Constants";
+import Constants from "../../utils/Constants"
 
 const Container = styled.div`
   animation: ${fadeIn} 0.25s;
@@ -23,85 +23,58 @@ const Container = styled.div`
   background: ${Constants.COLORS.BLACK[6]};
 `
 
-const MainMenu = () => (
-  <ul></ul>
-);
+const MainList = styled.ul`
+  list-style-type: none;
+  margin: 1rem;
 
-const FilterMenu = () => (
-  <ul></ul>
-);
+  li {
+    margin: 1rem;
+    text-align: center;
+  }
+`
+
+const FilterList = styled.ul`
+  list-style-type: none;
+  margin: 1.5rem 0 1.5rem 0;
+`
+
+const MainLink = ({ to, text }) => (
+  <Link to={to}>
+    <h2>{text}</h2>
+  </Link>
+)
+
+const Menu = ({ toggleMenu }) => {
+  return (
+    <MainList>
+      <li onClick={toggleMenu}>
+        <MainLink to="/" text="Articles" />
+        <FilterList>
+          <li><Link to="/">All</Link></li>
+          <li><Link to="/filter/codemath">Code & Math</Link></li>
+          <li><Link to="/filter/design">Design</Link></li>
+          <li><Link to="/filter/misc">Misc.</Link></li>
+        </FilterList>
+      </li>
+      <li>
+        <MainLink to="/" text="About" />
+      </li>
+      <li>
+        <MainLink to="/" text="Work" />
+      </li>
+    </MainList>
+  )
+}
 
 export default function Overlay({ toggle = () => {}, visible, ...props }) {
-  return <Container visible={visible}>
-    {/* Maybe we can make it such that there are subtle illustrations pointing to the page */}
-    <MainMenu />
-    <FilterMenu />
-  </Container>
+  return (
+    <Container visible={visible}>
+      <Menu toggleMenu={toggle} />
+    </Container>
+  )
 }
 
 Overlay.propTypes = {
   toggle: PropTypes.func,
-  visible: PropTypes.bool.isRequired
-};
-
-
-/*
-<Overlay expanded={expanded}>
-          <ul
-            css={`
-              list-style-type: none;
-              margin: 0;
-            `}
-          >
-            <li onClick={this.toggleMenu}>
-              <Link to="/">
-                <h2>Articles</h2>
-              </Link>
-            </li>
-            <li onClick={this.toggleMenu}>
-              <Link to="/about">
-                <h2>About</h2>
-              </Link>
-            </li>
-            <li onClick={this.toggleMenu}>
-              <Link to="/work">
-                <h2>Work</h2>
-              </Link>
-            </li>
-          </ul>
-          <br />
-          <hr
-            css={`
-              color: ${Constants.COLORS.BLACK[4]};
-            `}
-          />
-          <h4
-            css={`
-              color: ${Constants.COLORS.BLACK[3]};
-            `}
-          >
-            Filter articles
-          </h4>
-          <br />
-          <ul
-            css={`
-              list-style-type: none;
-              margin: 0;
-            `}
-          >
-            <li>
-              <h4>All</h4>
-            </li>
-            <li>
-              <Link to="/filter/codemath">
-                <h4>Code & Math</h4>
-              </Link>
-            </li>
-            <li>
-              <h4>Life & Philosophy</h4>
-            </li>
-            <li>
-              <h4>Design</h4>
-            </li>
-          </ul>
-        </Overlay>*/
+  visible: PropTypes.bool.isRequired,
+}

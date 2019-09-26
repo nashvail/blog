@@ -9,15 +9,10 @@ import Constants from "../../utils/constants"
 import Header from "../../components/Header"
 import FilterNav from "../../components/FilterNav"
 import ArticleGrid from "../../components/ArticleGrid"
+import ArticleGridContainer from "../../components/ArtcileGridContainer";
 
 // Helpers
 import { renderArticlePreviews } from "../../utils/helpers";
-
-// Styled components
-const Container = styled.main`
-  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
-  margin: 0 auto;
-`
 
 const FilteredArticlesGrid = ({ children }) => (
   <StaticQuery
@@ -61,9 +56,9 @@ class PhilosophyArticles extends React.Component {
       <>
         <Header />
         <FilterNav />
-        <Container>
+        <ArticleGridContainer>
           <FilteredArticlesGrid />
-        </Container>
+        </ArticleGridContainer>
       </>
     )
   }
