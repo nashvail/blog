@@ -16,18 +16,6 @@ const Container = styled.div`
   flex-direction: column;
 `
 
-const PreviewImage = styled.div`
-  width: 100%;
-  /* height: 0.1rem; */
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* background: url('../utils'); */
-  /* background: #fefef2; */
-  background: transparent;
-`
-
 const Title = styled.h3``
 
 const Spoiler = styled.p``
@@ -65,7 +53,7 @@ class ArticlePreview extends React.Component {
 
     return (
       <Container>
-        <Img fluid={cover} />
+        <Img fluid={cover}/>
         <Categories category={category} />
         <Title>{articleLink}</Title>
         <PublishDate>{formatPostDate(publishDate)}</PublishDate>
