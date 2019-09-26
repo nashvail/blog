@@ -2,7 +2,7 @@
   {
     "title": "Understanding impermanence",
     "publishDate": "2019-05-15",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/impermanence",
     "spoiler": "You probably have the wrong idea of what temporary or impermanent really mean.",
     "category": [
@@ -12,7 +12,7 @@
   {
     "title": "Your feelings are not your feelings",
     "publishDate": "2019-05-02",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/simulacra",
     "spoiler": "No matter how real and authentic they seem, your feelings are not your feelings. You've been told how to feel.",
     "category": [
@@ -22,7 +22,7 @@
   {
     "title": "Stop learning",
     "publishDate": "2019-04-16",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/stop-learning",
     "spoiler": "Being a life long student probably isn't a good idea.",
     "category": [
@@ -32,7 +32,7 @@
   {
     "title": "Kill your heroes",
     "publishDate": "2019-04-03",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/kill-your-heroes",
     "spoiler": "\"Most of my heroes were drug addicts.\" - Wax (Rapper and Songwriter)",
     "category": [
@@ -42,7 +42,7 @@
   {
     "title": "How to defeat the blank screen",
     "publishDate": "2019-03-17",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/battleplan",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
@@ -53,7 +53,7 @@
   {
     "title": "Designers, maybe inspiration is the wrong word",
     "publishDate": "2019-03-03",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/problem-with-inspiration",
     "spoiler": "I have an alternative.",
     "category": [
@@ -63,7 +63,7 @@
   {
     "title": "Please fail",
     "publishDate": "2019-02-20",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/please-fail",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
@@ -73,7 +73,7 @@
   {
     "title": "On mindfulness",
     "publishDate": "2019-02-05",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "link": "/blog/mindfulness",
     "category": [
@@ -83,7 +83,7 @@
   {
     "title": "Insights from Deep Work",
     "publishDate": "2019-01-17",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "link": "/blog/deep-work",
     "category": [
@@ -103,7 +103,7 @@
   {
     "title": "Designing a better UX for hackathons",
     "publishDate": "2018-08-31",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "https://medium.com/devfolio/designing-a-better-ux-for-hackathons-f31a3b0c4ffa",
     "spoiler": "Choosing the right tools and techniques to get you started.",
     "category": [
@@ -113,7 +113,7 @@
   {
     "title": "How to fix dragging animation in UI with simple math",
     "publishDate": "2018-06-31",
-    "cover": "./canvas.png",
+    "cover": "./drag.png",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "link": "https://uxdesign.cc/how-to-fix-dragging-animation-in-ui-with-simple-math-4bbc10deccf7",
     "category": [
@@ -125,7 +125,7 @@
   {
     "title": "How you can use simple Trigonometry to create better loaders",
     "publishDate": "2018-05-06",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "link": "https://uxdesign.cc/how-you-can-use-simple-trigonometry-to-create-better-loaders-32a573577eb4",
     "category": [
@@ -137,7 +137,7 @@
   {
     "title": "Understanding Linear Interpolation in UI Animation",
     "publishDate": "2017-05-14",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/lerp",
     "spoiler": "Linear interpolation or lerp is a one line function that can draw inbetweens in your animations for you.",
     "category": [
@@ -147,7 +147,7 @@
   {
     "title": "JavaScript's prototypal inheritance explained using CSS",
     "publishDate": "2017-01-22",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "https://medium.com/free-code-camp/understanding-prototypal-inheritance-in-javascript-with-css-93b2fcda75e4",
     "spoiler": "Never heard of protoypal inheritance? Does it confuse you? Well, it was starting right at your face everytime you wrote CSS.",
     "category": [
@@ -158,7 +158,7 @@
   {
     "title": "How CSS pseudo-classes work",
     "publishDate": "2016-11-06",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "https://medium.com/free-code-camp/explained-css-pseudo-classes-cef3c3177361",
     "spoiler": "A visual explanation so that you don't have to ever set background red again when using pseudo classes",
     "category": [
@@ -169,7 +169,7 @@
   {
     "title": "Upgrading CSS Animation With Motion Curves",
     "publishDate": "2016-08-25",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "https://www.smashingmagazine.com/2016/08/css-animations-motion-curves/",
     "spoiler": "There is UI animation, and then there is good UI animation. It’s smooth, beautiful and, most of all, natural, not blocky, rigid or robotic. Learn about CSS motion curves that make such animations possible.",
     "category": [
@@ -181,7 +181,7 @@
   {
     "title": "Let's settle this - Part 1",
     "publishDate": "2016-06-22",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/js-this-1",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
@@ -191,7 +191,7 @@
   {
     "title": "Let's settle this - Part 2",
     "publishDate": "2016-06-22",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/js-this-2",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
@@ -201,7 +201,7 @@
   {
     "title": "Nerding out with Bezier Curves",
     "publishDate": "2016-05-24",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/bezier",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
@@ -211,7 +211,7 @@
   {
     "title": "Designing the perfect Wallpaper App",
     "publishDate": "2016-04-26",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/wallpaper-app",
     "spoiler": "Choosing the right tools and techniques to get you started.",
     "category": [
@@ -221,7 +221,7 @@
   {
     "title": "A gentle introduction to React Motion",
     "publishDate": "2016-01-10",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "https://medium.com/@nashvail/a-gentle-introduction-to-react-motion-dc50dd9f2459",
     "spoiler": "This is an old one but hey!",
     "category": [
@@ -231,7 +231,7 @@
   {
     "title": "Recreating the Apple TV icons in JavaScript and CSS",
     "publishDate": "2015-09-14",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/apple-tv-icons",
     "spoiler": "Creating cards that respond to cursor movement or something like this",
     "category": [
@@ -241,7 +241,7 @@
   {
     "title": "How to being touch typing and why",
     "publishDate": "2014-12-21",
-    "cover": "./canvas.png",
+    "cover": "./trig.png",
     "link": "/blog/touch-typing",
     "spoiler": "Choosing the right tools and techniques to get you started.",
     "category": [
