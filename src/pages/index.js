@@ -88,8 +88,14 @@ export default () => (
     </Helmet>
     <Header />
     <FilterNav />
+    <Featured
+      type="NEW"
+      link={link}
+      title={title}
+      cover={cover}
+      spoiler={spoiler}
+    />
     <HomePage>
-      <Featured link={link} title={title} cover={cover} spoiler={spoiler} />
       <ArticlesGrid />
       <Footer />
     </HomePage>

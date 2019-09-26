@@ -10,14 +10,27 @@ import Pill from "./Pill"
 
 // Styled
 const Featured = styled.div`
-  margin-top: 3rem;
+  margin: 3rem auto 0 auto;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     flex-direction: column-reverse;
     max-width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    max-width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    max-width: ${Constants.BODY_WIDTH["after_second_breakpoint"]};
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
+    width: 90%;
   }
 `
 
@@ -62,11 +75,17 @@ const FeaturedCover = styled.div`
   }
 `
 
-export default function FeaturedArticle({ link, title, spoiler, cover }) {
+export default function FeaturedArticle({
+  link,
+  title,
+  spoiler,
+  cover,
+  type = "FEATURED",
+}) {
   return (
     <Featured>
       <FeaturedText>
-        <Pill type="NEW" />
+        <Pill type={type} />
         <FeaturedHeading>
           <Link to={link}>{title}</Link>
         </FeaturedHeading>
@@ -83,5 +102,5 @@ FeaturedArticle.propTypes = {
   link: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   spoiler: PropTypes.string.isRequired,
-  cover: PropTypes.element.isRequired
-};
+  cover: PropTypes.element.isRequired,
+}
