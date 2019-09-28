@@ -1,7 +1,8 @@
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types";
 
-import Navigation from './Navigation';
+import Navigation from "./Navigation"
 import Constants from "../utils/Constants"
 
 const Container = styled.header`
@@ -12,18 +13,19 @@ const Container = styled.header`
   justify-content: center;
   z-index: 99999;
   top: 0;
-  position: sticky;
+  position: ${props => (props.sticky ? "sticky" : "static")};
   overflow: hidden;
 `
 
-class Header extends React.Component {
-  render() {
-    return (
-      <Container>
-        <Navigation/>
-      </Container>
-    )
-  }
+export default function Header({ sticky=true }) {
+  console.log('sticky', sticky)
+  return (
+    <Container sticky={sticky}>
+      <Navigation />
+    </Container>
+  )
 }
 
-export default Header
+Header.propTypes = {
+  sticky: PropTypes.bool
+}

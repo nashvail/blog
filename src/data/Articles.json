@@ -137,7 +137,7 @@
   {
     "title": "Understanding Linear Interpolation in UI Animation",
     "publishDate": "2017-05-14",
-    "cover": "./trig.png",
+    "cover": "./lerp.png",
     "link": "/blog/lerp",
     "spoiler": "Linear interpolation or lerp is a one line function that can draw inbetweens in your animations for you.",
     "category": [

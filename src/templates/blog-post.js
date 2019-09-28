@@ -83,7 +83,7 @@ export default function Template({
     featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
   return (
     <>
-      <Header />
+      <Header sticky={false} />
       {/* <FilterNav /> */}
       <Container>
         <main>
