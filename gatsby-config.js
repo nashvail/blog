@@ -5,6 +5,16 @@
  */
 
 module.exports = {
+  siteMetadata: {
+    title: "Words, Pictures and Code",
+    author: "Nash Vail",
+    titleTemplate: "%s . Nash Vail",
+    description: "Nash Vail's website",
+    siteUrl: "https://nashvail.me",
+    social: {
+      twitter: '@nashvail'
+    }
+  },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
@@ -35,38 +45,38 @@ module.exports = {
             options: {
               width: 800,
               related: false, //Optional: Will remove related videos from the end of an embedded YouTube video.
-              noIframeBorder: true //Optional: Disable insertion of <style> border: 0
-            }
+              noIframeBorder: true, //Optional: Disable insertion of <style> border: 0
+            },
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
               tracedSVG: true,
-              showCaptions: true
+              showCaptions: true,
             },
           },
           {
             resolve: "@weknow/gatsby-remark-twitter",
             options: {
-              align: 'center'
-            }
+              align: "center",
+            },
           },
           {
             resolve: "gatsby-remark-prismjs",
             options: {
               inlineCodeMarker: "÷",
-              showLineNumbers: false
+              showLineNumbers: false,
             },
           },
           `gatsby-remark-static-images`,
           {
-            resolve:"@weknow/gatsby-remark-codepen",
+            resolve: "@weknow/gatsby-remark-codepen",
             options: {
               theme: "dark",
-              height: 400
-            }
-          }
+              height: 400,
+            },
+          },
         ],
       },
     },
