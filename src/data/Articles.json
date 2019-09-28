@@ -158,7 +158,7 @@
   {
     "title": "How CSS pseudo-classes work",
     "publishDate": "2016-11-06",
-    "cover": "./trig.png",
+    "cover": "./pseudo.png",
     "link": "https://medium.com/free-code-camp/explained-css-pseudo-classes-cef3c3177361",
     "spoiler": "A visual explanation so that you don't have to ever set background red again when using pseudo classes",
     "category": [
