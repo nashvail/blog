@@ -14,6 +14,9 @@ import { isExternalLink, formatPostDate } from "../utils/helpers"
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 1rem;
+  background: #FCFCFC;
+  border-radius: 12px;
 `
 
 const Title = styled.h3``
@@ -54,6 +57,7 @@ class ArticlePreview extends React.Component {
     return (
       <Container>
         <Img fluid={cover}/>
+        <div css={`margin: 0.5rem`}/>
         <Categories category={category} />
         <Title>{articleLink}</Title>
         <PublishDate>{formatPostDate(publishDate)}</PublishDate>

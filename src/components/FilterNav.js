@@ -32,7 +32,7 @@ const FilterNavigation = styled.nav`
   display: flex;
   justify-content: center;
   height: ${Constants.FILTER_NAV_HEIGHT};
-  background: ${Constants.COLORS.BLACK[6]};
+  background: ${Constants.COLORS.BLACK[7]};
   /* z-index: -1; */
 `
 

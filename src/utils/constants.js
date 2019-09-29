@@ -14,7 +14,8 @@ export default {
       3: "#616161",
       4: "#c2c2c2",
       5: "#e0e0e0",
-      6: "#f2f2f2"
+      6: "#f2f2f2",
+      7: '#fcfcfc'
     }
   },
   BREAKPOINTS: [

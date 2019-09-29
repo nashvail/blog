@@ -67,7 +67,6 @@ class CodeMathArticles extends React.Component {
       <>
         <Header />
         <FilterNav />
-        <Featured type="FEATURED" link={link} title={title} cover={cover} spoiler={spoiler} />
         <ArticleGridContainer>
           <FilteredArticlesGrid />
         </ArticleGridContainer>
