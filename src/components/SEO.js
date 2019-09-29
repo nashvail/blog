@@ -41,6 +41,14 @@ export default function SEO({
         return (
           <Helmet
             htmlAttributes={{ lang }}
+            {...(title
+              ? {
+                  titleTemplate: `%s — ${siteMetadata.title}`,
+                  title,
+                }
+              : {
+                  title: `${siteMetadata.title} — A blog by Nash Vail`,
+                })}
             meta={[
               {
                 name: "description",

@@ -5,13 +5,13 @@ import Img from "gatsby-image"
 
 // Utils
 import Constants from "../utils/Constants"
-import { generateTweetLink } from "../utils/helpers";
 
 // Components
 import Header from "../components/Header"
 import FilterNav from "../components/FilterNav"
 import SideCard from "../components/SideCard"
 import Footer from "../components/Footer"
+import SEO from "../components/SEO"
 
 // Styled components
 const Title = styled.h1`
@@ -83,6 +83,9 @@ export default function Template({
     featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
   return (
     <>
+      <SEO 
+        title={frontmatter.title}
+      />
       <Header sticky={false} />
       {/* <FilterNav /> */}
       <Container>
