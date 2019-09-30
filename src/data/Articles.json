@@ -147,7 +147,7 @@
   {
     "title": "JavaScript's prototypal inheritance explained using CSS",
     "publishDate": "2017-01-22",
-    "cover": "./trig.png",
+    "cover": "./prototypal.png",
     "link": "https://medium.com/free-code-camp/understanding-prototypal-inheritance-in-javascript-with-css-93b2fcda75e4",
     "spoiler": "Never heard of protoypal inheritance? Does it confuse you? Well, it was starting right at your face everytime you wrote CSS.",
     "category": [
