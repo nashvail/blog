@@ -3,6 +3,8 @@ import styled from "styled-components"
 import Media from "react-media"
 import PropTypes from "prop-types"
 
+// Need to break this down into more and more components rather
+
 // Icons
 import TwitterIcon from "../assets/twitter.svg"
 import LinkIcon from "../assets/link.svg"
@@ -69,10 +71,13 @@ const TweetButton = styled(SocialButton)``
 const CopyLinkButton = styled(SocialButton)``
 
 const NewsletterPrompt = styled.div`
-  background: #ffffff;
+  background: ${Constants.COLORS.BLACK[6]};
   border-radius: 4px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 const AdSpace = styled.div`
@@ -82,6 +87,74 @@ const AdSpace = styled.div`
   padding: 1rem;
 `
 
+export default function SideCard({ style, tweetLink }) {
+  const [sticky, setSticky] = React.useState(false)
+
+  React.useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > SCROLLING_STOP_THRESHOLD) setSticky(true)
+      else setSticky(false)
+    }
+    window.addEventListener("scroll", handleScroll, true)
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll)
+    }
+  }, [sticky])
+
+  const getConditionalStickyStyles = () => {
+    let newStyle = style
+    if (sticky) {
+      newStyle = {
+        ...style,
+        position: "sticky",
+        top: SCROLLING_STOP_THRESHOLD,
+      }
+    } else {
+      newStyle = {
+        ...style,
+        position: "static",
+      }
+    }
+
+    return newStyle
+  }
+
+  const copyCurrentLinkToClipboard = () => console.log("nothing")
+
+  return (
+    <Media query={MediaQuery}>
+      {matches =>
+        matches ? (
+          <Container style={{ ...getConditionalStickyStyles() }}>
+            <SocialShare>
+              <TweetButton href={tweetLink} target="_blank">
+                <img src={TwitterIcon} />
+                Tweet
+              </TweetButton>
+              <CopyLinkButton onClick={copyCurrentLinkToClipboard}>
+                <img src={LinkIcon} />
+                Copy link
+              </CopyLinkButton>
+            </SocialShare>
+            <NewsletterPrompt>
+              <button>Subscribe to newsletter</button>
+            </NewsletterPrompt>
+            <AdSpace>Here is something to buy</AdSpace>
+          </Container>
+        ) : (
+          <Container style={{ ...this.getResponsiveSideCardStyles() }}>
+            <SocialShare>Twitter</SocialShare>
+            <NewsletterPrompt>Subscribe asshole </NewsletterPrompt>
+            <AdSpace>Here is something to buy</AdSpace>
+          </Container>
+        )
+      }
+    </Media>
+  )
+}
+
+/*
 class SideCard extends React.Component {
   state = {
     sticky: false,
@@ -165,7 +238,9 @@ class SideCard extends React.Component {
                   Copy link
                 </CopyLinkButton>
               </SocialShare>
-              <NewsletterPrompt>Subscribe</NewsletterPrompt>
+              <NewsletterPrompt>
+                <button>Subscribe to newsletter</button>
+              </NewsletterPrompt>
               <AdSpace>Here is something to buy</AdSpace>
             </Container>
           ) : (
@@ -180,10 +255,9 @@ class SideCard extends React.Component {
     )
   }
 }
+*/
 
 SideCard.propTypes = {
   style: PropTypes.object,
   tweetLink: PropTypes.string.isRequired,
 }
-
-export default SideCard
