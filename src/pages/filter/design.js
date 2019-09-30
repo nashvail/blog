@@ -1,34 +1,21 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
-
-// Constants
-import Constants from "../../utils/constants"
 
 // Components
 import Header from "../../components/Header"
 import FilterNav from "../../components/FilterNav"
 import ArticleGrid from "../../components/ArticleGrid"
-import ArtcileGridContainer from "../../components/ArtcileGridContainer";
+import ArtcileGridContainer from "../../components/ArtcileGridContainer"
+import SEO from "../../components/SEO"
 
 // Helpers
-import { renderArticlePreviews } from "../../utils/helpers";
-
-// Styled components
-const Container = styled.main`
-  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
-  margin: 0 auto;
- `
+import { renderArticlePreviews } from "../../utils/helpers"
 
 const FilteredArticlesGrid = ({ children }) => (
   <StaticQuery
     query={graphql`
       query DesignArticlesQuery {
-        allArticlesJson(filter: {
-          category: {
-            eq: "design"
-          }
-        }){
+        allArticlesJson(filter: { category: { eq: "design" } }) {
           edges {
             node {
               title
@@ -38,7 +25,7 @@ const FilteredArticlesGrid = ({ children }) => (
               publishDate
               cover {
                 childImageSharp {
-                  fluid(maxWidth: 800){
+                  fluid(maxWidth: 800) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -50,7 +37,9 @@ const FilteredArticlesGrid = ({ children }) => (
     `}
     render={data => {
       return (
-        <ArticleGrid>{renderArticlePreviews(data.allArticlesJson.edges)}</ArticleGrid>
+        <ArticleGrid>
+          {renderArticlePreviews(data.allArticlesJson.edges)}
+        </ArticleGrid>
       )
     }}
   />
@@ -60,6 +49,9 @@ class DesignArticles extends React.Component {
   render() {
     return (
       <>
+        <SEO
+          title="Design Articles"
+        />
         <Header />
         <FilterNav />
         <ArtcileGridContainer>

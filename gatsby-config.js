@@ -6,10 +6,10 @@
 
 module.exports = {
   siteMetadata: {
-    title: "Words, Pictures and Code",
+    title: "nashvail.me",
     author: "Nash Vail",
     titleTemplate: "%s . Nash Vail",
-    description: "Nash Vail's website",
+    description: "Words, pictures and code",
     siteUrl: "https://nashvail.me",
     social: {
       twitter: '@nashvail'

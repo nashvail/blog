@@ -1,9 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
-
-// Constants
-import Constants from "../../utils/constants"
 
 // Components
 import Header from "../../components/Header"
@@ -11,6 +7,7 @@ import FilterNav from "../../components/FilterNav"
 import ArticleGrid from "../../components/ArticleGrid"
 import ArticleGridContainer from "../../components/ArtcileGridContainer"
 import Featured from "../../components/Featured";
+import SEO from "../../components/SEO";
 
 // Helpers
 import { renderArticlePreviews } from "../../utils/helpers";
@@ -65,6 +62,9 @@ class CodeMathArticles extends React.Component {
   render() {
     return (
       <>
+        <SEO
+          title="Code and Math Articles"
+        />
         <Header />
         <FilterNav />
         <ArticleGridContainer>
