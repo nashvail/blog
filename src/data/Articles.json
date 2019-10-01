@@ -181,7 +181,7 @@
   {
     "title": "Let's settle this - Part 1",
     "publishDate": "2016-06-22",
-    "cover": "./trig.png",
+    "cover": "./this1.png",
     "link": "/blog/js-this-1",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
@@ -191,7 +191,7 @@
   {
     "title": "Let's settle this - Part 2",
     "publishDate": "2016-06-22",
-    "cover": "./trig.png",
+    "cover": "./this2.png",
     "link": "/blog/js-this-2",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
