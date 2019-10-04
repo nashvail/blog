@@ -9,6 +9,7 @@ import Constants from "../../utils/Constants"
 // Components
 import NewsletterPrompt from "./NewsletterPrompt"
 import SocialShare from "./SocialShare";
+import AdSpace from "./AdSpace";
 
 // This should be coming through props, but anyway.
 const SCROLLING_STOP_THRESHOLD = 150
@@ -28,13 +29,6 @@ const Container = styled.div`
     margin: 3rem auto 3rem auto;
     width: 50%;
   }
-`
-
-const AdSpace = styled.div`
-  background: #ffffff;
-  border-radius: 4px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
 `
 
 export default function SideCard({ style, tweetLink }) {
@@ -78,7 +72,10 @@ export default function SideCard({ style, tweetLink }) {
           <Container style={{ ...getConditionalStickyStyles() }}>
             <SocialShare tweetLink={tweetLink} /> 
             <NewsletterPrompt />
-            <AdSpace>Here is something to buy</AdSpace>
+            <AdSpace
+              title="Learning Git?"
+              actionText="Take my Git course on Skillshare"
+            />
           </Container>
         ) : (
           <Container style={{ ...this.getResponsiveSideCardStyles() }}>
