@@ -201,7 +201,7 @@
   {
     "title": "Nerding out with Bezier Curves",
     "publishDate": "2016-05-24",
-    "cover": "./trig.png",
+    "cover": "./bezier.png",
     "link": "/blog/bezier",
     "spoiler": "Part two of settling the this keyword in JavaScript",
     "category": [
@@ -221,7 +221,7 @@
   {
     "title": "A gentle introduction to React Motion",
     "publishDate": "2016-01-10",
-    "cover": "./trig.png",
+    "cover": "./react_motion.png",
     "link": "https://medium.com/@nashvail/a-gentle-introduction-to-react-motion-dc50dd9f2459",
     "spoiler": "This is an old one but hey!",
     "category": [
@@ -231,7 +231,7 @@
   {
     "title": "Recreating the Apple TV icons in JavaScript and CSS",
     "publishDate": "2015-09-14",
-    "cover": "./trig.png",
+    "cover": "./apple_icon.png",
     "link": "/blog/apple-tv-icons",
     "spoiler": "Creating cards that respond to cursor movement or something like this",
     "category": [
