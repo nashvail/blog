@@ -78,7 +78,7 @@ export default function SideCard({ style, tweetLink }) {
             />
           </Container>
         ) : (
-          <Container style={{ ...this.getResponsiveSideCardStyles() }}>
+          <Container style={{}}>
             <SocialShare>Twitter</SocialShare>
             <NewsletterPrompt>Subscribe asshole </NewsletterPrompt>
             <AdSpace>Here is something to buy</AdSpace>

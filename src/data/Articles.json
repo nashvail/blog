@@ -127,7 +127,7 @@
     "publishDate": "2018-05-06",
     "cover": "./trig.png",
     "spoiler": "Part two of settling the this keyword in JavaScript",
-    "link": "https://uxdesign.cc/how-you-can-use-simple-trigonometry-to-create-better-loaders-32a573577eb4",
+    "link": "/blog/better-loader",
     "category": [
       "code",
       "design",
