@@ -115,11 +115,10 @@
     "publishDate": "2018-06-31",
     "cover": "./drag.png",
     "spoiler": "Part two of settling the this keyword in JavaScript",
-    "link": "https://uxdesign.cc/how-to-fix-dragging-animation-in-ui-with-simple-math-4bbc10deccf7",
+    "link": "/blog/dragging-animation",
     "category": [
       "code",
-      "design",
-      "medium"
+      "design"
     ]
   },
   {
@@ -130,8 +129,7 @@
     "link": "/blog/better-loader",
     "category": [
       "code",
-      "design",
-      "medium"
+      "design"
     ]
   },
   {

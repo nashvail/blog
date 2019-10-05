@@ -8,7 +8,7 @@ title: "How you can use simple trigonometry to create better loaders"
 description: >-
   Since the past few days I have been trying to write my own little JavaScript
   animation library. I know I know no one really cares about a…
-date: 2016-05-24
+date: 2018-05-06
 path: "/blog/better-loader"
 ---
 
