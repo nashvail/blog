@@ -4,7 +4,8 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  --inlineCode-bg: rgba(255, 229, 100, 0.2);
+  /* --inlineCode-bg: rgba(255, 229, 100, 0.2); */
+  --inlineCode-bg: #f2f2f2;
   --inlineCode-text: #1a1a1a;
 }
 
@@ -101,7 +102,8 @@ pre[class*='language-'] ::selection {
   border-radius: 0.3em;
   background: var(--inlineCode-bg);
   color: var(--inlineCode-text);
-  padding: 0.15em 0.2em 0.05em;
+  /* padding: 0.15em 0.2em 0.1em; */
+  padding: 0.2rem 0.25rem;
   white-space: normal;
 }
 
