@@ -1,21 +1,35 @@
 ---
 title: How to fix dragging animation in UI with simple math
 path: "/blog/dragging-animation"
-date: 2018-06-31
+date: 2018-07-31
 ---
+<br/>
 
-![](https://cdn-images-1.medium.com/max/1200/1*mzUTDrvpsdQrV8xu_exM1Q.png)
+![](./images/1.png)
 
 Let’s start it this way, consider any piece of software where dragging elements around is a major part of the interaction. Now pay close attention to how the elements behave when being dragged around. I’ll pick [Trello](https://medium.com/u/fb5dd2d116a1) as an example.
 
 Here’s what dragging a card between lists in Trello looks like.
 
-![](https://cdn-images-1.medium.com/max/800/1*x3yhJ6MSzJqg9V9hZuDIQw.gif)
+<center>
+  <figure>
+    <img alt="" title="" src="./images/2.gif">
+  </figure>
+</center>
 
 Notice how the card stays rigid and rotated at a fixed angle when being dragged? It’s subtle, I understand, but it kinda got to me. So I sprinkled some UI animation fairy dust over it and...
 
-![](https://cdn-images-1.medium.com/max/800/1*YEpIemLeUdwo8lR4wNx37w.png)
-![](https://cdn-images-1.medium.com/max/800/1*Hlh7noHTeN9KZu9cysKg9w.gif)
+<center>
+  <figure>
+    <img alt="" title="" src="./images/3.png">
+  </figure>
+</center>
+
+<center>
+  <figure>
+    <img alt="" title="" src="./images/4.gif">
+  </figure>
+</center>
 
 See the difference? A more natural looking drag.
 
@@ -30,7 +44,7 @@ Let’s dig a level deeper. Here’s what we want to do, precisely.
 
 When a card is being dragged in the UI, we want the card to react to the environment. That is, when it’s being dragged in the right hand side direction, we want it to slightly rotate to show the effect of that drag and show a similar effect when being dragged left.
 
-![](https://cdn-images-1.medium.com/max/1200/1*RyxUJa6QXhB5QUfTBUzP9A.png)
+![](./images/5.png)
 
 We want the rotation of card to be direction aware. If the card is being dragged towards right it should rotate clockwise and anticlockwise when being dragged left.
 
@@ -50,7 +64,7 @@ Since rotation of the card is dependent on how fast the card is being dragged, f
 ## Finding the velocity of drag
 <br/>
 
-![](https://cdn-images-1.medium.com/max/1200/1*UNb9VMCkvnZXRLlBOLcmVA.png)
+![](./images/6.png)
 
 When the card is being dragged, what is basically happening is it’s changing its position on the screen.
 
@@ -68,11 +82,11 @@ Save your sarcasm for a minute. Let’s start with speed.
 
 Consider the person below at position 0.
 
-![](https://cdn-images-1.medium.com/max/1200/1*xqPiHPt2Iilx0xZ87YvCwg.png)
+![](./images/7.png)
 
 We close our eyes for 60 second and open again. Now the man is at a position of 10 meters.
 
-![](https://cdn-images-1.medium.com/max/1200/1*dWE9SCCNb8czLHH_Ung85Q.png)
+![](./images/8.png)
 
 This means he ran 10 meters in the 1 minute (or 60 seconds) we were closing our eyes. So his speed would be,
 
@@ -88,7 +102,7 @@ Good enough speed there man!
 
 But let’s rewind to when the person was at his initial position. We close our eyes again, but this time the man runs to the left.
 
-![](https://cdn-images-1.medium.com/max/1200/1*5mIoFfa1kFBbYp_ec2tkfA.png)
+![](./images/9.png)
 
 What is his speed this time around?
 
@@ -107,13 +121,13 @@ Hah! You see, it’s the same speed but this time we have a negative sign in fro
 
 Similarly, for our card, if we subtract its current position from its previous position we can not only find the speed of the drag but also the direction it is being dragged in.
 
-![](https://cdn-images-1.medium.com/max/1200/1*s8bq2YNHJ7JHBCKi1GbVjQ.png)
+![](./images/10.png)
 
 There are multiple ways to go around doing that in code. One could be, storing the previous position of card and then subtracting it from the current position. But another, “clever-er” way to deal with this would be to subtract card’s position from Mouse’s position. This will work for us because, since the card is being dragged, the next position of the card will be Mouse’s current position. Makes sense?
 
 Take a minute and let that sink in.
 
-![](https://cdn-images-1.medium.com/max/1200/1*batMx-Uf8CYBndk9LA1Cxg.png)
+![](./images/11.png)
 
 Here’s a pen created from all that we have learnt so far. Notice that the card currently just follows the mouse around without having to be dragged.
 
@@ -279,8 +293,7 @@ This is where sigmoid function steps in.
 
 In mathematics, sigmoid is a function having a characteristic ‘S’ shaped curve, like the one shown below.
 
-![Sigmoid Curve](https://cdn-images-1.medium.com/max/1200/1*cmy4qlceKfYJq4eVOdywKw.png)
-Sigmoid Curve
+![Sigmoid Curve](./images/12.png)
 
 This S shaped curve finds variety of applications in animation and machine learning and neural networks and everything else I found on Google and am lazy to type here. But all in all, it’s something very interesting. Today, we’ll look at how it can help us in making the animation we’re after happen.
 
@@ -302,19 +315,19 @@ const sigmoid = x => x/(1 + Math.abs(x));
 
 A mathematical function at its core is just something that takes in a parameter (x) and returns a value (y) as a result. A single glance at sigmoid’s plot shows that for positive x values (green area) the graph is positive and for negative x, it’s negative(red area).
 
-![](https://cdn-images-1.medium.com/max/1200/1*d6FiBuudmS432db7HWKePQ.png)
+![](./images/13.png)
 
 Going to back to our list of TODOs, remember that knowing the direction of drag matters to us. The way we know direction of drag is by the sign of the velocity, and if we pass in `xVelocity` as parameter to sigmoid, we’re not losing that detail in any way since positive values of xVelocity will produce positive results and negative values will produce negative.
 
 2\. **Outputs of the function are bounded between +1 and -1**
 
-![](https://cdn-images-1.medium.com/max/1200/1*_4iJeR29-gJYh9os6ddyFg.png)
+![](./images/14.png)
 
 Shall we look at a cool mathematical notation real quick?
 
 We shall.
 
-![](https://cdn-images-1.medium.com/max/1200/1*wREaHcyVIQ-CVmRLQi1E_Q.png)
+![](./images/15.png)
 
 If you have went through Calculus, now could be the time you finally understand limits.
 
@@ -380,7 +393,11 @@ The first line in bold calculates and assigns value to the rotation variable. Th
 
 If you run the code you’ll notice a very, very subtle version of the animation we’re after.
 
-![](https://cdn-images-1.medium.com/max/800/1*NPEm2CsnA4amYIboyVCOig.gif)
+<center>
+  <figure>
+    <img alt="" title="" src="./images/16.gif">
+  </figure>
+</center>
 
 You’re right, it’s as good as invisible. We can amplify this subtle effect by multiplying, let’s say 10 to rotation.
 
@@ -388,7 +405,11 @@ You’re right, it’s as good as invisible. We can amplify this subtle effect b
 rotation = sigmoid(xVelocity) * 10;
 ```
 
-![](https://cdn-images-1.medium.com/max/800/1*QFM_js201QBdhFSQiubv-A.gif)
+<center>
+  <figure>
+    <img alt="" title="" src="./images/17.gif">
+  </figure>
+</center>
 
 Very jittery, but somewhat there. Let’s take the `* 10` out and do something else.
 
@@ -399,8 +420,11 @@ rotation = rotation + sigmoid(xVelocity);
 What we’re doing here is trying to remove the jitter by additively applying the the result of sigmoid to rotation.
 
 Here is what the animation looks like now.
-
-![](https://cdn-images-1.medium.com/max/800/1*RmzRMUyU3It7v1xAbDcukQ.gif)
+<center>
+  <figure>
+    <img alt="" title="" src="./images/18.gif">
+  </figure>
+</center>
 
 This is smooth and everything but still, not there at all. Let’s tweak the code a little more.
 
