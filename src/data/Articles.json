@@ -114,7 +114,7 @@
     "title": "How to fix dragging animation in UI with simple math",
     "publishDate": "2018-06-31",
     "cover": "./drag.png",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "A little bit of Math and requestAnimationFrame magic can give life to the most mundane of interactions.",
     "link": "/blog/dragging-animation",
     "category": [
       "code",
@@ -125,7 +125,7 @@
     "title": "How you can use simple Trigonometry to create better loaders",
     "publishDate": "2018-05-06",
     "cover": "./trig.png",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "No animation at all is better than a jittery one. Learn how you can use Trigonometry to create smooth animations for your loaders.",
     "link": "/blog/better-loader",
     "category": [
       "code",
@@ -137,7 +137,7 @@
     "publishDate": "2017-05-14",
     "cover": "./lerp.png",
     "link": "/blog/lerp",
-    "spoiler": "Linear interpolation or lerp is a one line function that can draw inbetweens in your animations for you.",
+    "spoiler": "Linear interpolation or lerp is a one line function that can draw inbetweens in your animations for you. Learn how.",
     "category": [
       "code"
     ]
@@ -147,7 +147,7 @@
     "publishDate": "2017-01-22",
     "cover": "./prototypal.png",
     "link": "https://medium.com/free-code-camp/understanding-prototypal-inheritance-in-javascript-with-css-93b2fcda75e4",
-    "spoiler": "Never heard of protoypal inheritance? Does it confuse you? Well, it was starting right at your face everytime you wrote CSS.",
+    "spoiler": "Prototypal inheritance was staring right at you every time you wrote CSS.",
     "category": [
       "code",
       "medium"
@@ -158,7 +158,7 @@
     "publishDate": "2016-11-06",
     "cover": "./pseudo.png",
     "link": "https://medium.com/free-code-camp/explained-css-pseudo-classes-cef3c3177361",
-    "spoiler": "A visual explanation so that you don't have to ever set background red again when using pseudo classes",
+    "spoiler": "A visual explanation of pseudo classes, so that you don't ever have to set background red again while writing them.",
     "category": [
       "code",
       "medium"
@@ -169,7 +169,7 @@
     "publishDate": "2016-08-25",
     "cover": "./motion_curves.png",
     "link": "https://www.smashingmagazine.com/2016/08/css-animations-motion-curves/",
-    "spoiler": "There is UI animation, and then there is good UI animation. It’s smooth, beautiful and, most of all, natural, not blocky, rigid or robotic. Learn about CSS motion curves that make such animations possible.",
+    "spoiler": "Learn how to read CSS motion curves, also in the process learn some basic Calculus.",
     "category": [
       "code",
       "design",
@@ -181,7 +181,7 @@
     "publishDate": "2016-06-22",
     "cover": "./this1.png",
     "link": "/blog/js-this-1",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "A huge collection of examples to help you understand JavaScript's infamous this keyword. Part One.",
     "category": [
       "code"
     ]
@@ -191,7 +191,7 @@
     "publishDate": "2016-06-22",
     "cover": "./this2.png",
     "link": "/blog/js-this-2",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "A huge collection of examples to help you understand JavaScript's infamous this keyword. Part Two.",
     "category": [
       "code"
     ]
@@ -201,7 +201,7 @@
     "publishDate": "2016-05-24",
     "cover": "./bezier.png",
     "link": "/blog/bezier",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "The Math and Science of arguably the most beautiful curves on the internet.",
     "category": [
       "code"
     ]
@@ -221,7 +221,7 @@
     "publishDate": "2016-01-10",
     "cover": "./react_motion.png",
     "link": "https://medium.com/@nashvail/a-gentle-introduction-to-react-motion-dc50dd9f2459",
-    "spoiler": "This is an old one but hey!",
+    "spoiler": "Explore the React Motion API while building a fly out menu.",
     "category": [
       "code"
     ]
@@ -231,7 +231,7 @@
     "publishDate": "2015-09-14",
     "cover": "./apple_icon.png",
     "link": "/blog/apple-tv-icons",
-    "spoiler": "Creating cards that respond to cursor movement or something like this",
+    "spoiler": "Learn to build cards that respond to hover, in vanilla CSS and JavaScript.",
     "category": [
       "code"
     ]

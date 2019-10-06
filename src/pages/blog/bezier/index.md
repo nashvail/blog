@@ -9,9 +9,7 @@ keywords:
 - nash
 - bezier curves
 title: "Nerding out with Bezier Curves"
-description: >-
-  Since the past few days I have been trying to write my own little JavaScript
-  animation library. I know I know no one really cares about a…
+description: "The math and science of arguably the most beautiful curves on the internet."
 date: 2016-05-24
 path: "/blog/bezier"
 featuredImage: ./images/cover.jpg

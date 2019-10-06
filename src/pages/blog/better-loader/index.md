@@ -2,12 +2,17 @@
 keywords:
 - trigonometry
 - math
+- javascript
+- css
+- user interface
+- UI
+- UX
+- design
+- animation
 - explanation
 - nash
 title: "How you can use simple trigonometry to create better loaders"
-description: >-
-  Since the past few days I have been trying to write my own little JavaScript
-  animation library. I know I know no one really cares about a…
+description: "No animation at all is better than a jittery one. Learn how you can use trigonometry to create smooth animations for your loaders."
 date: 2018-05-06
 path: "/blog/better-loader"
 ---

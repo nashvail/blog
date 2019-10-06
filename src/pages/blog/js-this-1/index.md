@@ -10,9 +10,7 @@ keywords:
 - nash vail
 path: "/blog/js-this-1"
 title: Let’s settle this - I
-description:
-  Can’t we all relate to this? At some point ‘this’ has been a thing to think
-  about for almost all JavaScript developers. For me, whenever…
+description: "A huge collection of examples to help you understand JavaScript's infamous this keyword. Part One."
 date: 2016-06-22
 featuredImage: ./images/cover.png
 ---

@@ -1,8 +1,15 @@
 ---
+keywords:
+- javascript
+- linear interpolation
+- game dev
+- math
+- css
+- canvas
+- nash
+- nash vail
 title: Understanding Linear Interpolation in UI Animation
-description: >-
-  In traditional (hand-drawn) animation, a senior or key artist draws keyframes
-  that define the motion.
+description: "Linear interpolation or lerp is a one line function that can draw inbetweens in your animations for you. Learn how."
 date: '2017-05-14'
 path: "/blog/lerp"
 ---
