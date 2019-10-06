@@ -11,6 +11,7 @@ module.exports = {
     titleTemplate: "%s . Nash Vail",
     description: "Words, pictures and code",
     siteUrl: "https://nashvail.me",
+    keywords: ["nash", "vail", "tutorial", "code", "javascript", "css", "web", "html", "courses", "illustration", "design", "philosophy", "life"],
     social: {
       twitter: '@nashvail'
     }

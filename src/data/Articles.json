@@ -94,7 +94,7 @@
     "title": "How displaying an image on HTML5 canvas works",
     "publishDate": "2019-01-06",
     "cover": "./canvas.png",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "Dive into the details of canvas's drawImage API, also, learn how to make Mario walk!",
     "link": "/blog/canvas-image",
     "category": [
       "code"

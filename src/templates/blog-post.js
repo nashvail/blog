@@ -85,6 +85,8 @@ export default function Template({
     <>
       <SEO 
         title={frontmatter.title}
+        description={frontmatter.description}
+        keywords={frontmatter.keywords}
       />
       <Header sticky={false} />
       {/* <FilterNav /> */}
@@ -126,6 +128,8 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         path
         title
+        description
+        keywords
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {

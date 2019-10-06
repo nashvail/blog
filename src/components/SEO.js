@@ -12,6 +12,7 @@ const query = graphql`
         author
         description
         siteUrl
+        keywords
         social {
           twitter
         }
@@ -26,6 +27,7 @@ export default function SEO({
   title,
   description,
   slug,
+  keywords,
   lang = "en",
 }) {
   return (
@@ -33,7 +35,10 @@ export default function SEO({
       query={query}
       render={data => {
         const { siteMetadata } = data.site
+        console.log(siteMetadata);
         const metaDescription = description || siteMetadata.description
+        const metaKeywords = siteMetadata.keywords.concat(keywords)
+
         // Don't really understand this line yet
         const metaImage = image ? `${siteMetadata.siteUrl}/${image}` : null
         const url = `${siteMetadata.siteUrl}${slug}`
@@ -82,6 +87,10 @@ export default function SEO({
                 name: "twitter:description",
                 content: metaDescription,
               },
+              {
+                name: "keywords",
+                content: metaKeywords
+              }
             ]
               .concat(
                 metaImage
