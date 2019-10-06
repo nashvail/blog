@@ -89,7 +89,6 @@ If we plotted the Sun’s vertical position in the sky against the time of the d
 To plot any 2-dimensional curve we need two values, `x` and `y`. In our case `time` \[of the day\] and `positionOfTheSun`. We collect a set of these values, put them on a graph and this is what we get.
 
 ![Fig. 7: The rising and setting cycle of the sun plotted on a graph.](./images/10.png)
-Fig. 7: The rising and setting cycle of the sun plotted on a graph.
 
 The vertical axis or the `y axis` is the Sun’s vertical position in sky and the horizontal axis or the `x axis` represents time. As the time entity progresses the “position of the Sun” entity changes its value and repeats the same set of values after 24 hours.
 
@@ -181,7 +180,6 @@ Here’s what’s happening.
 Once we had the coordinates of the circle’s centre, `cx` and `cy` , we were 50% there. All we need to do, is first of all, leave `cx` alone because we don’t want to change circle’s horizontal position. We need to add and subtract equal numbers periodically from `cy` to make the circle go up and down. And that’s exactly what we’re doing in the code.
 
 ![Fig. 11: Changing y coordinate of the circle’s centre.](./images/15.png)
-Fig. 11: Changing y coordinate of the circle’s centre.
 
 `centreY` stores in itself the value of circle’s center (75) so that numbers can be added to it or subtracted from it — like already mentioned — to change the circle’s vertical position.
 
@@ -206,7 +204,6 @@ Remember we were about to do an operation right before the beginning of section 
 The operation of multiplying a function by a constant is called scaling. Notice how the graph changes its shape, also notice the effect of multiplication on maximum and minimum values of Sine.
 
 ![Fig. 13: Graph scaling](./images/19.png)
-Fig. 13: Graph scaling
 
 Now that we know this, let’s make necessary changes to our code.
 
