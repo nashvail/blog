@@ -21,6 +21,7 @@ const Container = styled.div`
   right: 0;
   left: 0;
   background: ${Constants.COLORS.BLACK[6]};
+  z-index: 999;
 `
 
 const MainList = styled.ul`

@@ -18,6 +18,11 @@ const Container = styled.div`
   background-size: 35%;
   background-repeat: no-repeat;
   background-position: 120% 50%;
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    background-size: 15%;
+    background-position: 105% 50%;
+  }
 `
 
 export default function NewsletterPrompt() {

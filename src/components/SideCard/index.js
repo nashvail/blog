@@ -8,8 +8,8 @@ import Constants from "../../utils/Constants"
 
 // Components
 import NewsletterPrompt from "./NewsletterPrompt"
-import SocialShare from "./SocialShare";
-import AdSpace from "./AdSpace";
+import SocialShare from "./SocialShare"
+import AdSpace from "./AdSpace"
 
 // This should be coming through props, but anyway.
 const SCROLLING_STOP_THRESHOLD = 150
@@ -27,7 +27,7 @@ const Container = styled.div`
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     margin: 3rem auto 3rem auto;
-    width: 50%;
+    width: 100%;
   }
 `
 
@@ -64,24 +64,27 @@ export default function SideCard({ style, tweetLink }) {
     return newStyle
   }
 
-  const copyCurrentLinkToClipboard = () => console.log("nothing")
+  const Ad = () => (
+    <AdSpace
+      title="Learning Git?"
+      actionText="Take my Git course on Skillshare"
+    />
+  )
+
   return (
     <Media query={MediaQuery}>
       {matches =>
         matches ? (
           <Container style={{ ...getConditionalStickyStyles() }}>
-            <SocialShare tweetLink={tweetLink} /> 
+            <SocialShare tweetLink={tweetLink} />
             <NewsletterPrompt />
-            <AdSpace
-              title="Learning Git?"
-              actionText="Take my Git course on Skillshare"
-            />
+            <Ad />
           </Container>
         ) : (
-          <Container style={{}}>
-            <SocialShare>Twitter</SocialShare>
-            <NewsletterPrompt>Subscribe asshole </NewsletterPrompt>
-            <AdSpace>Here is something to buy</AdSpace>
+          <Container>
+            <SocialShare tweetLink={tweetLink} />
+            <NewsletterPrompt />
+            <Ad />
           </Container>
         )
       }

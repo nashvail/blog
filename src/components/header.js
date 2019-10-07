@@ -18,7 +18,6 @@ const Container = styled.header`
 `
 
 export default function Header({ sticky=true }) {
-  console.log('sticky', sticky)
   return (
     <Container sticky={sticky}>
       <Navigation />
