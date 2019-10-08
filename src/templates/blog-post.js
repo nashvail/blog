@@ -11,6 +11,7 @@ import Header from "../components/Header"
 import FilterNav from "../components/FilterNav"
 import SideCard from "../components/SideCard"
 import Footer from "../components/Footer"
+import RelatedArticles from "../components/RelatedArticles"
 import SEO from "../components/SEO"
 
 // Styled components
@@ -31,7 +32,7 @@ const Article = styled.article`
     line-height: 0.7rem;
     padding: 1.2rem 0.7rem 0.4rem 0;
   }
-  
+
   blockquote p {
     color: ${Constants.COLORS.BLACK[2]};
     font-style: italic;
@@ -83,7 +84,7 @@ export default function Template({
     featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
   return (
     <>
-      <SEO 
+      <SEO
         title={frontmatter.title}
         description={frontmatter.description}
         keywords={frontmatter.keywords}
@@ -108,11 +109,10 @@ export default function Template({
           <Article dangerouslySetInnerHTML={{ __html: html }} />
         </main>
         <Sidebar>
-          <SideCard 
-            style={{ marginTop: "8rem", marginLeft: "3rem" }} 
-            tweetLink={`https://twitter.com/intent/tweet/?text=${
-              frontmatter.title
-            }&url=https://nashvail.me${frontmatter.path}%2F&via=nashvail`}   
+          <RelatedArticles />
+          <SideCard
+            style={{ marginTop: "2rem", marginLeft: "3rem" }}
+            tweetLink={`https://twitter.com/intent/tweet/?text=${frontmatter.title}&url=https://nashvail.me${frontmatter.path}%2F&via=nashvail`}
           />
         </Sidebar>
         <Footer />
