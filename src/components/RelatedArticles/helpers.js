@@ -1,12 +1,10 @@
 import React from "react"
 import styled from "styled-components"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 
-// Constants
 import Constants from "../../utils/Constants"
 
-const Container = styled.div`
+export const Container = styled.div`
   width: 100%;
   background: ${Constants.COLORS.BLACK[7]};
   border-radius: 4px;
@@ -14,19 +12,25 @@ const Container = styled.div`
   margin-top: 5rem;
 `
 
-const Title = styled.p`
-  font-size: 0.85rem;
-  color: ${Constants.COLORS.BLACK[4]};
-  margin-bottom: 0.85rem;
-`
+export const Title = () => (
+  <p
+    css={`
+      font-size: 0.85rem;
+      color: ${Constants.COLORS.BLACK[4]};
+      margin-bottom: 0.85rem;
+    `}
+  >
+    Similar articles
+  </p>
+)
 
-const ArticleList = styled.ul`
+export const ArticleList = styled.ul`
   list-style-type: none;
   margin: 0;
   padding: 0;
 `
 
-const Article = ({ link, text }) => (
+export const Article = ({ link, text }) => (
   <li>
     <Link to={link}>
       <h4>{text}</h4>
@@ -34,7 +38,9 @@ const Article = ({ link, text }) => (
   </li>
 )
 
-export default function RelatedArticles() {
+/*
+export default function RelatedArticles({ currentArticleTitle, categories=[] }) {
+  console.log(categories);
   return (
     <Container>
       <Title>Similar articles</Title>
@@ -51,3 +57,4 @@ export default function RelatedArticles() {
     </Container>
   )
 }
+*/

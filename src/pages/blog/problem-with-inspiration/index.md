@@ -11,6 +11,8 @@ description: Why the word inspiration and inspire has lost its meaning in the de
 date: 2019-03-03
 path: "/blog/problem-with-inspiration"
 featuredImage: ./images/cover.png
+categories:
+- code
 ---
 
 

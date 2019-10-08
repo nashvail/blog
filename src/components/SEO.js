@@ -35,7 +35,6 @@ export default function SEO({
       query={query}
       render={data => {
         const { siteMetadata } = data.site
-        console.log(siteMetadata);
         const metaDescription = description || siteMetadata.description
         const metaKeywords = siteMetadata.keywords.concat(keywords)
 

@@ -12,6 +12,8 @@ path: "/blog/canvas-image"
 date: 2019-01-06
 title: "How displaying an image on HTML5 canvas works"
 description: "Dive into the details of canvas's drawImage API, also, learn how to make Mario walk!"
+categories:
+- code
 ---
 
 <br/>

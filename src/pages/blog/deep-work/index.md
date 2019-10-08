@@ -3,6 +3,8 @@ path: "/blog/deep-work"
 title: 'Insights from Deep Work (and why you need a routine)'
 date: '2019-01-17'
 featuredImage: ./images/cover.png
+categories:
+- code
 ---
 
 Steven J wasn't wrong when in what is now the most famous commencement speech on the internet reminded us that, "Your work is going to fill a large part of your life.". The words on passion and love which followed are debatable but the fact that your work actually makes up a large portion of your life is absolutely not. It's a fact both of us are aware of but don't care about enough. The question is, how do you make something better? You start by bettering parts of it. If I am cleaning my room I'll start with my bed, then move to the floor, and then to my desk. Bringing order and cleanliness to something that makes up a large chunk of your life therefore, is also improving your life as a whole, isn't it? 

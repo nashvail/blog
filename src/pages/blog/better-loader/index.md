@@ -15,6 +15,8 @@ title: "How you can use simple trigonometry to create better loaders"
 description: "No animation at all is better than a jittery one. Learn how you can use trigonometry to create smooth animations for your loaders."
 date: 2018-05-06
 path: "/blog/better-loader"
+categories:
+- code
 ---
 
 Recently while researching on landing pages, I ran into a website. It’s great and super useful for the people who use it. Something on the site though caught my eye and made me a little uneasy.

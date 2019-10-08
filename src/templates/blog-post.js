@@ -11,8 +11,11 @@ import Header from "../components/Header"
 import FilterNav from "../components/FilterNav"
 import SideCard from "../components/SideCard"
 import Footer from "../components/Footer"
-import RelatedArticles from "../components/RelatedArticles"
 import SEO from "../components/SEO"
+
+// Related articles components
+import RelatedCodeArticles from "../components/RelatedArticles/RelatedCodeArticles"
+import RelatedDesignArticles from "../components/RelatedArticles/RelatedDesignArticles"
 
 // Styled components
 const Title = styled.h1`
@@ -82,6 +85,17 @@ export default function Template({
   let featuredImgFluid
   if (frontmatter.featuredImage)
     featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
+
+  const RelatedArticles = () => {
+    const category = frontmatter.categories[0]
+    const currentArticleTitle = frontmatter.title
+    console.log(category);
+    if(category === "code")
+      return <RelatedCodeArticles currentArticleTitle={currentArticleTitle} />
+    else if (category === "design")
+      return <RelatedDesignArticles currentArticleTitle={currentArticleTitle} />
+  }
+
   return (
     <>
       <SEO
@@ -130,6 +144,7 @@ export const pageQuery = graphql`
         title
         description
         keywords
+        categories
         featuredImage {
           childImageSharp {
             fluid(maxWidth: 800) {

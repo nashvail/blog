@@ -13,6 +13,8 @@ title: Let’s settle this - I
 description: "A huge collection of examples to help you understand JavaScript's infamous this keyword. Part One."
 date: 2016-06-22
 featuredImage: ./images/cover.png
+categories:
+- code
 ---
 
 https://twitter.com/bendhalpern/status/578925947245633536

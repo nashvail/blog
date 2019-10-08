@@ -13,7 +13,8 @@ title: Let’s settle this - II
 description: "A huge collection of examples to help you understand JavaScript's infamous this keyword. Part Two."
 date: 2016-06-22
 featuredImage: ./images/cover.png
-category: ["code"]
+categories:
+- code
 ---
 
 

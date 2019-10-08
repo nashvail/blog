@@ -15,6 +15,8 @@ title: How to fix dragging animation in UI with simple math
 path: "/blog/dragging-animation"
 date: 2018-07-31
 description: "A little bit of Math and requestAnimationFrame magic can give life to the most mundane of interactions."
+categories:
+- code
 ---
 <br/>
 

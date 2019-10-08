@@ -5,6 +5,8 @@ description: >-
   the most about the September 9 event were these icons.
 date: '2015-09-14'
 path: "/blog/apple-tv-icons"
+categories:
+- code
 ---
 
 Apple did it again, the attention to detail is amazing. The one thing I loved the most about the [September 9 event](http://www.theverge.com/2015/9/9/9297615/apple-iphone-6s-ipad-pro-apple-tv-event-recap) were these icons.

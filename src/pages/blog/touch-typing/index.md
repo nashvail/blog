@@ -3,6 +3,8 @@ title: How to begin touch typing and Why
 description: Choosing the right tools and techniques to get you started
 date: '2014-12-21'
 path: "/blog/touch-typing"
+categories:
+- code
 ---
 
 <br/>

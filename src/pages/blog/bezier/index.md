@@ -13,6 +13,8 @@ description: "The math and science of arguably the most beautiful curves on the 
 date: 2016-05-24
 path: "/blog/bezier"
 featuredImage: ./images/cover.jpg
+categories:
+- code
 ---
 
 

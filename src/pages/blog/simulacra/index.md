@@ -14,6 +14,8 @@ title: "Your feelings are not your feelings"
 date: 2019-05-02
 featuredImage: ./images/cover.png
 path: "/blog/simulacra"
+categories:
+- code
 ---
 
 What if I told you that reality is different from what you see with your two eyes, hear with your ears, feel with your skin, and smell with a nose that has a perpetually blocked nostril (try taking in a deep breath, you'll find out). What if I told you, you cannot refute the argument that right now you might be living in a simulation. What if I told you yes, I am late to the game, I hadn't watched The Matrix, until recently. 

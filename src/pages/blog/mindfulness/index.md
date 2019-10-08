@@ -3,6 +3,8 @@ path: "/blog/mindfulness"
 title: 'On mindfulness'
 date: '2019-02-05'
 featuredImage: ./images/cover.png
+categories:
+- code
 ---
 ### When asked "What is enlightenment?" one zen master answered, "Wash your dinner bowl.".
 <br/>
