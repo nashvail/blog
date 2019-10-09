@@ -12,7 +12,7 @@ date: 2019-03-03
 path: "/blog/problem-with-inspiration"
 featuredImage: ./images/cover.png
 categories:
-- code
+- design
 ---
 
 

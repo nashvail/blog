@@ -11,6 +11,8 @@ title: "Understanding impermanence"
 date: 2019-05-15
 path: "/blog/impermanence"
 featuredImage: ./images/cover.png
+categories: 
+- misc.
 ---
 It is said an Eastern monarch once charged his wise men to invent him a sentence, to be ever in view, and which should be true and appropriate in all times and situations. They presented him the words: ‘And this, too, shall pass away.’ How much it expresses! How chastening in the hour of pride! —how consoling in the depths of affliction! ‘And this, too, shall pass away. - *Abraham Lincoln*
 

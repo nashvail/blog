@@ -16,6 +16,7 @@ import SEO from "../components/SEO"
 // Related articles components
 import RelatedCodeArticles from "../components/RelatedArticles/RelatedCodeArticles"
 import RelatedDesignArticles from "../components/RelatedArticles/RelatedDesignArticles"
+import RelatedMiscArticles from "../components/RelatedArticles/RelatedMiscArticles"
 
 // Styled components
 const Title = styled.h1`
@@ -94,6 +95,10 @@ export default function Template({
       return <RelatedCodeArticles currentArticleTitle={currentArticleTitle} />
     else if (category === "design")
       return <RelatedDesignArticles currentArticleTitle={currentArticleTitle} />
+    else if (category === "misc.")
+      return <RelatedMiscArticles currentArticleTitle={currentArticleTitle} />
+    else 
+      return;
   }
 
   return (

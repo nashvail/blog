@@ -12,7 +12,7 @@ date: 2019-03-17
 featuredImage: ./images/cover.png
 path: "/blog/battleplan"
 categories:
-- code
+- misc.
 ---
 
 > **"The [blank] canvas has an idotic stare and mesmerizes some painters so much that they turn into idiots themselves..."**

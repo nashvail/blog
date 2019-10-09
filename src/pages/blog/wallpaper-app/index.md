@@ -7,7 +7,7 @@ date: '2016-04-26'
 path: "/blog/wallpaper-app"
 featuredImage: ./images/cover.png
 categories:
-- code
+- design
 ---
 
 Wallpaper apps don’t get a whole lot of love, do they? Then one day [WLPPR](http://wlppr.co/) came along. It’s a beautifully designed app with a ton of beautiful wallpapers. All of the wallpapers, though definitely breathtaking are some kind of satellite image of our Solar System. I just wanted more variety of wallpapers wrapped in a beautifully built app. I couldn’t find one so I decided to build one myself. This article goes through the process of designing that app.
