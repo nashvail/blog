@@ -75,7 +75,14 @@ const Container = styled.main`
   }
 `
 const Sidebar = styled.aside`
+  display: flex;
+  flex-direction: column;
   position: relative;
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    flex-direction: column-reverse;
+  }
+
 `
 
 export default function Template({
@@ -130,7 +137,7 @@ export default function Template({
         <Sidebar>
           <RelatedArticles />
           <SideCard
-            style={{ marginTop: "2rem", marginLeft: "3rem" }}
+            style={{ marginTop: "2rem" }}
             tweetLink={`https://twitter.com/intent/tweet/?text=${frontmatter.title}&url=https://nashvail.me${frontmatter.path}%2F&via=nashvail`}
           />
         </Sidebar>

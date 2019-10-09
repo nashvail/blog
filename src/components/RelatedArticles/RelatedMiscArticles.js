@@ -26,12 +26,10 @@ const RelatedMiscArticles = ({ currentArticleTitle }) => (
         <Container>
           <Title />
           <ArticleList>
-            <Article title="Hello" link="what" />
             {allArticlesArray
               .sort(() => 0.5 - Math.random())
               .slice(0, 5)
               .map(article => {
-                console.log(article)
                 return (
                   <Article text={article.node.title} link={article.node.link} />
                 )

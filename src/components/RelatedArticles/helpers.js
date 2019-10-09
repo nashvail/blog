@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { Link } from "gatsby";
+import { Link } from "gatsby"
 
 import Constants from "../../utils/Constants"
 
@@ -9,19 +9,21 @@ export const Container = styled.div`
   background: ${Constants.COLORS.BLACK[7]};
   border-radius: 4px;
   padding: 1.5rem;
-  margin-top: 5rem;
+  margin-top: 4rem;
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    margin-top: -1rem;
+  }
 `
 
 export const Title = () => (
-  <p
+  <h5
     css={`
-      font-size: 0.85rem;
       color: ${Constants.COLORS.BLACK[4]};
-      margin-bottom: 0.85rem;
     `}
   >
     Similar articles
-  </p>
+  </h5>
 )
 
 export const ArticleList = styled.ul`
@@ -31,30 +33,13 @@ export const ArticleList = styled.ul`
 `
 
 export const Article = ({ link, text }) => (
-  <li>
+  <li
+    css={`
+      margin: 1rem 0;
+    `}
+  >
     <Link to={link}>
       <h4>{text}</h4>
     </Link>
   </li>
 )
-
-/*
-export default function RelatedArticles({ currentArticleTitle, categories=[] }) {
-  console.log(categories);
-  return (
-    <Container>
-      <Title>Similar articles</Title>
-      <ArticleList>
-        <Article
-          link="/blog/better-loader"
-          text="How to use Trigonometry to create better loaders"
-        />
-        <Article
-          link="/blog/canvas-image"
-          text="How displaying an image on HTML5 canvas works"
-        />
-      </ArticleList>
-    </Container>
-  )
-}
-*/

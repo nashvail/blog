@@ -18,9 +18,6 @@ const MediaQuery = `(min-width:${Constants.BREAKPOINTS[0]})`
 const Container = styled.div`
   position: static;
   width: 100%;
-  float: right;
-  /* height: 500px; */
-  /* background: ${Constants.COLORS.BLACK[2]}; */
   display: grid;
   grid-gap: 1rem;
   grid-template-rows: auto auto auto;
