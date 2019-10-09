@@ -48,7 +48,6 @@ const Article = styled.article`
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
     margin-top: 0px;
-    grid-column: span 12;
   }
 `
 
@@ -74,16 +73,7 @@ const Inner = styled.main`
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     grid-template-columns: auto;
     grid-gap: 2rem;
-    width: 70%;
-    max-width: 75ch;
-  }
-
-  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
-    width: 75%;
-  }
-
-  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
-    width: 85%;
+    width: 100%;
   }
 `
 
