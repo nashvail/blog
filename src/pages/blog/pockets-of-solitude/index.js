@@ -106,9 +106,11 @@ class PocketsOfSolitude extends React.Component {
               <SideCard
                 style={{
                   height: "200px",
-                  marginTop: "5rem",
+                  marginTop: "2rem",
                 }}
                 stickyThreshold={180}
+                tweetLink={`https://twitter.com/intent/tweet/?text=Pockets%20Of%20Solitude&url=https://nashvail.me/blog/pockets-of-solitude%2F&via=nashvail`}
+                hideAd
               />
             </aside>
           </Inner>

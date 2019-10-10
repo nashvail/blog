@@ -30,7 +30,7 @@ const Container = styled.div`
   }
 `
 
-export default function SideCard({ style, tweetLink, stickyThreshold=40 }) {
+export default function SideCard({ style, tweetLink, stickyThreshold=40, hideAd }) {
   const [sticky, setSticky] = React.useState(false)
 
 
@@ -81,7 +81,7 @@ export default function SideCard({ style, tweetLink, stickyThreshold=40 }) {
           <Container style={{ ...getConditionalStickyStyles() }}>
             <SocialShare tweetLink={tweetLink} />
             <NewsletterPrompt />
-            <GitAd />
+            {!hideAd && <GitAd />}
           </Container>
         ) : (
           <Container>
@@ -98,5 +98,6 @@ export default function SideCard({ style, tweetLink, stickyThreshold=40 }) {
 SideCard.propTypes = {
   style: PropTypes.object,
   tweetLink: PropTypes.string.isRequired,
-  stickyThreshold: PropTypes.number
+  stickyThreshold: PropTypes.number,
+  hideAd: PropTypes.bool
 }
