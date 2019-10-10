@@ -12,7 +12,6 @@ import SocialShare from "./SocialShare"
 import AdSpace from "./AdSpace"
 
 // This should be coming through props, but anyway.
-const SCROLLING_STOP_THRESHOLD = 150
 const MediaQuery = `(min-width:${Constants.BREAKPOINTS[0]})`
 
 const Container = styled.div`
@@ -28,12 +27,14 @@ const Container = styled.div`
   }
 `
 
-export default function SideCard({ style, tweetLink }) {
+export default function SideCard({ style, tweetLink, stickyThreshold=75 }) {
   const [sticky, setSticky] = React.useState(false)
+
+
 
   React.useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > SCROLLING_STOP_THRESHOLD) setSticky(true)
+      if (window.scrollY > stickyThreshold) setSticky(true)
       else setSticky(false)
     }
     window.addEventListener("scroll", handleScroll, true)
@@ -49,7 +50,7 @@ export default function SideCard({ style, tweetLink }) {
       newStyle = {
         ...style,
         position: "sticky",
-        top: SCROLLING_STOP_THRESHOLD,
+        top: stickyThreshold,
       }
     } else {
       newStyle = {
@@ -92,4 +93,5 @@ export default function SideCard({ style, tweetLink }) {
 SideCard.propTypes = {
   style: PropTypes.object,
   tweetLink: PropTypes.string.isRequired,
+  stickyThreshold: PropTypes.number
 }

@@ -13,7 +13,7 @@ import heroImage from "./assets/bubble.png"
 import Header from "../../../components/Header"
 import Footer from "./../../../components/Footer"
 import SideCard from "../../../components/SideCard"
-import RelatedMiscArticles from "../../../components/RelatedArticles/RelatedMiscArticles";
+import RelatedMiscArticles from "../../../components/RelatedArticles/RelatedMiscArticles"
 
 import Content from "./content"
 
@@ -102,11 +102,14 @@ class PocketsOfSolitude extends React.Component {
               <Content />
             </Article>
             <aside>
-            <RelatedMiscArticles/>
-            <SideCard style={{
-              height: "200px",
-              marginTop: "5rem"
-            }}/>
+              <RelatedMiscArticles />
+              <SideCard
+                style={{
+                  height: "200px",
+                  marginTop: "5rem",
+                }}
+                stickyThreshold={180}
+              />
             </aside>
           </Inner>
           <Footer />
