@@ -11,6 +11,9 @@ import NewsletterPrompt from "./NewsletterPrompt"
 import SocialShare from "./SocialShare"
 import AdSpace from "./AdSpace"
 
+// Assets
+import GitThumbnail from "../../assets/course_git.png"
+
 // This should be coming through props, but anyway.
 const MediaQuery = `(min-width:${Constants.BREAKPOINTS[0]})`
 
@@ -27,7 +30,7 @@ const Container = styled.div`
   }
 `
 
-export default function SideCard({ style, tweetLink, stickyThreshold=75 }) {
+export default function SideCard({ style, tweetLink, stickyThreshold=40 }) {
   const [sticky, setSticky] = React.useState(false)
 
 
@@ -62,10 +65,12 @@ export default function SideCard({ style, tweetLink, stickyThreshold=75 }) {
     return newStyle
   }
 
-  const Ad = () => (
+  const GitAd = () => (
     <AdSpace
       title="Learning Git?"
       actionText="Take my Git course on Skillshare"
+      image={GitThumbnail}
+      link="https://skl.sh/2riYNbD"
     />
   )
 
@@ -76,13 +81,13 @@ export default function SideCard({ style, tweetLink, stickyThreshold=75 }) {
           <Container style={{ ...getConditionalStickyStyles() }}>
             <SocialShare tweetLink={tweetLink} />
             <NewsletterPrompt />
-            <Ad />
+            <GitAd />
           </Container>
         ) : (
           <Container>
             <SocialShare tweetLink={tweetLink} />
             <NewsletterPrompt />
-            <Ad />
+            <GitAd />
           </Container>
         )
       }
