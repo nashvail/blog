@@ -6,6 +6,8 @@ import Constants from "../../utils/Constants"
 
 import NewsletterIllo from "../../assets/newsletter.png"
 
+const SUBSCRIBE_FORM_LINK = "http://eepurl.com/gemNHf"
+
 const Container = styled.div`
   background-color: ${Constants.COLORS.BLACK[6]};
   border-radius: 4px;
@@ -25,6 +27,21 @@ const Container = styled.div`
   }
 `
 
+const LinkButton = styled.a`
+  background: #121212;
+  border-radius: 4px;
+  color: white;
+  padding: 0.5rem 1.3rem;
+  font-family: "Roboto";
+  font-size: 0.8rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  :hover {
+    text-decoration: none;
+  }
+`
+
 export default function NewsletterPrompt() {
   const scrollToTop = () => {
     window.scrollTo({
@@ -36,22 +53,9 @@ export default function NewsletterPrompt() {
 
   return (
     <Container>
-      <button
-        onClick={scrollToTop}
-        css={`
-          background: #121212;
-          border-radius: 4px;
-          color: white;
-          padding: 0.5rem 1.3rem;
-          font-family: "Roboto";
-          font-size: 0.8rem;
-          cursor: pointer;
-          border: none;
-          box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
-        `}
-      >
+      <LinkButton href={SUBSCRIBE_FORM_LINK} target="_blank" css={``}>
         Subscribe to newsletter
-      </button>
+      </LinkButton>
     </Container>
   )
 }
