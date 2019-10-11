@@ -1,5 +1,7 @@
 import React from "react"
 import styled from "styled-components"
+import { useStaticQuery, graphql } from "gatsby"
+import Img from "gatsby-image"
 
 // Constants
 import Constants from "../../../utils/Constants"
@@ -7,7 +9,7 @@ import Constants from "../../../utils/Constants"
 // Assets
 import "../../../utils/global.css"
 import s_ from "./styles.module.css"
-import heroImage from "./assets/bubble.png"
+import heroImage from "./images/bubble.png"
 
 // Components
 import Header from "../../../components/Header"
@@ -35,6 +37,11 @@ const Container = styled.main`
     min-width: 400px;
     width: 90%;
   }
+
+  .gatsby-image-wrapper {
+    width: 100%;
+  }
+
 `
 
 const Article = styled.article`
@@ -53,10 +60,6 @@ const Article = styled.article`
 
 const HeroContainer = styled.section`
   display: flex;
-  justify-content: space-between;
-  /* background: yellow; */
-
-  /* First Breakpoint */
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     flex-direction: column-reverse;
     margin-top: 2rem;
@@ -77,18 +80,35 @@ const Inner = styled.main`
   }
 `
 
-const Hero = () => (
-  <HeroContainer>
-    <div className="text" style={{ alignSelf: "center" }}>
-      <span className={s_.publishDate}>August 15, 2019</span>
-      <span className={s_.heroText1}>Pockets of</span>
-      <span className={s_.heroText2}>Solitude</span>
-    </div>
-    <div className={s_.image}>
-      <img src={heroImage} alt="" />
-    </div>
-  </HeroContainer>
-)
+const Hero = () => {
+  const data = useStaticQuery(graphql`
+    query HeroImageQuery {
+      file(relativePath: { eq: "bubble.png" }) {
+        id
+        childImageSharp {
+          fluid {
+            aspectRatio
+            base64
+            sizes
+            src
+            srcSet
+          }
+        }
+      }
+    }
+  `)
+
+  return (
+    <HeroContainer>
+      <div className={s_.text} style={{ alignSelf: "center" }}>
+        <span className={s_.publishDate}>August 15, 2019</span>
+        <span className={s_.heroText1}>Pockets of</span>
+        <span className={s_.heroText2}>Solitude</span>
+      </div>
+      <Img fluid={data.file.childImageSharp.fluid} alt="Please work!" className={s_.image}/>
+    </HeroContainer>
+  )
+}
 
 class PocketsOfSolitude extends React.Component {
   render() {

@@ -11,10 +11,24 @@ module.exports = {
     titleTemplate: "%s . Nash Vail",
     description: "Words, pictures and code",
     siteUrl: "https://nashvail.me",
-    keywords: ["nash", "vail", "tutorial", "code", "javascript", "css", "web", "html", "courses", "illustration", "design", "philosophy", "life"],
+    keywords: [
+      "nash",
+      "vail",
+      "tutorial",
+      "code",
+      "javascript",
+      "css",
+      "web",
+      "html",
+      "courses",
+      "illustration",
+      "design",
+      "philosophy",
+      "life",
+    ],
     social: {
-      twitter: '@nashvail'
-    }
+      twitter: "@nashvail",
+    },
   },
   plugins: [
     `gatsby-plugin-styled-components`,
@@ -86,6 +100,13 @@ module.exports = {
       options: {
         name: `data`,
         path: `./src/data/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
     },
   ],

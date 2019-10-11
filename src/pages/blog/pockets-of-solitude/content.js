@@ -1,6 +1,6 @@
 import React from "react"
 
-import connectedImage from "./assets/connected.png"
+import connectedImage from "./images/connected.png"
 import s_ from "./styles.module.css"
 
 export default function Content() {
