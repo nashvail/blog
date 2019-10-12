@@ -146,7 +146,7 @@
     "title": "JavaScript's prototypal inheritance explained using CSS",
     "publishDate": "2017-01-22",
     "cover": "./prototypal.png",
-    "link": "https://medium.com/free-code-camp/understanding-prototypal-inheritance-in-javascript-with-css-93b2fcda75e4",
+    "link": "/blog/prototypal-inheritance",
     "spoiler": "Prototypal inheritance was staring right at you every time you wrote CSS.",
     "category": [
       "code",
@@ -157,7 +157,7 @@
     "title": "How CSS pseudo-classes work",
     "publishDate": "2016-11-06",
     "cover": "./pseudo.png",
-    "link": "https://medium.com/free-code-camp/explained-css-pseudo-classes-cef3c3177361",
+    "link": "/blog/pseudo-classes",
     "spoiler": "A visual explanation of pseudo classes, so that you don't ever have to set background red again while writing them.",
     "category": [
       "code",
