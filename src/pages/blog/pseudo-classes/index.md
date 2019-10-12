@@ -67,7 +67,7 @@ First, take a look at this block of HTML. I’ll use this code in all my example
 
 Now I’m going to convert this code into something more visual and more intuitive: a tree.
 
-The following body element has 3 children, *.main* and two `anchor` elements.
+The following body element has 3 children, `.main` and two `anchor` elements.
 
 ```html
 <body>  
@@ -85,7 +85,7 @@ Here’s what the relation between `body` and its three children looks like when
 
 One thing to keep in mind is that the order in which children are placed in the tree is important. Children located top to bottom in code are placed left to right in the tree.
 
-Next, let’s look at the *.main* div:
+Next, let’s look at the `.main` div:
 
 ```html
 <div class=”main”>  
@@ -98,7 +98,7 @@ Next, let’s look at the *.main* div:
 </div>
 ```
 
-.main has 4 children. The first two are `anchor` elements then an `ul` and then again an anchor elements.
+`.main` has 4 children. The first two are `anchor` elements then an `ul` and then again an anchor elements.
 
 ![Fig . 2](./images/4.png)
 
@@ -139,7 +139,7 @@ Here’s me doing my part, explaining the code shown above. We’ll start by sel
 
 Notice how the selection has been done? Each section in the tree (numbered 1 to 5) has elements with a common parent. The parent of Section 1 is `body`, the parent of Section 2 is .`main,` and so on. **Once again, notice that each section corresponds to a level deeper in code nesting**.
 
-Next, since anchor elements are \`what-you-want-to-selec`t, we’ll do just that:
+Next, since anchor elements are `what-you-want-to-select`, we’ll do just that:
 
 ![Fig. 5 — selecting just the anchor elements](./images/7.png)
 
@@ -149,7 +149,7 @@ This is where `what-you-want-to-select` part ends and the filtering begins.
 
 ![Fig. 6 — Selecting only-of-type anchor elements.](./images/8.png)
 
-\`only-of type t`raverses each section and selects only those anchor elements that are the only anchor element in their respective section. Notice how sections 3, 4, and 5 are the only sections with anchor elements? As figure 6 shows, these are the ones that get selected and declared when a style gets applied.
+`only-of type` traverses each section and selects only those anchor elements that are the only anchor element in their respective section. Notice how sections 3, 4, and 5 are the only sections with anchor elements? As figure 6 shows, these are the ones that get selected and declared when a style gets applied.
 
 ## Pseudo-class #2 :first-of-type
 <br/>
@@ -175,13 +175,13 @@ In case you forgot the hard work I did for you setting up the CodePen, here’s 
 ## Pseudo-class #3 :last-of-type
 <br/>
 
-If you can’t tell by the name, `last-of-type` is the exact opposite of `first-of-type` Which therefore means in each section of the tree, instead of selecting the first occurrence, select the last ones.
+If you can’t tell by the name, `last-of-type` is the exact opposite of `first-of-type`. Which therefore means in each section of the tree, instead of selecting the first occurrence, select the last ones.
 
 ![Fig. 9 — :last-of-type selections](./images/11.png)
 
 “What about the sections with just one anchor element?”, not very glad you asked that question. It’s quite simple to see if a section has just one anchor element, it obviously passes the `only-of-type` filter, but not only that. Since there are no anchor elements preceding or following that particular tag it passes both `first-of-type` and `last-of-type` filters as well (e.g `a` tags Section 4 and 5).
 
-## Pseudo-class #4 :nth-of-type(number/an + b/even/odd)
+## Pseudo-class #4 :nth-of-type
 <br/>
 
 And now we finally bite into the juicy part of the article, there’s simple CSS with some fifth grade Math toppings, hope you enjoy savouring it.
@@ -194,7 +194,7 @@ a:nth-of-type(1) {
 }
 ```
 
-It looks a little cryptic but is quite simple really. To read the selector simply take the number from the parentheses and replace `nth` in the selector name with that number’s **ordinal** form. That’s another fancy English word for you, to be honest though…
+It looks a little cryptic but is quite simple really. To read the selector simply take the number from the parentheses and replace `nth` in the selector name with that number’s **ordinal** form.
 
 Alright coming back, `a:nth-of-type(1)` can be therefore read as `a:first-of-type` and no surprise it works exactly like `a:first-of-type` and results in the elements getting selected as shown below; just the anchor elements which are first of their types in their respective section.
 
@@ -234,7 +234,7 @@ it will select the third anchor elements in the second section as section 2is th
 
 ![Fig. 12 — :nth-of-type(3) or read as :third-of-type](./images/14.png)
 
-Quite simple isn’t it? But numbers aren’t the only thing that you can pass into *:nth-of-type(…),* this bloke is more powerful that that, you can also pass in formulas of form `(a\*n) + b` (or for brevity `an + b`)`.` Where `a` and `b` are constants and `n` is a value >= 0. How did you like the Math topping sir? don’t worry it’ll all make sense in a second.
+Quite simple isn’t it? But numbers aren’t the only thing that you can pass into `:nth-of-type(…)` this bloke is more powerful that that, you can also pass in formulas of form `(a * n) + b` (or for brevity `an + b`)`.` Where `a` and `b` are constants and `n` is a value >= 0. How did you like the Math topping sir? don’t worry it’ll all make sense in a second.
 
 Consider the following style
 
@@ -242,17 +242,15 @@ Consider the following style
 a:nth-of-type(n) { border: 2px solid black; }
 ```
 
-The formula that’s passed in the selector above is `(1 \* n) + 0 \[= n\] `, `a` is 1, b is 0 and `n` is well, n. What happens next is, starting from 0 the numerical value of `n` is incrementally plugged into the formula and selection is made. Therefore `a:nth-of-type(n)` basically translates to
+The formula that’s passed in the selector above is `(1 * n) + 0 [= n] `, `a` is 1, b is 0 and `n` is well, n. What happens next is, starting from 0 the numerical value of `n` is incrementally plugged into the formula and selection is made. Therefore `a:nth-of-type(n)` basically translates to
 
 ```css
-a:nth-of-type(0) { border: 2px solid black; } // n = 0  
-a:nth-of-type(1) { border: 2px solid black; } // n = 1  
-a:nth-of-type(2) { border: 2px solid black; } // n = 2  
-a:nth-of-type(3) { border: 2px solid black; } // n = 3  
-a:nth-of-type(4) { border: 2px solid black; } // n = 4
+a:nth-of-type(0) { border: 2px solid black; } /* n = 0 */
+a:nth-of-type(1) { border: 2px solid black; } /* n = 1 */
+a:nth-of-type(2) { border: 2px solid black; } /* n = 2 */
+a:nth-of-type(3) { border: 2px solid black; } /* n = 3 */
+a:nth-of-type(4) { border: 2px solid black; } /* n = 4 */
 ```
-
-...
 
 Hence this results in all the anchor elements getting selected.
 
@@ -277,11 +275,11 @@ a:nth-of-type(5) { border: 2px solid black; }...
 
 ![Fig 13 — nth-of-type(2n+1) selections](./images/15.png)
 
-Other than numbers and formulas that generate numbers*,* you can pass in either `even` or `odd` strings*. even* selects all the even occurrences of an element of particular type in a section i.e *:second-of-type* *:fourth-of-type* *:sixth-of-type* e.t.c and on the other hand obviously *:nth-of-type(odd)* selects all the odd occurrences i.e *:first-of-type, :third-of-type, :fifth-of-type* e.t.c
+Other than numbers and formulas that *generate numbers*, you can pass in either `even` or `odd` strings. `even` selects all the even occurrences of an element of particular type in a section i.e `:second-of-type :fourth-of-type :sixth-of-type` e.t.c and on the other hand obviously `:nth-of-type(odd)` selects all the odd occurrences i.e `:first-of-type, :third-of-type, :fifth-of-type` e.t.c
 
-## Pseudo-class #5 :nth-last-of-type(number/an + b/even/odd)
-
-This selector functions exactly like the previous one, but with one little difference. See for yourself…
+## Pseudo-class #5 :nth-last-of-type
+<br/>
+This selector functions exactly like the previous one, but with one little difference. See for yourself...
 
 ```css
 a:nth-last-of-type(1) { border: 2px solid black; }
@@ -291,11 +289,11 @@ a:nth-last-of-type(1) { border: 2px solid black; }
 
 Notice how in each level numbering of anchor types is done from right to left instead of normal left to right. That is the only difference. `last-of-type` accepts numbers and formulas and even/odd just like `nth-of-type` except when selection is made the last type is treated as first, second last as second, third last as third and so on…
 
-With that we come to an end of \*`\-of-type` selectors. Hope it was a fun ride for you, we started with `only-of-type` then moved to `first-of-type`, `last-of-type` and took a huge dip into `nth-of-type(…)` and `nth-last-of-type(..).` If in case somewhere in the middle you lost your grip and fell off I encourage you play around with this pen and re read the explanation.
+With that we come to an end of `*-of-type` selectors. Hope it was a fun ride for you, we started with `only-of-type` then moved to `first-of-type`, `last-of-type` and took a huge dip into `nth-of-type(…)` and `nth-last-of-type(..).` If in case somewhere in the middle you lost your grip and fell off I encourage you play around with this pen and re read the explanation.
 
 https://codepen.io/nashvail/pen/VKkXLB
 
-Alright, time to hop on to the next one in this less visited corner of the CSS theme park. Another category of pseudo selectors/classes we’re going to delve into are \*`\-child` classes. With a clear understanding of how \*`\-of-type` selectors work grasping the concept behind \*`\-child` selectors should be a cinch for you. “Cinch? What’s that? Is it a unit of measurement?” No ya dumbass, it means an extremely easy task. Anyways, let’s start with our very first *\*-child selector,* :`only-child`.
+Alright, time to hop on to the next one in this less visited corner of the CSS theme park. Another category of pseudo selectors/classes we’re going to delve into are `*-child` classes. With a clear understanding of how `*-of-type` selectors work grasping the concept behind `*-child` selectors should be a cinch for you. “Cinch? What’s that? Is it a unit of measurement?” No, it means an extremely easy task. Anyway, let’s start with our very first `*-child selector`, :`only-child`.
 
 ## Child pseudo-class #1 :only-child
 <br/>
@@ -312,7 +310,7 @@ Now that’s the very definition of self explanatory and straightforward. The se
 
 ![Fig. 15 — a:only-child selections](./images/17.png)
 
-I had a friend who was never his mother’s favorite, and he was an only child. Just wanted to plug that in there, anyways, notice that in contrast with `\*-of-type` selectors we are no longer numbering types, but children, starting of course from 1 (and not 0). When compared with `only-of-type,` the anchor element in section 3 is not selected as its parent (`ul`) has 3 children therefore even though it (the anchor element in level 3) is an `only child of type ‘a’` of its parent, its not the only child, there are 2 \`li`s as well.
+I had a friend who was never his mother’s favorite, and he was an only child. Just wanted to plug that in there, anyways, notice that in contrast with `*-of-type` selectors we are no longer numbering types, but children, starting of course from 1 (and not 0). When compared with `only-of-type`, the anchor element in section 3 is not selected as its parent (`ul`) has 3 children therefore even though it (the anchor element in level 3) is an `only child of type ‘a’` of its parent, its not the only child, there are 2 `li`s as well.
 
 ## Child pseudo-class #2 :first-child
 <br/>
@@ -328,9 +326,8 @@ a:first-child {
 It simply says, select all the anchor element, but with one condition in mind, the anchor element should be the first child of its parent. That’s it, no further explanation needed.
 
 ![Fig. 16 — a:first-child selections](./images/18.png)
-Fig. 16 — a:first-child selections
 
-For if you are a little confused as of why the `a` in section 1 wasn’t selected it’s because the first child in section 1 (whose parent is `body`) is *.main*, the first `a` in section 1 is the second child and couldn’t pass the `first-child` filter, that is the exact reason why the poor bloke ended up not being selected and was given a big hashtag fuck off. Let’s continue to the next one.
+For if you are a little confused as of why the `a` in section 1 wasn’t selected it’s because the first child in section 1 (whose parent is `body`) is `.main`, the first `a` in section 1 is the second child and couldn’t pass the `first-child` filter, that is the exact reason why the poor bloke ended up not being selected and was given a big hashtag fuck off. Let’s continue to the next one.
 
 ## Child pseudo-class #3 :last-child
 <br/>
@@ -343,11 +340,11 @@ a:last-child {
 }
 ```
 
-*what-you-want-to-select* ? “Anchor elements.” And the `filter` you want to use? `last-child.` That quite simply translates to select those anchor elements which are the last child of their parent. Or, in other words select anchor elements whose parent finally decided it wasn’t fun anymore and stopped after that bloke was born. Below is what the tree looks like with *:last-child* selections.
+`what-you-want-to-select` ? “Anchor elements.” And the `filter` you want to use? `last-child.` That quite simply translates to select those anchor elements which are the last child of their parent. Or, in other words select anchor elements whose parent finally decided it wasn’t fun anymore and stopped after that bloke was born. Below is what the tree looks like with `:last-child` selections.
 
 ![Fig. 16 — :last-child selections.](./images/19.png)
 
-## Child pseudo-class #4 :nth-child(number/an+b/even/odd)
+## Child pseudo-class #4 :nth-child
 <br/>
 
 I hope you were able to digest the Math topping you got served last time, because it’s about to happen again only this time on a slightly different crust.
@@ -358,11 +355,9 @@ Now, I would like you to take all your attention and laser point it to the follo
 a:nth-child(1) { border: 2px solid black; }
 ```
 
-It’s all the same as *:nth-of-type,* I would have linked to that section of the article here but Medium policies don’t allow that, if you want a refresher, you will have to scroll up to that section. Leaving Medium policies aside which might change in future, what hasn’t changed is the process of decrypting `nth-selectors .`
+Just like with `:nth-of-type`, in the selector name take the number in parentheses and replace `nth` with that number’s ordinal form. Therefore the selector shown in example is equivalent to `a:first-child` and works exactly the same; i.e selects all the anchor elements, given that they are the first child of their parent.
 
-Just like with *:nth-of-type,* in the selector name take the number in parentheses and replace “`nth”` with that number’s ordinal form. Therefore the selector shown in example is equivalent to `a:first-child` and works exactly the same; i.e selects all the anchor elements, given that they are the first child of their parent.
-
-That should nail the similarity between the two `nth-selectors (nth-of-type` and `nth-child),` but we will anyways go ahead and take a look at another example.
+That should nail the similarity between the two `nth-selectors (nth-of-type` and `nth-child)`, but we will anyways go ahead and take a look at another example.
 
 ```css
 a:nth-child(2n - 1) { border: 2px solid black; }
@@ -371,16 +366,16 @@ a:nth-child(2n - 1) { border: 2px solid black; }
 We begin by incrementally plugging in values of `n` starting from 0 into the formula, which makes us realize that the selector shown above is basically equivalent to the ones shown below.
 
 ```css
-// n = 0 implies (2 \* 0) - 1 = 0 - 1 = **\-1**  
+/* n = 0 implies (2 * 0) - 1 = 0 - 1 = -1  */
 a:nth-child(-1) { border: 2px solid black; } | No selections
 
-// n = 1 implies (2 \* 1) - 1 = 2 - 1 = **1**  
+/* n = 1 implies (2 * 1) - 1 = 2 - 1 = 1  */
 a:nth-child(1) { border: 2px solid black; }
 
-// n = 2 implies (2 \* 2) - 1 = 4 - 1 = **3**  
+/* n = 2 implies (2 * 2) - 1 = 4 - 1 = 3 */
 a:nth-child(3) { border: 2px solid black; }
 
-// n = 3 implies (2 \* 3) - 1 = 6 - 1 = **5**  
+/* n = 3 implies (2 * 3) - 1 = 6 - 1 = 5 */
 a:nth-child(5) { border: 2px solid black; } | No selections further  
 ...
 ```
@@ -391,12 +386,12 @@ As it is, if the selector gets numbers out of bounds (like -1, 5, 6… in the ca
 
 Folks at CSS Tricks have a very informative article called [Useful :nth-child Recipes](https://css-tricks.com/useful-nth-child-recipies/) you should check it out and put your knowledge of :`nth-child` to test*.* I challenge you m8.
 
-With that we will move to the last selector of this article which punningly is *:nth-last-child.* Holy shit! why is “punningly” a word even?
+With that we will move to the last selector of this article which punningly is `:nth-last-child` Holy shit! why is “punningly” a word even?
 
-## Child pseudo-class #5 :nth-last-child(number/an + b/even/odd)
+## Child pseudo-class #5 :nth-last-child
 <br/>
 
-This selector works exactly like *:nth-child* except that it starts selecting elements from the opposite direction just like that annoying high school teacher who would ask questions to the class starting from the peaceful folks seated at the last benches. God I hated him. If you look at the trees drawn so far, the children are numbered left to right in each section, but this selector bloke sees the tree like so
+This selector works exactly like `:nth-child` except that it starts selecting elements from the opposite direction just like that annoying high school teacher who would ask questions to the class starting from the peaceful folks seated at the last benches. God I hated him. If you look at the trees drawn so far, the children are numbered left to right in each section, but this selector bloke sees the tree like so
 
 ![Fig. 18](./images/21.png)
 
@@ -410,7 +405,7 @@ the anchor elements will get selected as shown below.
 
 ![](./images/22.png)
 
-Quite straightforward isn’t it? This selector also very comfortably accepts formulas (of form an + b) and `even/odd` strings, the selections though, are made from the opposite end.
+Quite straightforward isn’t it? This selector also very comfortably accepts formulas (of form `an + b`) and `even/odd` strings, the selections though, are made from the opposite end.
 
 OK, this is where our journey together ends. You can pay for your ticket by tweeting this article to your developer buddies.
 
