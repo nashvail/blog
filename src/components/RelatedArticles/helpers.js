@@ -4,6 +4,8 @@ import { Link } from "gatsby"
 
 import Constants from "../../utils/Constants"
 
+import { isExternalLink } from "../../utils/helpers"
+
 export const Container = styled.div`
   width: 100%;
   background: ${Constants.COLORS.BLACK[7]};
@@ -32,14 +34,22 @@ export const ArticleList = styled.ul`
   padding: 0;
 `
 
-export const Article = ({ link, text }) => (
-  <li
-    css={`
-      margin: 1rem 0;
-    `}
-  >
-    <Link to={link}>
-      <h4>{text}</h4>
-    </Link>
-  </li>
-)
+export const Article = ({ link, text }) => {
+  return (
+    <li
+      css={`
+        margin: 1rem 0;
+      `}
+    >
+      {isExternalLink(link) ? (
+        <a href={link} target="_blank" rel="noopener noreferrer">
+          <h4>{text}</h4>
+        </a>
+      ) : (
+        <Link to={link}>
+          <h4>{text}</h4>
+        </Link>
+      )}
+    </li>
+  )
+}
