@@ -44,7 +44,7 @@
     "publishDate": "2019-03-17",
     "cover": "./blank_screen.png",
     "link": "/blog/battleplan",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "Many painters are afraid in front of the blank canvas, but the blank canvas is afraid of the real, passionate painter.",
     "category": [
       "misc.",
       "design"
@@ -55,7 +55,7 @@
     "publishDate": "2019-03-03",
     "cover": "./inspire.png",
     "link": "/blog/problem-with-inspiration",
-    "spoiler": "I have an alternative.",
+    "spoiler": "Why the words inspiration and inspire have lost their meaning in the design community.",
     "category": [
       "design"
     ]
@@ -105,7 +105,7 @@
     "publishDate": "2018-08-31",
     "cover": "./hackathon_ux.png",
     "link": "https://medium.com/devfolio/designing-a-better-ux-for-hackathons-f31a3b0c4ffa",
-    "spoiler": "Choosing the right tools and techniques to get you started.",
+    "spoiler": "Applying to hackathons means submitting the same details over and over with no way of updating. Here's how we're changing that.",
     "category": [
       "design"
     ]
@@ -211,7 +211,7 @@
     "publishDate": "2016-04-26",
     "cover": "./wallpaper.png",
     "link": "/blog/wallpaper-app",
-    "spoiler": "Choosing the right tools and techniques to get you started.",
+    "spoiler": "Wallpaper apps don’t get a whole lot of love, do they?",
     "category": [
       "design"
     ]

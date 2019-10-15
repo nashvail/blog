@@ -6,7 +6,7 @@ keywords:
 - give up
 - win
 - how to
-description: Whay failing repeatedly is important.
+description: Many painters are afraid in front of the blank canvas, but the blank canvas is afraid of the real, passionate painter.
 title: "How to defeat the blank screen"
 date: 2019-03-17
 featuredImage: ./images/cover.png

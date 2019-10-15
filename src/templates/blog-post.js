@@ -94,10 +94,10 @@ export default function Template({
   if (frontmatter.featuredImage)
     featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
 
+    // This is very rudimentary, will improve later with a better architecture
   const RelatedArticles = () => {
     const category = frontmatter.categories[0]
     const currentArticleTitle = frontmatter.title
-    console.log(category);
     if(category === "code")
       return <RelatedCodeArticles currentArticleTitle={currentArticleTitle} />
     else if (category === "design")
