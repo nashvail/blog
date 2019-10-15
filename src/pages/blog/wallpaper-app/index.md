@@ -1,8 +1,7 @@
 ---
 title: Designing the perfect Wallpaper App
 description: >-
-  Wallpaper apps don’t get a whole lot of love, do they? Then one day WLPPR came
-  along. It’s a beautifully designed app with a ton of…
+  Wallpaper apps don’t get a whole lot of love, do they?
 date: '2016-04-26'
 path: "/blog/wallpaper-app"
 featuredImage: ./images/cover.png

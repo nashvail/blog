@@ -7,7 +7,7 @@ keywords:
 - muzli
 - invision
 title: "Designers, maybe inspiration is the wrong word"
-description: Why the word inspiration and inspire has lost its meaning in the design community.
+description: Why the words inspiration and inspire have lost their meaning in the design community.
 date: 2019-03-03
 path: "/blog/problem-with-inspiration"
 featuredImage: ./images/cover.png
