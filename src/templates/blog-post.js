@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import styled from "styled-components"
+import { DiscussionEmbed } from "disqus-react"
 import Img from "gatsby-image"
 
 // Utils
@@ -82,7 +83,6 @@ const Sidebar = styled.aside`
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     flex-direction: column-reverse;
   }
-
 `
 
 export default function Template({
@@ -94,18 +94,23 @@ export default function Template({
   if (frontmatter.featuredImage)
     featuredImgFluid = frontmatter.featuredImage.childImageSharp.fluid
 
-    // This is very rudimentary, will improve later with a better architecture
+  // Disqus config
+  const disqusConfig = {
+    shortname: process.env.GATSBY_DISQUS_NAME,
+    config: { identifier: data.path, title: frontmatter.title },
+  }
+
+  // This is very rudimentary, will improve later with a better architecture
   const RelatedArticles = () => {
     const category = frontmatter.categories[0]
     const currentArticleTitle = frontmatter.title
-    if(category === "code")
+    if (category === "code")
       return <RelatedCodeArticles currentArticleTitle={currentArticleTitle} />
     else if (category === "design")
       return <RelatedDesignArticles currentArticleTitle={currentArticleTitle} />
     else if (category === "misc.")
       return <RelatedMiscArticles currentArticleTitle={currentArticleTitle} />
-    else 
-      return;
+    else return
   }
 
   return (
@@ -133,6 +138,7 @@ export default function Template({
             </div>
           )}
           <Article dangerouslySetInnerHTML={{ __html: html }} />
+          <DiscussionEmbed {...disqusConfig}/>
         </main>
         <Sidebar>
           <RelatedArticles />
