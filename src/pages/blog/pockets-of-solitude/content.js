@@ -7,20 +7,25 @@ export default function Content() {
   return (
     <>
       <div className={s_.shaper}></div>
-      {/* <h3>Unpublished Draft----------</h3> */}
+
       <p>
-        <span className={s_.firstcharacter}>I</span> love early mornings. The
-        loud mating calls of the birds, the smoke from yesterday, all settled on
-        the tar and the cold fresh air that I can pull in through my nostrils
-        and into my lungs. But really, the best part about mornings is fewer
-        people. I love hitting the gym in morning with so few people, for one, I
-        don't have to wait for my turn on the treadmill or the fact that if I am
-        late than 7 AM someone always takes away the 5 pound dumbbells. And
-        because mornings are so precious to me I have taught myself to fall
-        asleep early. It required baking in certain habits in the last few hours
-        that lead to sleep. For example, no junk food, or coffee, or watching or
-        reading something that sends my mind into a whirlwind of thoughts.
-        Basically, saying no to anything that can potentially induce insomnia.
+        <span className={s_.firstcharacter}>I</span> can't decide if it's the
+        loud mating calls of the birds, or the nostril popping cold, fresh air
+        that make me love early mornings so much. Or, with over half of them
+        still asleep, maybe it's the momentary illusion of fewer humans on earth
+        that makes early mornings special. Or maybe it's just in my genes. Some
+        people like early mornings, some don't. Which, I will never understand,
+        how can someone not like early mornings? Especially when it comes with
+        the horny, sweet mating calls. Of the birds, of course.
+      </p>
+
+      <p>
+        Since mornings are so precious to me I have taught myself to
+        fall asleep early. It required baking in certain habits in the last few
+        hours that lead to sleep. For example, no junk food, or coffee, or
+        watching or reading something that sends my mind into a whirlwind of
+        thoughts. Basically, saying no to anything that can potentially induce
+        insomnia.
       </p>
       <p>
         That one night though, it was different. I found myself watching the

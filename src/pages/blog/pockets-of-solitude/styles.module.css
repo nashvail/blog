@@ -1,7 +1,7 @@
 /* To create the effect of text wrapping around image*/
 .shaper {
   shape-outside: ellipse(200px 200px at 80% 4%);
-  width: 500px;
+  width: 600px;
   height: 500px;
   float: right;
   opacity: 0.2;

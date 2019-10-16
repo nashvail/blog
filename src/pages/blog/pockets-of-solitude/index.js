@@ -16,6 +16,7 @@ import Header from "../../../components/Header"
 import Footer from "./../../../components/Footer"
 import SideCard from "../../../components/SideCard"
 import RelatedMiscArticles from "../../../components/RelatedArticles/RelatedMiscArticles"
+import SEO from "../../../components/SEO"
 
 import Content from "./content"
 
@@ -113,7 +114,11 @@ const Hero = () => {
 class PocketsOfSolitude extends React.Component {
   render() {
     return (
-      <div>
+      <>
+        <SEO
+          title="Pockets of Solitude"
+          keywords={['distraction', 'online', 'social', 'social media', 'alone', 'solitude']}
+        />
         <Header />
         <Container>
           <Hero />
@@ -136,7 +141,7 @@ class PocketsOfSolitude extends React.Component {
           </Inner>
           <Footer />
         </Container>
-      </div>
+      </>
     )
   }
 }
