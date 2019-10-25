@@ -9,7 +9,6 @@ import Constants from "../../../utils/Constants"
 // Assets
 import "../../../utils/global.css"
 import s_ from "./styles.module.css"
-import heroImage from "./images/bubble.png"
 
 // Components
 import Header from "../../../components/Header"

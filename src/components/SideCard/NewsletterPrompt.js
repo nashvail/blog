@@ -43,14 +43,6 @@ const LinkButton = styled.a`
 `
 
 export default function NewsletterPrompt() {
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      left: 0,
-      behavior: "smooth",
-    })
-  }
-
   return (
     <Container>
       <LinkButton href={SUBSCRIBE_FORM_LINK} target="_blank" css={``}>

@@ -50,11 +50,11 @@ export default function SocialShare({ tweetLink }) {
   return (
     <Container>
       <TweetButton href={tweetLink} target="_blank">
-        <img src={TwitterIcon} />
+        <img src={TwitterIcon} alt="Twitter icon"/>
         Tweet
       </TweetButton>
       <CopyLinkButton>
-        <img src={LinkIcon} />
+        <img src={LinkIcon} alt="Copy link icon"/>
         Copy link
       </CopyLinkButton>
     </Container>

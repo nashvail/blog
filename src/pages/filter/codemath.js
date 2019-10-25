@@ -6,20 +6,10 @@ import Header from "../../components/Header"
 import FilterNav from "../../components/FilterNav"
 import ArticleGrid from "../../components/ArticleGrid"
 import ArticleGridContainer from "../../components/ArtcileGridContainer"
-import Featured from "../../components/Featured";
 import SEO from "../../components/SEO";
 
 // Helpers
 import { renderArticlePreviews } from "../../utils/helpers";
-
-// Featured article stuff
-import {
-  link,
-  title,
-  cover,
-  spoiler,
-} from "../blog/pockets-of-solitude/featured-content"
-
 
 
 const FilteredArticlesGrid = ({ children }) => (

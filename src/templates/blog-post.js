@@ -9,7 +9,6 @@ import Constants from "../utils/Constants"
 
 // Components
 import Header from "../components/Header"
-import FilterNav from "../components/FilterNav"
 import SideCard from "../components/SideCard"
 import Footer from "../components/Footer"
 import SEO from "../components/SEO"

@@ -111,7 +111,7 @@ export default function Content() {
         instagram. It's too much.
       </p>
       <figure>
-        <img src={connectedImage} />
+        <img src={connectedImage} alt="Sucked into phones"/>
       </figure>
       <p>
         The human brain is not designed to absorb such amounts of bullshit 24/7.

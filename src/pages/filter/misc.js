@@ -1,9 +1,5 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
-
-// Constants
-import Constants from "../../utils/constants"
 
 // Components
 import Header from "../../components/Header"
