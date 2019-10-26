@@ -3,7 +3,7 @@ import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 
 // Constants
-import Constants from "../../utils/constants"
+import Constants from "../../utils/Constants"
 
 // Components
 import Header from "../../components/Header"
