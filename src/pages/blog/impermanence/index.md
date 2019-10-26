@@ -10,6 +10,7 @@ keywords:
 title: "Understanding impermanence"
 date: 2019-05-15
 path: "/blog/impermanence"
+description: "Sometimes things pass, sometimes you do first."
 featuredImage: ./images/cover.png
 categories: 
 - misc.

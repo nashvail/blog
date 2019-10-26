@@ -1,7 +1,16 @@
 ---
+keywords:
+- failure
+- motivation
+- please
+- fail
+- college
+- school
+- job
 path: "/blog/please-fail"
 title: "Please fail"
 date: '2019-02-20'
+description: "My thoughts on failure, after failing about 33 times."
 categories:
 - misc.
 ---

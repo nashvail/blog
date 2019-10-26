@@ -1,7 +1,14 @@
 ---
+keywords:
+- learning
+- tutorial
+- stop
+- philosophy
+- stop
 path: "/blog/stop-learning"
 title: 'Stop learning'
 date: '2019-04-16'
+description: "Continuous learning after a point procures diminishing returns. Know when to stop."
 featuredImage: ./cover.png
 categories:
 - misc.

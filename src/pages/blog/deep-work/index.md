@@ -1,7 +1,20 @@
 ---
+keywords:
+- deep work
+- Cal
+- Cal Newport
+- book review
+- review
+- book
+- productivity
+- routine
+- everyday
+- artists
+- acountants
 path: "/blog/deep-work"
 title: 'Insights from Deep Work (and why you need a routine)'
 date: '2019-01-17'
+description: "Routines are not cages, learn how a structured routine can alter your life drastically."
 featuredImage: ./images/cover.png
 categories:
 - misc.

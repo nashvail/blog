@@ -1,8 +1,21 @@
 ---
+keywords: 
+- buddhism
+- meditation
+- mindfulness
+- insomnia
+- buddha
+- jiddu
+- present
+- gym
+- mind
+- calm
+- sky
 path: "/blog/mindfulness"
 title: 'On mindfulness'
 date: '2019-02-05'
 featuredImage: ./images/cover.png
+description: "This technique of living hasn't gone out of fashion in 2,500 years. Maybe there's something to it?"
 categories:
 - misc.
 ---

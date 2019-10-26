@@ -4,7 +4,7 @@
     "publishDate": "2019-05-15",
     "cover": "./trig.png",
     "link": "/blog/impermanence",
-    "spoiler": "You probably have the wrong idea of what temporary or impermanent really mean.",
+    "spoiler": "Sometimes things pass, sometimes you do first.",
     "category": [
       "misc."
     ]
@@ -24,7 +24,7 @@
     "publishDate": "2019-04-16",
     "cover": "./trig.png",
     "link": "/blog/stop-learning",
-    "spoiler": "Being a life long student probably isn't a good idea.",
+    "spoiler": "Continuous learning after a point procures diminishing returns. Know when to stop.",
     "category": [
       "misc."
     ]
@@ -34,7 +34,7 @@
     "publishDate": "2019-04-03",
     "cover": "./trig.png",
     "link": "/blog/kill-your-heroes",
-    "spoiler": "\"Most of my heroes were drug addicts.\" - Wax (Rapper and Songwriter)",
+    "spoiler": "What a person does, often, is very different from what a person is.",
     "category": [
       "misc."
     ]
@@ -65,7 +65,7 @@
     "publishDate": "2019-02-20",
     "cover": "./trig.png",
     "link": "/blog/please-fail",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "My thoughts on failure, after failing about 33 times.",
     "category": [
       "misc."
     ]
@@ -74,7 +74,7 @@
     "title": "On mindfulness",
     "publishDate": "2019-02-05",
     "cover": "./trig.png",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "This technique of living hasn't gone out of fashion in 2,500 years. Maybe there's something to it?",
     "link": "/blog/mindfulness",
     "category": [
       "misc."
@@ -84,7 +84,7 @@
     "title": "Insights from Deep Work",
     "publishDate": "2019-01-17",
     "cover": "./trig.png",
-    "spoiler": "Part two of settling the this keyword in JavaScript",
+    "spoiler": "Routines are not cages, learn how a structured routine can alter your life drastically.",
     "link": "/blog/deep-work",
     "category": [
       "misc."

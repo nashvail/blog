@@ -1,8 +1,23 @@
 ---
+keywords:
+- teachers
+- heroes
+- addicts
+- kill
+- murder
+- frida
+- picasso
+- die
+- mentor
+- mentee
+- diego
+- walter lewin
+- physics
 path: "/blog/kill-your-heroes"
 title: 'Kill your heroes'
 date: '2019-04-03'
 featuredImage: ./cover.png
+description: "What a person does, often, is very different from what a person is."
 categories:
 - misc.
 ---

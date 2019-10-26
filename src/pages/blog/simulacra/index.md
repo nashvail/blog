@@ -9,7 +9,7 @@ keywords:
 - neo
 - society
 - oscar wilde
-description: "There are more feelings than you have been told you're capable of feeling."
+description: "No matter how real and authentic they seem, your feelings are not your feelings. You've been told how to feel."
 title: "Your feelings are not your feelings"
 date: 2019-05-02
 featuredImage: ./images/cover.png
