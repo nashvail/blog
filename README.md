@@ -27,7 +27,8 @@
     - [x]  Designers, maybe inspiration is the wrong word
     - [x]  Designing a better UX for hackathons
     - [x]  Designing the perfect wallpaper app
-- [ ]  Spoilers and Illustrations for Misc.
+- [x]  Spoilers for Misc.
+- [ ]  Illustrations for Misc.
 - [ ]  Fix the missing image in Understanding Impermanence
 - [ ]  Proof read the articles.
 
