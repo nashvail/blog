@@ -47,7 +47,7 @@ export default function AdSpace({
   return (
     <Container href={link} target="_blank">
       <h4>{title}</h4>
-      {image && <img src={image}/>}
+      {image && <img src={image} alt="Ad art"/>}
       <p>{actionText}</p>
     </Container>
   )

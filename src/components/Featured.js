@@ -92,7 +92,7 @@ export default function FeaturedArticle({
         <FeaturedSpoiler>{spoiler}</FeaturedSpoiler>
       </FeaturedText>
       <FeaturedCover>
-        <img src={cover} alt="Featured image cover" />
+        <img src={cover} alt="Featured cover" />
       </FeaturedCover>
     </Featured>
   )
