@@ -41,36 +41,39 @@ export default function Content() {
         falls in love with his computer, which I thought would be weird when
         it's eventually confessed to a friend halfway through the movie, but
         instead, all his friend asked was ... "Is it (Theodore's relationship
-        with his computer) real?" and even though I hoped for a conclusion, the
-        whole scene ended with an "I don't know" from both sides. And I was
-        stuck.
+        with his computer) <b>real</b>?" and even though I hoped for a
+        conclusion, the whole scene ended with an "I don't know" from both
+        sides. And I was stuck with the word "real" and what it means.
       </p>
       <p>
-        My brain picked this up and started questioning everything digital,
-        everything that doesn't exist outside of a screen, and then, it was 2
-        AM. My plans of waking up at 5:30 AM was obliterated of course, along
-        with it died the pride I take in my work?
+        My brain suddenly questioning everything digital, everything that
+        doesn't exist outside of a screen, and then, it was 2 AM. My plans of
+        waking up at 5:30 AM was obliterated of course, along with it died the
+        pride I take in my work.
       </p>
       <p>
-        A good part of the population and yes, me and even you spend hours
+        A good part of the population and yes, me and maybe even you spend hours
         creating things that only exist as flickering lights on a thin glass
-        slab. I am talking about apps and games and all the other things that we
-        use on our little phones and tablets and laptops. The smartest minds
-        today come together each morning and essentially discuss how the pixels
-        on the screens of their users are going to glow.
+        slab. I am talking about apps and games and websites and all the other
+        things that we use on our little phones and tablets and laptops. The
+        smartest minds today come together each morning and essentially discuss
+        how the pixels on the screens of their users are going to glow.
       </p>
 
       <p>
         What these people build, or you build and I build is digital, with no
-        tangible real existence and when I think of things this way, everything
-        seems a little synthetic. It’s as if I go back to a time before
-        technology and show the people of past a piece of software on an iPad
-        that my team built, and these people who are seeing either sow seeds or
-        build real things, like buildings and vases, castles and pyramids. I am
-        afraid that one of them is going to look into the screen and question,
-        “is it real?” And I am afraid I won’t have an instant answer to puke out
-        and our conversation will quickly turn into an argument of me insisting
-        YES, mostly just to save my pride.
+        tangible, <b>real</b> existence, And when I think of things this way,
+        everything digital seems a little synthetic, as synthetic as having a
+        relationship with a computer.
+      </p>
+      <p>
+        It’s as if I go back to a time before technology and show the people a
+        piece of software that my team built &mdash; and these people who are
+        seeing either sow seeds or build "real" things, like buildings and
+        vases, castles and pyramids&mdash;I am afraid that they would not regard
+        our creation with the same respect as what they creat because somehow a
+        software running on a screen isn't as real as say, a pyramid. [this is
+        the juicy 1]
       </p>
       <p>
         I did let the question of, is the work we do real stay with me and even
@@ -80,10 +83,10 @@ export default function Content() {
         impacts". Correct. I don't disagree, except just a small part of me
         which likes print design and seeing things go from screen to something
         that I can touch and hold and wear, that part still finds the digital
-        work synthetic. But it doesn't matter, because it's true, reality today
-        *is* shaped by the glowing pixels. It's a crazy thought if you ponder,
-        that something can not exist in reality and still shape it. That's the
-        power of screens.
+        work synthetic. But it doesn't matter, because it's true, reality today{" "}
+        <em>is</em> shaped by the glowing pixels. It's a crazy thought if you
+        ponder, that something can not exist in reality and still shape it.
+        That's the power of screens.
       </p>
       <p>
         It's not that the screens are controlling autonomous evil beings, it's
@@ -102,8 +105,8 @@ export default function Content() {
         it into your heads, thoughts that can potentially change the way you
         look at the world, at least for a week or even a lifetime, who knows. I
         couldnt have done this before screens. There were just two ways, publish
-        what I have to say in print, which is a hell lot hard than publishing an
-        unedited pile of thoughts I had at 2AM on my website. Or, stand at a
+        what I have to say in print, which is a hell lot harder than publishing
+        an unedited pile of thoughts I had at 2AM on my website. Or, stand at a
         busy intersection and shout and expect 4 people to hear it and even one
         of them to come and ask me to shut up. You can't do that now, you can't
         kick me off my shouting pedestal. And it's just not me, it's everybody.
@@ -111,7 +114,7 @@ export default function Content() {
         instagram. It's too much.
       </p>
       <figure>
-        <img src={connectedImage} alt="Sucked into phones"/>
+        <img src={connectedImage} alt="Sucked into phones" />
       </figure>
       <p>
         The human brain is not designed to absorb such amounts of bullshit 24/7.
@@ -119,15 +122,17 @@ export default function Content() {
         having her vacation or the pictures of Jonthan’s kid or the fact that
         someone went paragliding for the first time, all of this quickly turns
         your brain into a mush and you into a lab rat constantly chasing and
-        clicking this tapping that scrolling there. The biggest part of the
-        problem is that you cannot do much about it. There are people far
-        smarter than you, with PhDs and in labcoats building all of this to
-        constantly keep you hooked. They know your dopamine hit points,
-        everything is engineered to keep you addicted, turn you into a junkie
-        for notifications, and if you don't stop, pause and think you're going
-        to drive yourself insane. You're already halfway there, if a screen is
-        the first thing you look at in the morning and the last thing at night,
-        we really need to talk.
+        clicking this tapping that scrolling there.
+      </p>
+      <p>
+        The biggest part of the problem is that you cannot do much about it.
+        There are people far smarter than you, with PhDs and in labcoats
+        building all of this to constantly keep you hooked. They know your
+        dopamine hit points, everything is engineered to keep you addicted, turn
+        you into a junkie for notifications, and if you don't stop, pause and
+        think you're going to drive yourself insane. You're already halfway
+        there, if a screen is the first thing you look at in the morning and the
+        last thing at night, we really need to talk.
       </p>
       <p>
         You know how it is. How it feels almost impossible to resist looking at
@@ -142,13 +147,10 @@ export default function Content() {
         check the phone over and over again. It’s your struggle against
         yourself. It’s why we look up to people who go on a tech detox for 10
         days, as if going on tech detox is an achievement, humans were on tech
-        detox for 5 fucking million years you idiot, it’s tech, it’s not
-        breathing/oxygen. To keep your sanity safe you will have to create
-        boundaries. I have talked at length about keeping distractions
-        quarantined while at work here, but today I’ll talk about what you can
-        do outside work, your daily life, how you can find a bubble for yourself
-        that’ll shield you from all the noise. How in the constant chaos you can
-        find for yourself small pockets of solitude.
+        detox for 5 fucking million years you idiot, it’s tech, it’s not oxygen.
+        To keep your sanity safe you will have to create boundaries. Today I’ll
+        talk about what worked for me, and tell you how in the constant
+        chaos of the internet you can find for yourself small pockets of solitude.
       </p>
       {/* <h2>There is a party in my head and no one's invited</h2> */}
       <p>
