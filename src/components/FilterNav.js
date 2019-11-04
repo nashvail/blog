@@ -75,11 +75,16 @@ const FiltersContainer = styled.ul`
   }
 `
 
+const ActiveNavLinkStyle = {
+  fontWeight: 700,
+  color: Constants.COLORS.BLACK[1],
+}
+
 const Filters = () => (
   <FiltersContainer>
     {FILTERS.map(filter => (
       <li>
-        <Link to={filter.link}>{filter.name}</Link>
+        <Link to={filter.link} activeStyle={ActiveNavLinkStyle}>{filter.name}</Link>
       </li>
     ))}
   </FiltersContainer>

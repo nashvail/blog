@@ -20,14 +20,18 @@ const NavigationLI = styled.li`
   }
   a {
     text-decoration: none;
-    color: #616161;
+    color: ${props => (props.disabled ? Constants.COLORS.BLACK[5] : Constants.COLORS.BLACK[3])};
+    cursor: ${props => (props.disabled ? "default" : "pointer")};
   }
 `
 
-export default function NavLink({ to, text }) {
+export default function NavLink({ to, text, disabled }) {
+
+  const linkTo = disabled ? " " : to;
+
   return (
-    <NavigationLI>
-      <Link to={to} activeStyle={ActiveNavLinkStyle}>
+    <NavigationLI disabled={disabled}>
+      <Link to={linkTo} activeStyle={ActiveNavLinkStyle}>
         {text}
       </Link>
     </NavigationLI>
