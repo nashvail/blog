@@ -4,7 +4,7 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: '21px',
   baseLineHeight: 1.5,
-  headerFontFamily: ['Chivo', 'serif'],
+  headerFontFamily: ['Chivo', 'Roboto', 'serif'],
   bodyFontFamily: ['Spectral', 'sans-serif'],
 
   // The “scale ratio” for the theme. 
@@ -26,18 +26,16 @@ const typography = new Typography({
       name: 'Chivo',
       styles: [
         '400',
-        '400i',
         '700',
-        '700i',
+        '900',
       ],
     },
     {
       name: 'Roboto',
       styles: [
         '400',
-        '400i',
         '700',
-        '700i',
+        '900',
       ],
     },
   ],
