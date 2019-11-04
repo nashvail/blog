@@ -45,7 +45,7 @@ const Article = styled.article`
 `
 
 const PublishDate = styled.span`
-  font-family: "Input mono";
+  font-family: "Roboto";
   /* font-weight: bold; */
   color: grey;
   display: block;

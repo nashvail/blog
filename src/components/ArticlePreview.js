@@ -24,7 +24,7 @@ const Title = styled.h3``
 const Spoiler = styled.p``
 
 const PublishDate = styled.span`
-  font-family: "Input Mono";
+  font-family: "Roboto";
   font-size: 0.8rem;
   color: ${Constants.COLORS.BLACK[4]};
   margin: 0.5rem 0;
