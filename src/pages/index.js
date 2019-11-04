@@ -86,6 +86,7 @@ export default () => (
     <SEO/>
     <Header />
     <FilterNav />
+{/* 
     <Featured
       type="NEW"
       link={link}
@@ -93,6 +94,7 @@ export default () => (
       cover={cover}
       spoiler={spoiler}
     />
+ */}
     <HomePage>
       <ArticlesGrid />
       <Footer />
