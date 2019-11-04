@@ -4,7 +4,7 @@ import Typography from "typography"
 const typography = new Typography({
   baseFontSize: '21px',
   baseLineHeight: 1.5,
-  headerFontFamily: ['Georgia', 'serif'],
+  headerFontFamily: ['Chivo', 'serif'],
   bodyFontFamily: ['Spectral', 'sans-serif'],
 
   // The “scale ratio” for the theme. 
@@ -15,6 +15,24 @@ const typography = new Typography({
   googleFonts: [
     {
       name: 'Spectral',
+      styles: [
+        '400',
+        '400i',
+        '700',
+        '700i',
+      ],
+    },
+    {
+      name: 'Chivo',
+      styles: [
+        '400',
+        '400i',
+        '700',
+        '700i',
+      ],
+    },
+    {
+      name: 'Roboto',
       styles: [
         '400',
         '400i',
