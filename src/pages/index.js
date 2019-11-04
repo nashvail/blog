@@ -12,14 +12,6 @@ import SEO from "../components/SEO"
 // Helpers
 import { renderArticlePreviews } from "../utils/helpers"
 
-// Featured article stuff
-import {
-  link,
-  title,
-  cover,
-  spoiler,
-} from "./blog/pockets-of-solitude/featured-content"
-
 // This is everything below the header
 const HomePage = styled.main`
   margin: 0 auto;
