@@ -58,10 +58,10 @@ const Menu = ({ toggleMenu }) => {
         </FilterList>
       </li>
       <li>
-        <MainLink to="/" text="About" />
+        {/* <MainLink to="/" text="About" /> */}
       </li>
       <li>
-        <MainLink to="/" text="Work" />
+        {/* <MainLink to="/" text="Work" /> */}
       </li>
     </MainList>
   )
