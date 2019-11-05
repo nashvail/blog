@@ -13,7 +13,7 @@ keywords:
 - diego
 - walter lewin
 - physics
-path: "/blog/kill-your-heroes"
+path: "/blog/killyourheroes"
 title: 'Kill your heroes'
 date: '2019-04-03'
 featuredImage: ./cover.png
