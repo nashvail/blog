@@ -15,6 +15,7 @@ import { renderArticlePreviews } from "../utils/helpers"
 // This is everything below the header
 const HomePage = styled.main`
   margin: 0 auto;
+  padding-top: 2rem;
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   /* background: blue; */
 
