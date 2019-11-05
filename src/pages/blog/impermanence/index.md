@@ -46,7 +46,7 @@ Whenever we call something temporary or permanent we always talk relative to a T
 
 And similarly, something is permanent for you if its Timeline stretches beyond your Timeline or ends exactly when your Timeline ends.
 
-{{< figure "/images/impermanence-article-images/fig4.png" "Permanent timelines(green) outlast your Timeline(blue).">}}
+![Permanent timelines(green) outlast your Timeline(blue).](./images/fig4.png)
 
 But the reality is just a *little* more complex than that. In reality, there is no way to reliably know the end of a Timeline. So in real life Timelines look something like this.
 

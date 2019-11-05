@@ -28,8 +28,8 @@
     - [x]  Designing a better UX for hackathons
     - [x]  Designing the perfect wallpaper app
 - [x]  Spoilers for Misc.
-- [ ]  Illustrations for Misc.
-- [ ]  Fix the missing image in Understanding Impermanence
+- [x]  Illustrations for Misc.
+- [x]  Fix the missing image in Understanding Impermanence
 - [ ]  Proof read the articles.
 
 ## ToDos
