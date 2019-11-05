@@ -2,9 +2,11 @@ import React from "react"
 import styled from "styled-components"
 
 // Components
-import NavLink from './NavLink';
+import NavLink from "./NavLink"
+import Logo from "../Logo"
 
 // Constants
+import Constants from "../../utils/Constants"
 
 // Styled components
 const Navigation = styled.nav`
@@ -22,13 +24,43 @@ const NavigationUL = styled.ul`
   align-items: center;
 `
 
+const Inner = styled.div`
+  width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    width: ${Constants.BODY_WIDTH["after_first_breakpoint"]};
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 800px;
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
+`
+
 export default () => (
-  <Navigation>
-    <NavigationUL>
-      <NavLink to="/" text="Articles" />
-      <NavLink to="/about" text="About" disabled />
-      <NavLink to="/about" text="Work" disabled />
-      <NavLink to="/about" text="Shop" disabled />
-    </NavigationUL>
-  </Navigation>
+  <Inner>
+    <Navigation>
+      <NavigationUL>
+        <NavLink to="/" text="Articles" />
+        <NavLink to="/about" text="About" disabled />
+        <NavLink to="/about" text="Work" disabled />
+        <NavLink to="/about" text="Shop" disabled />
+      </NavigationUL>
+    </Navigation>
+    <Logo />
+  </Inner>
 )
