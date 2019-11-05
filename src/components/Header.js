@@ -22,6 +22,7 @@ export default function Header({ sticky=true }) {
   return (
     <Container sticky={sticky}>
       <NormalNavigation/>
+      <MobileNavigation/>
     </Container>
   )
 }

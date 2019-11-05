@@ -1,6 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 
+// Constants
+import Constants from "../../utils/Constants"
+
 // Components
 import HamburgerButton from "../HamburgerButton";
 import Overlay from "./Overlay";
@@ -13,6 +16,12 @@ const Container = styled.div`
   align-items: center;
   width: 100vw;
   padding: 0 1.5rem;
+
+  @media screen and (min-width: ${Constants.BREAKPOINTS[2]}) {
+    display: none;
+    opacity: 0;
+    visibility: hidden;
+  }
 `
 
 export default function MobileNavigation() {
