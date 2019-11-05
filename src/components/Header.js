@@ -2,7 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import PropTypes from "prop-types";
 
-import Navigation from "./Navigation"
+import NormalNavigation from "./Navigation/NavNormal"
+import MobileNavigation from "./Navigation/NavMobile"
 import Constants from "../utils/Constants"
 
 const Container = styled.header`
@@ -20,7 +21,7 @@ const Container = styled.header`
 export default function Header({ sticky=true }) {
   return (
     <Container sticky={sticky}>
-      <Navigation />
+      <NormalNavigation/>
     </Container>
   )
 }
