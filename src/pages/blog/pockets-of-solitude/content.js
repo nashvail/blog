@@ -13,10 +13,10 @@ export default function Content() {
         loud mating calls of the birds, or the nostril popping cold, fresh air
         that make me love early mornings so much. Or, with over half of us still
         asleep, maybe it's the momentary illusion of fewer humans on earth that
-        makes early mornings special. Or maybe it's just in my genes. Some
-        people like early mornings, some don't. Which, I will never understand,
-        how can someone not like early mornings? Especially when it comes with
-        the horny, sweet mating calls. Of the birds, of course.
+        makes early mornings special. Or maybe it's just me. Some people like
+        early mornings, some don't. Which, I will never understand. How can
+        someone not like early mornings? Especially when it comes with the
+        horny, sweet mating calls. Of the birds, of course.
       </p>
 
       <p>
@@ -29,52 +29,44 @@ export default function Content() {
       <p>
         But show me a man who sticks to his habits and I'll show you a ... well
         rounded disciplined person. Which I am not, yet. That one night I found
-        myself watching the movie "Her", way past my bedtime. Her is one of
-        those Sci-Fi movies where technology has progressed to a point where
-        computers have started to sound real and even behave real, so real that
-        you can fall in love with them.
+        myself watching the movie{" "}
+        <a href="https://www.imdb.com/title/tt1798709/" target="__blank">
+          Her
+        </a>
+        , way past my bedtime. Her is one of those Sci-Fi movies where
+        technology has progressed to a point where computers have started to
+        sound real and even behave real, so real that you can fall in love with
+        them.
       </p>
 
       <p>
-        Literally, love. Which as much as I know is sharing details of your day
-        over texts and calls, but anyway. So this person, Theodore, in the movie
-        falls in love with his computer, which I thought would be weird when
-        it's eventually confessed to a friend halfway through the movie, but
-        instead, all his friend asked was ... "Is it (Theodore's relationship
-        with his computer) <b>real</b>?" and even though I hoped for a
-        conclusion, the whole scene ended with an "I don't know" from both
-        sides. And I was stuck with the word "real" and what it means.
+        So this person, Theodore, in the movie falls in love with his computer,
+        or the AI that lives inside it, something like Siri. Which I thought
+        would be weird when it's eventually confessed to a friend halfway
+        through the movie, but instead, all his friend asked was ... "Is it
+        (Theodore's relationship with his computer) <b>real</b>?" and even
+        though I hoped for a conclusion, the whole scene ended with an "I don't
+        know" from both sides.
       </p>
       <p>
-        My brain suddenly questioning everything digital, everything that
-        doesn't exist outside of a screen, and then, it was 2 AM. My plans of
-        waking up at 5:30 AM was obliterated of course, along with it died the
-        pride I take in my work.
+        Intuition tells us ofcourse the "relationship" between Theodore and his
+        AI girlfriend isn't real. But why isn't it "real"? Only because
+        Theodores' lover exists inside a device and not in reality? Well, in
+        that case nothing is real.
       </p>
       <p>
         A good part of the population and yes, me and maybe even you spend hours
         creating things that only exist as flickering lights on a thin glass
-        slab. I am talking about apps and games and websites and all the other
-        things that we use on our little phones and tablets and laptops. The
-        smartest minds today come together each morning and essentially discuss
-        how the pixels on the screens of their users are going to glow.
+        slab. I am talking about the apps and the games and the websites and all the other
+        things that we use on our little phones and tablets and laptops.
       </p>
 
       <p>
         What these people build, or you build and I build is digital, with no
-        tangible, <b>real</b> existence, And when I think of things this way,
-        everything digital seems a little synthetic, as synthetic as having a
-        relationship with a computer.
+        tangible, <b>real</b> existence. Does that mean the things we build and
+        the work we do isn't, real?
       </p>
-      <p>
-        It’s as if I go back to a time before technology and show the people a
-        piece of software that my team built &mdash; and these people who are
-        seeing either sow seeds or build "real" things, like buildings and
-        vases, castles and pyramids&mdash;I am afraid that they would not regard
-        our creation with the same respect as what they creat because somehow a
-        software running on a screen isn't as real as say, a pyramid. [this is
-        the juicy 1]
-      </p>
+     
       <p>
         I did let the question of, is the work we do real stay with me and even
         spread the pollens of it over almost everyone I met in the weeks
@@ -149,8 +141,8 @@ export default function Content() {
         days, as if going on tech detox is an achievement, humans were on tech
         detox for 5 fucking million years you idiot, it’s tech, it’s not oxygen.
         To keep your sanity safe you will have to create boundaries. Today I’ll
-        talk about what worked for me, and tell you how in the constant
-        chaos of the internet you can find for yourself small pockets of solitude.
+        talk about what worked for me, and tell you how in the constant chaos of
+        the internet you can find for yourself small pockets of solitude.
       </p>
       {/* <h2>There is a party in my head and no one's invited</h2> */}
       <p>
