@@ -33,6 +33,8 @@ const typography = new Typography({
     {
       name: 'Roboto',
       styles: [
+        '100',
+        '300',
         '400',
         '700',
         '900',

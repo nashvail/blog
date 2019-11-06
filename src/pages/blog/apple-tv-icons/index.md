@@ -18,7 +18,6 @@ They are playful, and amazing and you want to just wiggle them again and again. 
 Here's the [source code](https://github.com/nashvail/ATVIcons) on github.
 
 ## Caution! (A little math ahead)
-<br/>
 
 
 The effect as I understood is simple, the closer you move the cursor to an edge of an icon, the more it rotates along the perpendicular axis and translates away from the cursor appearing as if it is following the cursor in a 3 dimensional space.
@@ -66,7 +65,6 @@ Let us define a similar factor `l` for translation. Which when calculated the ex
 `l` can be multiplied with maxTranslation to obtain the amount of translation for any position of mouse inside the icon.
 
 ## Thinking 3 dimensionally
-<br/>
 
 
 I created the feel of depth by manipulating the `maxTranslation` values. Every icon has a base, that is the colored or gradient colored rectangle over or below which other components are placed on or under respectively.
@@ -82,7 +80,6 @@ Everything described above takes up less than 50 lines of JavaScript code and is
 Let us go through a very rudimentary example of using the “library”, it will also give you a more clear idea of the `stacking-factor`.
 
 ## Usage
-<br/>
 
 
 In your HTML file create a simple div with a class name of your choice, let’s call it icon. Inside this div include all the different components of the icon each with an attribute of `data-stacking-factor`. The icon is initialized in JavaScript by calling `ATicon.getInstance()` and passing in it a jQuery wrapped DOM element, `div.icon` in this case.

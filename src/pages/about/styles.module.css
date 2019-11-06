@@ -1,0 +1,36 @@
+.nash {
+  /* width: 500px; */
+  /* height: 500px; */
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 75px 1fr;
+  grid-gap: 1rem;
+  font-family: 'Roboto', sans-serif;
+  position: absolute;
+
+}
+
+.nash span:nth-child(1) {
+  grid-column: 2;
+  font-size: 75px;
+  font-weight: 900;
+  text-anchor: start;
+  line-height: 75px;
+  padding: 0;
+  color: #121212;
+}
+
+.nash b {
+  background: #121212;
+  grid-row: 1;
+  grid-column: 1;
+}
+
+/* VAIL */
+.nash span:last-child {
+  color: #121212;
+  writing-mode: vertical-lr;
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 100;
+}

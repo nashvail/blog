@@ -12,7 +12,6 @@ categories:
 Wallpaper apps don’t get a whole lot of love, do they? Then one day [WLPPR](http://wlppr.co/) came along. It’s a beautifully designed app with a ton of beautiful wallpapers. All of the wallpapers, though definitely breathtaking are some kind of satellite image of our Solar System. I just wanted more variety of wallpapers wrapped in a beautifully built app. I couldn’t find one so I decided to build one myself. This article goes through the process of designing that app.
 
 ## Goal
-<br/>
 
 
 It’s always a good idea to define what your app will do before you design how the app will do it. Here, the goal was simple. To design an app that a user can launch, quickly view and download a wallpaper of his/her liking. The app is not supposed to occupy you for a long period of time. All of this coupled with an elegant and smart UI and we have the app.
@@ -20,7 +19,6 @@ It’s always a good idea to define what your app will do before you design how 
 Before diving in, the first question that came up was, where to get the wallpapers from? The answer — [Unsplash](http://unsplash.com). In case you’re not aware (really?) Unsplash hosts these beautiful high quality images that are free and you can do whatever you want with them. Each single photo on Unsplash is not only worthy of being used as a wallpaper but also beautiful enough to be framed and hung in your living room. ([Check out my Unsplash profile](https://unsplash.com/nashvail)).
 
 ## Explorations
-<br/>
 
 
 The very obvious place to look for initially is how iOS handles selection of wallpaper.
@@ -81,7 +79,6 @@ Here’s how the app looks and works like.
 So what do you think? Looks good? What would be your take at designing a wallpaper app?
 
 ## Where can I get the app?
-<br/>
 
 
 [Here it is on GitHub](https://github.com/nashvail/SplashWalls). 

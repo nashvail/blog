@@ -51,7 +51,6 @@ See the difference? A more natural looking drag.
 In this article we’ll be learning how to build a card that behaves naturally when it’s being dragged around. There’s some math and a lot more to learn. Ready? Pop your collars and crack your knuckles, cuz we’re about to…
 
 ## Begin
-<br/>
 
 The thirty-thousand-foot view, from an airplane of our goal is to make dragging cards around look more natural.
 
@@ -77,7 +76,6 @@ Overall, here are the TODOs we discover on digging a level deeper into the “ma
 Since rotation of the card is dependent on how fast the card is being dragged, figuring out the velocity of drag would be a perfect place to start. Let’s see how we can do that.
 
 ## Finding the velocity of drag
-<br/>
 
 ![](./images/6.png)
 
@@ -294,7 +292,6 @@ update();
 Nothing very special happening here. But brace yourself for the next section.
 
 ## Sigmoid
-<br/>
 
 Sigma…what?
 
@@ -372,7 +369,6 @@ var sigmoid = function(x) {
 And that’s it! Now we can finally get to dynamically rotating the card.
 
 ## Rotating the card
-<br/>
 
 The first thing we’ll do is create a new variable, `rotation`.
 

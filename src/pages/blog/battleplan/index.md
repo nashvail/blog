@@ -36,7 +36,6 @@ We’ll do that. But if the blank canvas is here for the kill we need a better s
 Look at this strategy or, battle plan if I should, like oil to the mouth of that bottle. Let’s start.
 
 ## Curate
-<br/>
 
 ![](./images/1.png)
 
@@ -57,7 +56,6 @@ If I ever meet you, the only way I am going to know you’re serious about your 
 Curating what you think is good is the first step. Next, question.
 
 ## Question
-<br/>
 
 ![](./images/3.png)
 
@@ -68,7 +66,6 @@ Once you have a collection make some free time. Pick out a random piece from you
 Note your thoughts down. Then repeat.
 
 ## Slap
-<br/>
 
 ![](./images/4.gif)
 

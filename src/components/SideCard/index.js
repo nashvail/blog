@@ -30,7 +30,7 @@ const Container = styled.div`
   }
 `
 
-export default function SideCard({ style, tweetLink, stickyThreshold=40, hideAd }) {
+export default function SideCard({ style, tweetLink, stickyThreshold=45, hideAd }) {
   const [sticky, setSticky] = React.useState(false)
 
 

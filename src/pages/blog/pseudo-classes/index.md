@@ -40,8 +40,6 @@ Pseudo-classes are sometimes hard to grasp, mainly because they’re presented i
 
 ## The Markup and The Tree
 
-<br/>
-
 First, take a look at this block of HTML. I’ll use this code in all my examples.
 
 ```html
@@ -111,7 +109,6 @@ In order for this article to bear any fruit for you, it’s important that you u
 “Ha ha nice pun there!” “Thanks!” Increment the pun counter to 1, and let’s move to our very first pseudo-class.
 
 ## Pseudo-class #1 :only-of-type
-<br/>
 
 All pseudo-classes follow the same format:
 
@@ -152,7 +149,6 @@ This is where `what-you-want-to-select` part ends and the filtering begins.
 `only-of type` traverses each section and selects only those anchor elements that are the only anchor element in their respective section. Notice how sections 3, 4, and 5 are the only sections with anchor elements? As figure 6 shows, these are the ones that get selected and declared when a style gets applied.
 
 ## Pseudo-class #2 :first-of-type
-<br/>
 
 Let’s fast forward to the part where we end selecting all the `what-you-want-to-select`s (anchor elements in our case).
 
@@ -173,7 +169,6 @@ a:first-of-type {
 In case you forgot the hard work I did for you setting up the CodePen, here’s the [link](http://codepen.io/nashvail/pen/VKkXLB) again to check out what the code renders in a browser.
 
 ## Pseudo-class #3 :last-of-type
-<br/>
 
 If you can’t tell by the name, `last-of-type` is the exact opposite of `first-of-type`. Which therefore means in each section of the tree, instead of selecting the first occurrence, select the last ones.
 
@@ -182,7 +177,6 @@ If you can’t tell by the name, `last-of-type` is the exact opposite of `first-
 “What about the sections with just one anchor element?”, not very glad you asked that question. It’s quite simple to see if a section has just one anchor element, it obviously passes the `only-of-type` filter, but not only that. Since there are no anchor elements preceding or following that particular tag it passes both `first-of-type` and `last-of-type` filters as well (e.g `a` tags Section 4 and 5).
 
 ## Pseudo-class #4 :nth-of-type
-<br/>
 
 And now we finally bite into the juicy part of the article, there’s simple CSS with some fifth grade Math toppings, hope you enjoy savouring it.
 
@@ -278,7 +272,6 @@ a:nth-of-type(5) { border: 2px solid black; }...
 Other than numbers and formulas that *generate numbers*, you can pass in either `even` or `odd` strings. `even` selects all the even occurrences of an element of particular type in a section i.e `:second-of-type :fourth-of-type :sixth-of-type` e.t.c and on the other hand obviously `:nth-of-type(odd)` selects all the odd occurrences i.e `:first-of-type, :third-of-type, :fifth-of-type` e.t.c
 
 ## Pseudo-class #5 :nth-last-of-type
-<br/>
 This selector functions exactly like the previous one, but with one little difference. See for yourself...
 
 ```css
@@ -296,7 +289,6 @@ https://codepen.io/nashvail/pen/VKkXLB
 Alright, time to hop on to the next one in this less visited corner of the CSS theme park. Another category of pseudo selectors/classes we’re going to delve into are `*-child` classes. With a clear understanding of how `*-of-type` selectors work grasping the concept behind `*-child` selectors should be a cinch for you. “Cinch? What’s that? Is it a unit of measurement?” No, it means an extremely easy task. Anyway, let’s start with our very first `*-child selector`, :`only-child`.
 
 ## Child pseudo-class #1 :only-child
-<br/>
 
 Consider the following style.
 
@@ -313,7 +305,6 @@ Now that’s the very definition of self explanatory and straightforward. The se
 I had a friend who was never his mother’s favorite, and he was an only child. Just wanted to plug that in there, anyways, notice that in contrast with `*-of-type` selectors we are no longer numbering types, but children, starting of course from 1 (and not 0). When compared with `only-of-type`, the anchor element in section 3 is not selected as its parent (`ul`) has 3 children therefore even though it (the anchor element in level 3) is an `only child of type ‘a’` of its parent, its not the only child, there are 2 `li`s as well.
 
 ## Child pseudo-class #2 :first-child
-<br/>
 
 Consider the following style declaration.
 
@@ -330,7 +321,6 @@ It simply says, select all the anchor element, but with one condition in mind, t
 For if you are a little confused as of why the `a` in section 1 wasn’t selected it’s because the first child in section 1 (whose parent is `body`) is `.main`, the first `a` in section 1 is the second child and couldn’t pass the `first-child` filter, that is the exact reason why the poor bloke ended up not being selected and was given a big hashtag fuck off. Let’s continue to the next one.
 
 ## Child pseudo-class #3 :last-child
-<br/>
 
 This is the part where selectors should start to get self explanatory and you should start thinking I am dumb trying to explain them to you. [But my name is not blurryface and I don’t care what you think](http://genius.com/6273352). “Nice twenty one pilots reference there” yeah I know, thanks. Now, look at the following style declaration.
 
@@ -345,7 +335,6 @@ a:last-child {
 ![Fig. 16 — :last-child selections.](./images/19.png)
 
 ## Child pseudo-class #4 :nth-child
-<br/>
 
 I hope you were able to digest the Math topping you got served last time, because it’s about to happen again only this time on a slightly different crust.
 
@@ -389,7 +378,6 @@ Folks at CSS Tricks have a very informative article called [Useful :nth-child R
 With that we will move to the last selector of this article which punningly is `:nth-last-child` Holy shit! why is “punningly” a word even?
 
 ## Child pseudo-class #5 :nth-last-child
-<br/>
 
 This selector works exactly like `:nth-child` except that it starts selecting elements from the opposite direction just like that annoying high school teacher who would ask questions to the class starting from the peaceful folks seated at the last benches. God I hated him. If you look at the trees drawn so far, the children are numbered left to right in each section, but this selector bloke sees the tree like so
 

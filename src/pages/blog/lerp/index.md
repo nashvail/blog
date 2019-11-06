@@ -33,7 +33,6 @@ Remember what teachers told you in grade school about computers being dumb? Comp
 I’ll be using HTML5 canvas and JavaScript to illustrate the algorithm. However, you’ll be able to read and understand the article even if you aren’t familiar with them.
 
 ## Intent
-<br/>
 
 
 Our goal is simple, to animate a ball from point A`(startX, startY)` to B `(endX, endY)`.
@@ -51,7 +50,6 @@ If this scene were passed to a studio that does traditional animation, the senio
 For our situation, there is no animation studio nor do we have junior artists. All we have is a goal, a computer, and the ability to write some code.
 
 ## Approach
-<br/>
 
 
 The HTML code is simple, we only need one line.
@@ -159,7 +157,6 @@ Using the above approach, you can only reach points lying in a straight line 45 
 Now you can use trigonometry and fancy math to calculate precise amounts that `x` and `y` should be incremented by to reach any coordinate you want. But you don’t need to do that when you have linear interpolation.
 
 ## Approach with linear interpolation
-<br/>
 
 
 Here’s what linear interpolation function a.k.a `lerp` looks like.

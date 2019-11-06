@@ -31,7 +31,6 @@ I am a lover of analogies, an analogyphile.
 Here we go.
 
 ## Prototypes in CSS Buttons
-<br/>
 
 ![](./images/2.png)
 
@@ -105,7 +104,6 @@ In this section, we tried to define the concept of **prototypes** for CSS button
 In programming terms, a prototype is an object that supplies base behavior to a second object. The second object then extends this base behavior to form its own specialization. Let’s see in the next section how our knowledge of prototypes in CSS buttons maps to JavaScript.
 
 ## Prototypes in JavaScript
-<br/>
 
 Consider the following JavaScript object:
 
@@ -136,7 +134,6 @@ For example every array declared in JavaScript has access to `.push`, `.sort`,
 Prototypes and prototypal inheritance aren’t JavaScript specific. They’re a construct that JavaScript uses internally that allows us to use it in our own programs. Before we look at how exactly we can do that, we need to understand what prototypal chaining is.
 
 ## Prototypal Chaining
-<br/>
 
 We’ll need to get back to the buttons analogy for once. Let’s say I want to create a large solid button, `.btn-solid-lg`:
 
@@ -184,7 +181,6 @@ There’s no limit to the length of prototype chain. There also aren’t any lim
 So how will this new knowledge of prototypes and prototypal chaining help you write better code?
 
 ## Writing better code with Prototypes
-<br/>
 
 The goal of this article was to explain to you what prototypes are, and how prototypal inheritance works. I hope I’ve succeeded in this.
 

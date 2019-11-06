@@ -1,15 +1,12 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import styled from "styled-components"
-
-// Constants
-import Constants from "../../utils/Constants"
 
 // Components
 import Header from "../../components/Header"
 import FilterNav from "../../components/FilterNav"
 import ArticleGrid from "../../components/ArticleGrid"
 import ArticleGridContainer from "../../components/ArtcileGridContainer";
+import SEO from "../../components/SEO"
 
 // Helpers
 import { renderArticlePreviews } from "../../utils/helpers";
@@ -54,6 +51,9 @@ class PhilosophyArticles extends React.Component {
   render() {
     return (
       <>
+        <SEO 
+          title="Miscellaneous articles"
+        />
         <Header />
         <FilterNav />
         <ArticleGridContainer>

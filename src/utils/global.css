@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Chivo:700,900|Roboto:400,500,700,900|Spectral:400,400i,700,700i&display=swap');
+/* @import url('https://fonts.googleapis.com/css?family=Chivo:700,900|Roboto:400,500,700,900|Spectral:400,400i,700,700i&display=swap'); */
 
 *,
 body,
@@ -29,6 +29,7 @@ a:hover {
 h1, h2, h3 {
   font-family: 'Chivo';
   margin: 0;
+  margin-bottom:1rem;
 }
 
 h4, h5 {

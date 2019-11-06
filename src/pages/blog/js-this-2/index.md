@@ -27,7 +27,6 @@ Let us continue where we left off. Your task is the same, to guess what gets log
 But before we dive in, let’s warm up a little.
 
 ## Example #16
-<br/>
 
 ```js
 function foo() {}
@@ -50,7 +49,6 @@ With that out of the way let’s now figure out what gets logged to the console.
 The one thing you should carry away from this example is that functions in JavaScript are also objects and like any other objects they can be assigned properties.
 
 ## Example #17
-<br/>
 
 ```js
 function foo() {  
@@ -72,7 +70,6 @@ First of all notice **`how`** the function is invoked. It’s not a standalone i
 And that (2.) is the reason why when you execute the piece of code shown above you get an empty object logged to the console. You might ask “How is this even useful?”. We’ll get to that it’s all a little controversial.
 
 ## Example #18
-<br/>
 
 ```js
 function foo(id, name) {  
@@ -119,7 +116,6 @@ var b = {
 Great! we have just learnt a new way for creating objects. But `a` and `b` have something in common, they are both **prototypically linked to `foo`’s prototype** (event 4) and therefore have access to its properties ( variables, functions e.t.c ). And just because of that we can call `a.print()` and `b.print()` since `print` is a function we created in `foo`’s prototype. Quick question, what binding occurs when I call `a.print()`? You’re absolutely right if you said Implicit. Therefore, on calling `a.print()` ‘this’ inside `print` is `a` and the first thing to get logged to the console is `1, A` and similarly when we call `b.print() 2, B` gets logged.
 
 ## Example #19
-<br/>
 
 ```js
 function foo(id, name) {  
@@ -225,7 +221,6 @@ There’s yet another way to bind `this` to a function, this time through a meth
 Let’s see if you can figure this out. What gets logged in the example below?
 
 ## Example #20
-<br/>
 
 ```js
 var expenses = {  
@@ -261,7 +256,6 @@ What do you think gets logged to the console? 0 of course as 10 has been bound t
 Let us take a look at an example that illustrates a real life usage of `bind.`
 
 ## Example #21
-<br/>
 
 ```html
 <!--HTML-->
@@ -292,7 +286,6 @@ If you guessed it right `undefined` is what gets logged. The reason for this “
 But there is a way to fix this (pun intended). All we need to do is add one, just one extra line of code.
 
 ## Fix #1
-<br/>
 
 ```js
 var myButton = {  
@@ -313,7 +306,6 @@ Notice in the previous snippet (#21) the way function `init` is invoked. Exactly
 You could have fixed the code with arrow functions too. Here’s how. I will leave it up to you to figure why these work.
 
 ## Fix #2
-<br/>
 
 ```js
 var myButton = {  
@@ -331,7 +323,6 @@ var myButton = {
 ```
 
 ## Fix #3
-<br/>
 
 ```js
 var myButton = {  
@@ -348,7 +339,6 @@ var myButton = {
 That’s it. We’re done… almost. There are still questions like is there an order of precedence? What if there is a clash between two rules trying to bind a ‘this’ to the same function? This is a topic for another article. Part 3? Probably and to be honest it’s rare you’ll run into such clashes. So for now we’re done and let’s summarize what we have learnt in the two parts.
 
 ## Summary
-<br/>
 
 In the first part we saw how `this` for a function is not fixed and can change depending on how the function is invoked. We went over Default binding which applies when a function undergoes standalone invocation, Implicit binding which applies when a function is invoked with an object reference preceding it and arrow functions and how ‘this’ to them are bound lexically. Towards the end of the first part we also went over a self referencing quirk in JavaScript objects.
 

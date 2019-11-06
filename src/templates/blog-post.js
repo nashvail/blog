@@ -119,7 +119,7 @@ export default function Template({
         description={frontmatter.description}
         keywords={frontmatter.keywords}
       />
-      <Header sticky={false} />
+      <Header sticky={true} />
       {/* <FilterNav /> */}
       <Container>
         <main>
@@ -142,7 +142,7 @@ export default function Template({
         <Sidebar>
           <RelatedArticles />
           <SideCard
-            style={{ marginTop: "2rem" }}
+            style={{ marginTop: "1rem" }}
             tweetLink={`https://twitter.com/intent/tweet/?text=${frontmatter.title}&url=https://nashvail.me${frontmatter.path}%2F&via=nashvail`}
           />
         </Sidebar>

@@ -38,7 +38,6 @@ In all of the code examples presented below your task is to guess what will be p
 
 ## Example #1
 
-<br/>
 
 ```js
 function foo() {  
@@ -65,7 +64,6 @@ If you run the code above you get the global object logged to the console, thric
 One thing to understand is that `this` is not bound to a function until the function is invoked, therefore, to find `this` you should pay a close attention to **how the function is called or invoked and not where**. All the three function invocations `foo(); bar();` and `baz();` are standalone invocations hence `this` for all the three functions is the global object.
 
 ## Example #2
-<br/>
 
 ```js
 `use strict`;
@@ -93,7 +91,6 @@ To recap, inside a function that is invoked plainly i.e standalone invocation `t
 To make our concept of Default binding more concrete, here are a few more examples.
 
 ## Example #3
-<br/>
 
 ```js
 function foo() {  
@@ -113,7 +110,6 @@ I hope you didn’t answer `foo` or `bar.` Did you?
 We’re getting comfortable with Default Binding here. Let’s do a simple one. What gets logged to the console in the example below?
 
 ## Example #4
-<br/>
 
 ```js
 var a = 1;
@@ -132,7 +128,6 @@ If you have followed this far properly you should know that it is ‘1’ that g
 We’ll keep in touch with Default Binding as we progress further in the article but now it’s time to introduce you to the next rule.
 
 ## Example #5
-<br/>
 
 ```js
 var obj = {  
@@ -152,7 +147,6 @@ Nothing trippy here really, the object ‘obj’ is what gets logged to the cons
 Therefore in the example above for the call `obj.foo()` obj is the `this` and hence `obj` is what gets printed to the console.
 
 ## Example #6
-<br/>
 
 ```js
 function logThis() {  
@@ -183,7 +177,6 @@ Why not? They are of course the same function, but you see **how `logThis` is in
 Anywho, let’s see how you handle this (pun a hundred goddamn percent intended).
 
 ## Example #7
-<br/>
 
 ```js
 function foo() {  
@@ -208,7 +201,6 @@ Notice how `bar` has been invoked? Going by what it looks like, Implicit binding
 Awesome! Moving on.
 
 ## Example #8
-<br/>
 
 ```js
 var obj = {  
@@ -235,7 +227,6 @@ But notice **how** `foo` is invoked. Is it a standalone invocation? Of course no
 Hope you’re not getting bored. How’s your score doing by the way? Good? Okay, I am all ready to trip you this time.
 
 ## Example #9
-<br/>
 
 ```js
 var arr = [1, 2, 3, 4];
@@ -256,7 +247,6 @@ It’s the same old trick, check out **'how'** `myCustomFunc` is invoked. That�
 Did I get you?
 
 ## Example #10
-<br/>
 
 ```js
 var arr = [1, 2, 3, 4];
@@ -269,7 +259,6 @@ arr.forEach(function() {
 The result of executing above code is the global object being logged four times to the console. It’s ok if you tripped. Take a look at Example #7. Still not getting it? The next example will help.
 
 ## Example #11
-<br/>
 
 ```js
 var arr = [1, 2, 3, 4];
@@ -290,7 +279,6 @@ Similarly, in this example the first thing that gets logged to the console is `a
 Let’s keep using this array example to introduce a few more concepts. I think I will start using an acronym here, how about WGL? WHAT. GETS. LOGGED? Here’s the next example before I start getting any more corny.
 
 ## Example #12
-<br/>
 
 ```js
 var arr = [1, 2, 3, 4];
@@ -314,7 +302,6 @@ The answer is exactly the same as that of #10. It’s up to you to figure why `a
 New concept coming up! Let’s see how familiar you are with ES2015.
 
 ## Example #13
-<br/>
 
 ```js
 var arr = [1, 2, 3, 4];
@@ -360,7 +347,6 @@ The example above is a bonus one so don’t increment your score even if you gue
 Now pay close attention to the following example. I don’t want you to get this one wrong at any expense ;-).
 
 ## Example #14
-<br/>
 
 ```js
 var yearlyExpense = {
@@ -430,7 +416,6 @@ So far we have made ourselves familiar with Implicit and Default binding. We now
 Before we move to the other rules, you should know that there are instances where we can lose Implicitly bounded ‘this’. Let’s quickly take a look at those examples.
 
 ## Example #15
-<br/>
 
 ```js
 var obj = {  
@@ -450,7 +435,6 @@ No need to get distracted by all the fancy code here, to find `this` inside a fu
 Both bar and foo are references to the same exact function the only difference is in the way they are invoked.
 
 ## Example #16
-<br/>
 
 ```js
 var obj = {  

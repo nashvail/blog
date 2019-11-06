@@ -43,7 +43,6 @@ Here’s what we’ll be making!
 </center>
 
 ## Let’s Begin
-<br/>
 The loader that we are going to make consists basically of three small circles moving in a periodic up and down motion, each, a little out of sync with the others.
 
 Let’s break it down into parts, first, we’ll get a single small circle moving in a smooth periodic up and down motion. We’ll figure the rest of the parts later.
@@ -51,7 +50,6 @@ Let’s break it down into parts, first, we’ll get a single small circle movin
 You are always welcome to code along.
 
 ### 1\. Positioning the circle
-<br/>
 
 ![](./images/3.png)
 
@@ -74,14 +72,12 @@ The next step is very straightforward with elementary school mathematics in play
 ![Fig. 4: Calculating the centre.](./images/7.png)
 
 ### 2. Making the circle move
-<br/>
 
 Our goal in this section is to make the circle move. But not just move in any form of motion. We need the circle to move in a _periodic up and down motion_.
 
 ![Fig. 5: Expected movement.](./images/8.png)
 
 ### 2.1 The Math of periodicity
-<br/>
 
 Periodic is anything that occurs on a regular interval. The simplest example of periodicity is the rising and setting of the Sun every day. And time. Whatever time it is right now, say 6:30 PM , 24 hours later, it’ll again be 6:30 PM, and 24 hours from then will again be 6:30 PM. That’s regular, that’s something happening precisely at 24 hours intervals.
 
@@ -138,7 +134,6 @@ Also notice that the maximum value `y` reaches is 1 and the minimum value it cou
 But this range can be changed by a simple operation. Which we’re going to do in a little bit. But before that, let’s take all that we’ve learned so far and get the circle moving however much we can.
 
 ### 2.2 Math to code
-<br/>
 
 So far we have the circle inside `<svg>...</svg>` and the circle has an id of `c` . Let’s go ahead and target this circle in JavaScript and make it dance, baby!
 

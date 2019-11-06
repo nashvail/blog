@@ -21,7 +21,6 @@ categories:
 Since the past few days I have been trying to write my own little JavaScript animation library. I know I know no one really cares about a new animation library but hey, the point is, in the process I stumbled on to Bezier curves. I spent a couple of hours researching, trying to understand them during which I came across this fresh article — “[Mathematical Intuition Behind Bezier Curves](https://buildingvts.com/mathematical-intuition-behind-bezier-curves-2ea4e9645681#.qwbh5kssy)”, which also happens to be the inspiration for this article. It’s mathy and seemingly aimed at brainy people, therefore I had kind of a tough time wrapping my head around the concept. But, fortunately, in the end I did and this led to learning a number of cool new stuff about Bezier curves which I am very excited to share with you.
 
 ## What you will be learning
-<br/>
 
 
 I’ll start out with an introduction to curves, what they are, why they’re cool, their mathematical representation. Don’t worry about the Math though, to be honest, I kinda sorta suck at Math, so I have to come with ways of trying to explain it to myself and I am sure “the ways” will work for you too :).
@@ -31,7 +30,6 @@ Next, we’ll move on to Bezier curves. What they are, and what makes them diffe
 Towards the end we will build our own little Bezier curve drawing engine in JavaScript and SVG. How cool is that?
 
 ### Curves
-<br/>
 
 I don’t need to give a formal definition of curve here right? All of these lines are curves, look at them
 
@@ -78,7 +76,6 @@ A function can also be represented in **parametric form**. In parametric form we
 You will want to know what parametric form is when we talk about the Mathematics behind Bezier curves.
 
 ### Bezier Curves
-<br/>
 
 
 Bezier curves are very special curves. The math and the idea behind them blew me away and you should get ready to be blown away too.
@@ -86,7 +83,6 @@ Bezier curves are very special curves. The math and the idea behind them blew me
 Since you’re reading this I assume you are a designer or a developer and have dealt with Bezier curves before, especially Cubic Bezier curves, we’ll get to what Cubic Bezier curves are in a second. Now these curves are used in a variety of places, to create vector graphics, animation paths, [animation easing curves](http://cubic-bezier.com/) e.t.c only because they are so *easy to control*. You don’t need to know a whole lot of Math, none at all to bend these curves to your whims. Think if Bezier curves didn’t exist and people had to come up with unique Mathematical functions for curves for let’s say drawing vector graphics like fonts for example, a nightmare of course.
 
 ## Math 😱
-<br/>
 
 
 Alright, time for some Math. I’ll start with the general formula for Bezier curves, it's quite daunting at the first sight, but we’ll make our way through.
@@ -98,7 +94,6 @@ Alright, time for some Math. I’ll start with the general formula for Bezier cu
 Let us start breaking the formula down. You can skip over the parts you already know.
 
 ### B(t)
-<br/>
 
 
 ![](./images/8.png)
@@ -106,7 +101,6 @@ Let us start breaking the formula down. You can skip over the parts you already 
 **B** because it’s a **B**ezier curve. As mentioned earlier in the article about parametric form of curves, `t` is a parameter. You plug in `t` and out comes `x` and `y`, a point. We’ll soon see how that works with the equation above. It’ll be good to mention here that for Bezier curves the value of `t` should be between 0 and 1, both included.
 
 ### Σ / Sigma
-<br/>
 
 
 ![](./images/9.png)
@@ -123,7 +117,6 @@ Just a shorter notation for something longer.
 Alright, looks like we’re clear with sigma.
 
 ### nCi
-<br/>
 
 
 ![](./images/12.png)
@@ -143,7 +136,6 @@ Instead of drawing sketches and figuring out the answer to a given Combination e
 ![](./images/15.png)
 
 ### P sub i
-<br/>
 
 
 ![](./images/16.png)
