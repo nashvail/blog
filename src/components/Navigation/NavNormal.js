@@ -8,6 +8,7 @@ import TwitterIcon from "../../assets/twitter.svg"
 import InstagramIcon from "../../assets/instagram.svg"
 import CodepenIcon from "../../assets/codepen.svg"
 import MediumIcon from "../../assets/medium.svg"
+import GitHubIcon from "../../assets/github.svg"
 
 // Constants
 import Constants from "../../utils/Constants"
@@ -64,7 +65,18 @@ const SocialLinks = styled.div`
     margin: 0 0 0 1rem;
     width: 24px;
   }
+
+  a {
+    height: 24px;
+  }
 `
+
+const SocialLink = ({icon, link, desc}) => (
+  <a href={link} target="__blank">
+    <img src={icon} alt={desc} />
+  </a>
+);
+
 
 export default () => (
   <Inner>
@@ -78,10 +90,11 @@ export default () => (
     </Navigation>
     <Logo />
     <SocialLinks>
-      <img src={TwitterIcon} alt="Twitter icon" />
-      <img src={InstagramIcon} alt="Twitter icon" />
-      <img src={CodepenIcon} alt="Twitter icon" />
-      <img src={MediumIcon} alt="Twitter icon" />
+      <SocialLink icon={TwitterIcon} link="https://twitter.com/NashVail" desc="Twitter"/>
+      <SocialLink icon={InstagramIcon} link="https://instagram.com/nashvail" desc="Instagram"/>
+      <SocialLink icon={CodepenIcon} link="https://codepen.io/nashvail" desc="Codepen" />
+      <SocialLink icon={MediumIcon} link="https://medium.com/@nashvail" desc="Medium"/>
+      <SocialLink icon={GitHubIcon} link="https://github.com/nashvail" desc="GitHub"/>
     </SocialLinks>
   </Inner>
 )
