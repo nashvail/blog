@@ -4,6 +4,10 @@ import styled from "styled-components"
 // Components
 import NavLink from "./NavLink"
 import Logo from "../Logo"
+import TwitterIcon from "../../assets/twitter.svg"
+import InstagramIcon from "../../assets/instagram.svg"
+import CodepenIcon from "../../assets/codepen.svg"
+import MediumIcon from "../../assets/medium.svg"
 
 // Constants
 import Constants from "../../utils/Constants"
@@ -51,6 +55,17 @@ const Inner = styled.div`
   }
 `
 
+const SocialLinks = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  img{
+    margin: 0 0 0 1rem;
+    width: 24px;
+  }
+`
+
 export default () => (
   <Inner>
     <Navigation>
@@ -62,5 +77,11 @@ export default () => (
       </NavigationUL>
     </Navigation>
     <Logo />
+    <SocialLinks>
+      <img src={TwitterIcon} alt="Twitter icon" />
+      <img src={InstagramIcon} alt="Twitter icon" />
+      <img src={CodepenIcon} alt="Twitter icon" />
+      <img src={MediumIcon} alt="Twitter icon" />
+    </SocialLinks>
   </Inner>
 )
