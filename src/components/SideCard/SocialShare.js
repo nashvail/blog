@@ -5,8 +5,8 @@ import styled from "styled-components"
 import Constants from "../../utils/Constants"
 
 // Icons
-import TwitterIcon from "../../assets/twitter.svg"
-import LinkIcon from "../../assets/link.svg"
+import {ReactComponent as TwitterIcon} from "../../assets/twitter.svg"
+import {ReactComponent as LinkIcon} from "../../assets/link.svg"
 
 const Container = styled.div`
   display: flex;
@@ -36,9 +36,9 @@ const SocialButton = styled.a`
     text-decoration: none;
   }
 
-  img {
+  svg {
     margin: 0;
-    padding-right: 0.4rem;
+    margin-right: 0.4rem;
   }
 `
 
@@ -50,11 +50,11 @@ export default function SocialShare({ tweetLink }) {
   return (
     <Container>
       <TweetButton href={tweetLink} target="_blank">
-        <img src={TwitterIcon} alt="Twitter icon"/>
+        <TwitterIcon stroke="#616161"/>
         Tweet
       </TweetButton>
       <CopyLinkButton>
-        <img src={LinkIcon} alt="Copy link icon"/>
+        <LinkIcon/>
         Copy link
       </CopyLinkButton>
     </Container>
