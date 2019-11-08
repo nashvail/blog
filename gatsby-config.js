@@ -68,6 +68,7 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
+    `gatsby-plugin-svgr`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {

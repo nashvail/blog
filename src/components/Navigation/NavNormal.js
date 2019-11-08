@@ -4,11 +4,9 @@ import styled from "styled-components"
 // Components
 import NavLink from "./NavLink"
 import Logo from "../Logo"
-import TwitterIcon from "../../assets/twitter.svg"
-import InstagramIcon from "../../assets/instagram.svg"
-import CodepenIcon from "../../assets/codepen.svg"
-import MediumIcon from "../../assets/medium.svg"
-import GitHubIcon from "../../assets/github.svg"
+import { ReactComponent as TwitterIcon } from "../../assets/twitter.svg"
+import { ReactComponent as InstagramIcon } from "../../assets/instagram.svg"
+import { ReactComponent as GitHubIcon } from "../../assets/github.svg"
 
 // Constants
 import Constants from "../../utils/Constants"
@@ -45,7 +43,7 @@ const Inner = styled.div`
   @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
     display: flex;
     justify-content: space-between;
-    flex-direction: row-reverse;
+    /* flex-direction: row-reverse; */
     width: 800px;
   }
 
@@ -61,23 +59,15 @@ const SocialLinks = styled.div`
   align-items: center;
   justify-content: flex-end;
 
-  img{
-    margin: 0 0 0 1rem;
-    width: 24px;
-  }
 
   a {
+    margin: 0 0 0 1rem;
     height: 24px;
   }
+
+  a:hover {
+  }
 `
-
-const SocialLink = ({icon, link, desc}) => (
-  <a href={link} target="__blank">
-    <img src={icon} alt={desc} />
-  </a>
-);
-
-
 export default () => (
   <Inner>
     <Navigation>
@@ -90,11 +80,15 @@ export default () => (
     </Navigation>
     <Logo />
     <SocialLinks>
-      <SocialLink icon={TwitterIcon} link="https://twitter.com/NashVail" desc="Twitter"/>
-      <SocialLink icon={InstagramIcon} link="https://instagram.com/nashvail" desc="Instagram"/>
-      <SocialLink icon={CodepenIcon} link="https://codepen.io/nashvail" desc="Codepen" />
-      <SocialLink icon={MediumIcon} link="https://medium.com/@nashvail" desc="Medium"/>
-      <SocialLink icon={GitHubIcon} link="https://github.com/nashvail" desc="GitHub"/>
+      <a href="https://twitter.com/nashvail" target="__blank">
+        <TwitterIcon stroke="#3d3d3d" />
+      </a>
+      <a href="https://instagram.com/nashvail" target="__blank">
+        <InstagramIcon stroke="#3d3d3d" />
+      </a>
+      <a href="https://github.com/nashvail" target="__blank">
+        <GitHubIcon stroke="#3d3d3d" />
+      </a>
     </SocialLinks>
   </Inner>
 )

@@ -12,12 +12,7 @@ import SEO from "../components/SEO"
 // Helpers
 import { renderArticlePreviews } from "../utils/helpers"
 
-import {
-  title,
-  link,
-  spoiler,
-  cover
-} from "./blog/pockets-of-solitude";
+import { title, link, spoiler, cover } from "./blog/pockets-of-solitude"
 
 // This is everything below the header
 const HomePage = styled.main`
@@ -86,13 +81,13 @@ export default () => (
     <SEO />
     <Header />
     <FilterNav />
-    {/* <Featured
+    <Featured
       type="NEW"
       link={link}
       title={title}
       cover={cover}
       spoiler={spoiler}
-    /> */}
+    />
     <HomePage>
       <ArticlesGrid />
       <Footer />
