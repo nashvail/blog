@@ -45,7 +45,7 @@ const Side = styled.aside``
 export default () => (
   <>
     <SEO title="About Nash" />
-    <Header />
+    <Header hideLogo hideShadow sticky={false}/>
     <Container>
       <Main>
         <div className={s_.nash}>
