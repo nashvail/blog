@@ -9,7 +9,7 @@ import Constants from "../utils/Constants"
 const Container = styled.header(props => `
   background: white;
   height: ${Constants.HEADER_HEIGHT};
-  box-shadow: ${props.hideShadow && "0 2px 6px 0 rgba(0, 0, 0, 0.05)"};
+  box-shadow: ${props.hideShadow ? "none" : "0 2px 6px 0 rgba(0, 0, 0, 0.05)"};
   display: grid;
   justify-content: center;
   z-index: 99999;
@@ -24,7 +24,7 @@ export default function Header({
   hideShadow = false,
 }) {
   return (
-    <Container sticky={sticky}>
+    <Container sticky={sticky} hideShadow={hideShadow}>
       <NormalNavigation />
       <MobileNavigation />
     </Container>
