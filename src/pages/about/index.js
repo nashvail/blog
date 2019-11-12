@@ -65,11 +65,24 @@ const Content = styled.article`
 const Side = styled.aside``
 
 const ImageContainer = styled.div`
+  display: auto;
   margin: 2rem auto 0 auto;
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
 
+  @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
+    width: 90%;
+  }
+
+  @media screen and (max-width: ${Constants.BREAKPOINTS[1]}) {
+    width: 80%;
+  }
+
   @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
-    width: ${Constants.BODY_WIDTH["after_second_breakpoint"]};
+    /* width: ${Constants.BODY_WIDTH["after_second_breakpoint"]}; */
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 `
 
@@ -109,10 +122,10 @@ export default () => {
             `}
           >
             <h3>
-            <a href="https://www.notion.so/nashvail/a01108389ef145baa596792d6f0195cb?v=5faaabe552274806a8a981898e28b6fd">
-              Reading list
+              <a href="https://www.notion.so/nashvail/a01108389ef145baa596792d6f0195cb?v=5faaabe552274806a8a981898e28b6fd">
+                Reading list
               </a>
-              </h3>
+            </h3>
             <p>
               A while ago I started maintaining a Kanaban board of the books I
               plan to read, reading, have read or abandoned.
