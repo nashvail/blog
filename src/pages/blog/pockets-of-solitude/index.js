@@ -152,6 +152,6 @@ export default PocketsOfSolitude
 export const title = "Pockets of solitude"
 export const link = "/blog/pockets-of-solitude/"
 export const spoiler =
-  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and"
+  "There are days when the brain feels like it's been wrung out dry like squeezed meat, so dry that if you dropped it to the floor it won't plop, stick and spread like honey. It'd bounce a little and roll to a corner or wherever the air from the fan takes it. Here's how I saved my sanity in those moments."
 export const cover = FeaturedCover
 

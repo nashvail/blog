@@ -58,7 +58,7 @@ const FeaturedHeading = styled.h1`
 `
 
 const FeaturedSpoiler = styled.p`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 `
 
 const FeaturedCover = styled.div`
