@@ -121,16 +121,25 @@ export default () => {
               margin-top: calc(60px + 1.5rem - 2rem);
             `}
           >
-            <h3>
+            <h3
+              style={{
+                textDecoration: "underline"
+              }}
+            >
               <a href="https://www.notion.so/nashvail/a01108389ef145baa596792d6f0195cb?v=5faaabe552274806a8a981898e28b6fd">
                 Reading list
               </a>
             </h3>
             <p>
-              A while ago I started maintaining a Kanaban board of the books I
-              plan to read, reading, have read or abandoned.
+              A list of books I plan to read, reading, have read or abandoned.
             </p>
-            <h3>Learning list</h3>
+            <h3 style={{
+              textDecoration: "underline"
+            }}>
+              <a href="https://www.notion.so/nashvail/9f5ee7dbbc514b74869f8b399e394043?v=b235cd68366c4d59a28fd19eed436d28">
+                Learning list
+              </a>
+            </h3>
             <p>
               All the courses I have taken online. Skillshare is my favorite
               place to find quality courses so most of the links will lead you
@@ -145,10 +154,11 @@ export default () => {
             </div>
             <Content>
               <p>
-                My various interests have forced me to dabble and explore more
-                than one fields. Graphic Design, Illustration, Frontend
-                Development, Writing are some of the things I enjoy the most.
-                Email howdynash@gmail.com for work enquiries.
+                Hi! I am a designer, writer, illustrator and a frontend
+                developer. I am, at the moment based out of Bangalore, India
+                where I am building digital products with my friends. For work
+                enquiries shoot me an email at{" "}
+                <a href="mailto:howdynash@gmail.com">howdynash@gmail.com</a>.
               </p>
             </Content>
           </Main>
