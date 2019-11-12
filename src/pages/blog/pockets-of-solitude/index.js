@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
+import { DiscussionEmbed } from "disqus-react"
 import Img from "gatsby-image"
 
 // Constants
@@ -17,8 +18,13 @@ import Footer from "./../../../components/Footer"
 import SideCard from "../../../components/SideCard"
 import RelatedMiscArticles from "../../../components/RelatedArticles/RelatedMiscArticles"
 import SEO from "../../../components/SEO"
-
 import Content from "./content"
+
+// Disqus config
+const disqusConfig = {
+  shortname: process.env.GATSBY_DISQUS_NAME,
+  config: { identifier: "/blog/pockets-of-solitude", title: "Pockets of Solitude"},
+}
 
 // Styled components
 const Container = styled.main`
@@ -126,6 +132,8 @@ class PocketsOfSolitude extends React.Component {
           <Inner>
             <Article>
               <Content />
+              <br/>
+            <DiscussionEmbed {...disqusConfig}/>
             </Article>
             <aside>
               <RelatedMiscArticles />
