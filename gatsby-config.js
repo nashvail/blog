@@ -83,6 +83,15 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Nashvail.me`,
+        short_name: `Nashvail.me`,
+        start_url: `/`,
+        icon: `src/assets/icon.png`,
+      },
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
