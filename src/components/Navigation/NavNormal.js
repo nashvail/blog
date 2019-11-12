@@ -73,7 +73,7 @@ export default () => (
     <Navigation>
       <NavigationUL>
         <NavLink to="/" text="Articles" />
-        <NavLink to="/about" text="About" disabled />
+        <NavLink to="/about" text="About" />
         <NavLink to="/about" text="Work" disabled />
         <NavLink to="/about" text="Shop" disabled />
       </NavigationUL>

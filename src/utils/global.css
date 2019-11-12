@@ -216,11 +216,13 @@ pre[data-line] {
 
 /* gatsby-remark-images */
 
-.gatsby-resp-image-figcaption {
+.gatsby-resp-image-figcaption, figcaption {
   margin-top: 0.5rem;
   text-align: center;
   color: #c2c2c2;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  margin-top: 1rem;
+  font-family: 'Roboto';
 }
 
 

@@ -40,7 +40,8 @@ const Container = styled.main`
   }
 
   .gatsby-image-wrapper {
-    width: 100%;
+    width: 70%;
+    margin: 0 auto;
   }
 
 `

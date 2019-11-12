@@ -1,6 +1,6 @@
 /* To create the effect of text wrapping around image*/
 .shaper {
-  shape-outside: ellipse(200px 200px at 80% 4%);
+  shape-outside: ellipse(210px 200px at 81% 5%);
   width: 600px;
   height: 500px;
   float: right;
@@ -9,7 +9,7 @@
 
 .heroText1 {
   display: block;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Chivo, Georgia, 'Times New Roman', Times, serif;
   font-weight: bolder;
   font-size: 3rem;
 }
@@ -17,9 +17,9 @@
 .heroText2 {
   display: block;
   margin-top: -2rem;
-  font-family: Raleway;
+  font-family: Roboto;
   font-size: 5rem;
-  font-weight: lighter;
+  font-weight: 100;
 }
 
 .publishDate {

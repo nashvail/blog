@@ -34,3 +34,18 @@
   line-height: 60px;
   font-weight: 100;
 }
+
+.image {
+  width: 70%;
+  /* margin-left: -5rem; */
+}
+
+.gatsby-image-wrapper {
+  margin: none;
+}
+
+@media screen and (max-width: 850px) {
+  .gatsby-image-wrapper {
+    margin: 0 auto;
+  }
+}
