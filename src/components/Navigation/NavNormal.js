@@ -7,6 +7,7 @@ import Logo from "../Logo"
 import { ReactComponent as TwitterIcon } from "../../assets/twitter.svg"
 import { ReactComponent as InstagramIcon } from "../../assets/instagram.svg"
 import { ReactComponent as GitHubIcon } from "../../assets/github.svg"
+import { ReactComponent as CoffeeIcon } from "../../assets/coffee.svg"
 
 // Constants
 import Constants from "../../utils/Constants"
@@ -88,6 +89,9 @@ export default () => (
       </a>
       <a href="https://github.com/nashvail" target="__blank">
         <GitHubIcon stroke="#3d3d3d" />
+      </a>
+      <a href="https://www.buymeacoffee.com/6WOkNZ4l3" target="__blank">
+        <CoffeeIcon stroke="#3d3d3d" />
       </a>
     </SocialLinks>
   </Inner>

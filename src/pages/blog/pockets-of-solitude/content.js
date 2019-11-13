@@ -28,8 +28,11 @@ export default function Content() {
       </p>
       <p>
         But show me a man who sticks to his habits and I'll show you a ... well
-        rounded disciplined person. Which I am not, yet. That one night I found
-        myself watching the movie{" "}
+        rounded disciplined person. Which I am not, yet.
+      </p>
+
+      <p>
+        That one night I found myself watching the movie{" "}
         <a href="https://www.imdb.com/title/tt1798709/" target="__blank">
           Her
         </a>
