@@ -62,11 +62,28 @@ const SocialLinks = styled.div`
 
 
   a {
-    margin: 0 0 0 1rem;
+    /* margin: 0 0 0 1rem; */
+    padding: 0 0 0 1rem;
     height: 24px;
+    position: relative;
   }
 
-  a:hover {
+  a:before{
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background: black;
+    z-index: -1;
+    border-radius: 100%;
+    opacity: 0;
+    transform: scale(1);
+    transition: transform 0.15s cubic-bezier(.17,.67,.26,1.04);
+  }
+
+  a:hover:before {
+    opacity: 0.1;
+    transform: scale(2);
   }
 `
 export default () => (
