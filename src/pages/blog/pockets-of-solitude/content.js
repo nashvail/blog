@@ -11,7 +11,7 @@ export default function Content() {
       <div className={s_.shaper}></div>
       <p>
         <span className={s_.firstcharacter}>I</span> can't decide if it's the
-        loud mating calls of the birds, or the nostril popping cold, fresh air
+        loud mating calls of the birds, or the nostril popping cold fresh air
         that makes me love early mornings so much. Or, with over half of us
         still asleep, maybe it's the momentary illusion of fewer humans on earth
         that makes early mornings special. Or maybe it's just me. Some people
@@ -38,7 +38,7 @@ export default function Content() {
         </a>
         , way past my bedtime. Her is one of those Sci-Fi movies where
         technology has progressed to a point where computers have started to
-        sound, behave and understand you just like an actual human. So much so
+        sound, behave and understand you, just like an actual person. So much so
         that you can fall in love with one. And that's exactly what happens in
         the movie.
       </p>
@@ -49,20 +49,23 @@ export default function Content() {
         <a href="http://apple.com/siri" target="__blank">
           Siri
         </a>{" "}
-        like AI that lives inside it. This, I thought would be weird when it's
-        eventually confessed to a friend halfway through the movie, but instead,
-        all his friend asked was ... "Is it (Theodore's relationship with his
-        computer) real?" and even though I hoped for a conclusion, the whole
-        scene ended with an "I don't know" from both sides.
+        like AI, called Samantha that lives inside it. This, I thought would be
+        weird when it's eventually confessed to a friend halfway through the
+        movie, but instead, all his friend asked was ... "Is it (Theodore's
+        relationship with his computer) real?" and even though I hoped for a
+        conclusion, the whole scene ended with an "I don't know" from both
+        sides.
       </p>
       <p>
         Intuition tells us that of-course the "relationship" between Theodore
-        and his AI girlfriend isn't real. But why isn't it "real"? And how do we
-        define "real"? Is it not real because it's not a relationship between
-        two humans, but rather a human and machine? The emotions that Theodore
-        feels aren't real because they're for something that exists only behind
-        a screen? Well, in that case, there's something more we should be
-        questioning is real.
+        and his AI girlfriend Samantha isn't real. But why isn't it "real"? And
+        how do we define "real"? Is it not real because it's not a relationship
+        between two humans, but rather a human and a machine? The emotions that
+        Theodore feels aren't real because they're for something that exists
+        only behind a screen? Does the fact that Samantha isn't tangible but
+        resides only inside a 5 by 5 electronic device makes her, not real?
+        Well, in that case, there's something more we should be questioning is
+        real.
       </p>
       <p>
         A good part of the population and yes, me and possibly even you spend
@@ -76,12 +79,13 @@ export default function Content() {
         mean the things we build and the work we do isn't, real?
       </p>
       <p>
-        "Yes, the work we do is real because it has real world impacts", is what
-        I got from almost everyone I asked if the work they produce is digital
-        and do they consider it real. And I don't disagree with the statement,
-        because it's true, reality today is shaped by glowing pixels. It's a
-        crazy thought if you ponder, that something can not exist in reality and
-        still shape it. That's the power of screens.
+        "Of course! The work we do is real because it has real world impacts",
+        is what almost everyone who I know produces digital work answered, when
+        I asked them if they think the work they do is "real". And I don't
+        disagree with the statement, because it's true, reality today is shaped
+        by glowing pixels. It's a crazy thought if you ponder, that something
+        can not exist in reality and still shape it. That's the power of
+        screens.
       </p>
       <p>
         It's not that the screens are controlling autonomous evil beings, it's
@@ -112,7 +116,7 @@ export default function Content() {
 
       <p>
         You can't do that now, you can't kick me off my shouting pedestal. And
-        it's just not me, it's everybody. Channeling and consuming and shaping
+        it's not just me, it's everybody. Channeling and consuming and shaping
         through Twitter and Facebook and Instagram. It's too much.
       </p>
       <p>
@@ -134,17 +138,18 @@ export default function Content() {
         There are people far smarter than you, with PhDs and who wear lab-coats.
         They know your dopamine hit points, everything is engineered to keep you
         addicted, turn you into a junkie for notifications, and if you don't
-        stop, pause and think you're going to drive yourself insane. You're
+        stop, pause and think, you're going to drive yourself insane. You're
         already halfway there, if a screen is the first thing you look at in the
         morning and the last thing at night, we really need to talk.
       </p>
 
       <p>
-        <span className={s_.firstcharacter}>I</span>t's not everyday, but there
-        are days, and weeks when the brain feels like it's been wrung out of the
-        juice, dry. Dry like squeezed meat, so dry that if you dropped it to the
-        floor it won't plop, stick and spread like honey. It'd bounce a little
-        and roll to a corner or wherever the air from the fan takes it.
+        <span className={s_.firstcharacter}>C</span>onstant exposure to screens
+        and garbage information drains you eventually. It's not everyday, but
+        there are days, and weeks when the brain feels like it's been wrung out
+        of the juice, dry. Dry like squeezed meat, so dry that if you dropped it
+        to the floor it won't plop, stick and spread like honey. It'd bounce a
+        little and roll to a corner or wherever the air from the fan takes it.
       </p>
 
       <p>
@@ -153,7 +158,8 @@ export default function Content() {
         phone off and locking yourself in a room, if it was, I'd have told you
         so in the first paragraph and vanished. There's more to creating these
         moments of isolation, or what I like to call, creating these Pockets of
-        Solitude.
+        Solitude. Good habits sometimes need to be enforced, and more often than
+        not, on yourself.
       </p>
 
       <p>
@@ -161,8 +167,7 @@ export default function Content() {
         you is when you wake up, if you wake up at noon, hey that's your morning
         alright, no judgement. It's what you do after waking up that's worth
         judging. For example, it's not a good idea to unlock your phone the
-        first thing after you've let your eyelids up when your brain is already
-        buzzing.
+        first thing after you've let your eyelids up.
       </p>
 
       <p>
@@ -179,18 +184,18 @@ export default function Content() {
         Epicurus, an old time greek philosopher said, “To eat and drink without
         a friend is to devour like the lion and the wolf.”. Which is, to eat
         like animals, alluding to the fact that humans are social creatures and
-        it's kinda odd to sit and eat alone, ergo have friends, be happy e.t.c
+        it's kinda odd to sit and eat alone, ergo, have friends, be happy e.t.c
         e.t.c. But, Epicurus is fucking dead! We're now subject to
         over-socialisation, even if it's just through the screens.
       </p>
 
       <p>
-        If I have a choice I choose having my meals alone, not alone watching
-        Netflix just me and my plate of food. For however long it takes to eat I
-        can recollect my thoughts and be with myself. If that's not possible for
-        you I'd recommend having your evening snack, preferably healthy, alone
-        and offline. That's another way to create yet another pocket of
-        solitude.
+        When my brain's buzzing and if I have a choice, I choose having my meals
+        alone, not alone watching Netflix just me and my plate of food. For
+        however long it takes to eat I can recollect my thoughts and be with
+        myself. If that's not possible for you I'd recommend having your evening
+        snack, preferably healthy, alone and offline. That's another way to
+        create yet another pocket of solitude.
       </p>
 
       <p>
@@ -201,7 +206,7 @@ export default function Content() {
       </p>
       <p>
         But there is a way, which I learnt from the book Deep Work, I talk more
-        about it <Link to="/blog/deep-work">here</Link>. TL;DR work in blocks
+        about it <Link to="/blog/deep-work">here</Link>. TL;DR work in blocks of 30 minutes,
         and for the blocks have your notifications turned off and social and
         other time chewing sites blocked. All the working blocks are yet another
         small pockets of solitude.

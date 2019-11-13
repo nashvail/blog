@@ -62,8 +62,6 @@ const Content = styled.article`
   font-size: 1.15rem;
 `
 
-const Side = styled.aside``
-
 const ImageContainer = styled.div`
   display: auto;
   margin: 2rem auto 0 auto;

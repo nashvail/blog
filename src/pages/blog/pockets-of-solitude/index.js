@@ -109,7 +109,7 @@ const Hero = () => {
   return (
     <HeroContainer>
       <div className={s_.text} style={{ alignSelf: "center" }}>
-        <span className={s_.publishDate}>August 15, 2019</span>
+        <span className={s_.publishDate}>November 13, 2019</span>
         <span className={s_.heroText1}>Pockets of</span>
         <span className={s_.heroText2}>Solitude</span>
       </div>
@@ -160,6 +160,6 @@ export default PocketsOfSolitude
 export const title = "Pockets of solitude"
 export const link = "/blog/pockets-of-solitude/"
 export const spoiler =
-  "There are days when the brain feels like it's been wrung out dry like squeezed meat, so dry that if you dropped it to the floor it won't plop, stick and spread like honey. It'd bounce a little and roll to a corner or wherever the air from the fan takes it. Here's how I saved my sanity in those moments."
+  "How to stay sane in the face of brain mushing, mind numbing flood of useless information. Like, where Becky is having her vacation and the pictures of Jonathan's kid."
 export const cover = FeaturedCover
 

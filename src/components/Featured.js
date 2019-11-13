@@ -38,10 +38,14 @@ const FeaturedText = styled.div`
   width: 40%;
   display: flex;
   flex-direction: column;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
 
   @media screen and (max-width: ${Constants.BREAKPOINTS[0]}) {
     width: 100%;
     margin-top: 2rem;
+    margin-bottom: none;
+    justify-content: auto;
   }
 `
 
