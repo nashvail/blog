@@ -28,7 +28,6 @@ const disqusConfig = {
 
 // Styled components
 const Container = styled.main`
-  /* background: red; */
   width: ${Constants.BODY_WIDTH["before_first_breakpoint"]};
   margin: 0 auto;
 
@@ -40,9 +39,9 @@ const Container = styled.main`
     max-width: ${Constants.BODY_WIDTH["after_second_breakpoint"]};
   }
 
-  @media screen and (max-width: 840px) {
-    min-width: 400px;
-    width: 90%;
+  @media screen and (max-width: ${Constants.BREAKPOINTS[2]}) {
+    /* min-width: 400px; */
+    width: 85%;
   }
 
   .gatsby-image-wrapper {
