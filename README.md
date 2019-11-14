@@ -13,9 +13,9 @@
 - [x]  A working email subscription
     - [x]  Link to subscription form
     - [x]  Update subscription form with proper text
-- [ ]  Complete pockets of solitude (working on pos-fixes branch)
+- [x]  Complete pockets of solitude (working on pos-fixes branch)
     - [x]  Responsiveness
-    - [ ]  Edit text and add melted brain illo
+    - [x]  Edit text and add melted brain illo
     - [x]  Try to make the images gatsby-image component
 - [x]  SideCard complete and responsive with git link
     - [x]  responsiveness
@@ -30,8 +30,8 @@
 - [x]  Spoilers for Misc.
 - [x]  Illustrations for Misc.
 - [x]  Fix the missing image in Understanding Impermanence
-- [ ]  Proof read the articles.
+- [x]  Proof read the articles.
 
 ## ToDos
-- [ ] Add the About page
+- [x] Add the About page
 - [ ] Add Work page
