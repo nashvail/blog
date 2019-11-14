@@ -87,7 +87,7 @@ export default function SideCard({ style, tweetLink, stickyThreshold=45, hideAd 
           <Container>
             <SocialShare tweetLink={tweetLink} />
             <NewsletterPrompt />
-            <GitAd />
+            {/* <GitAd /> */}
           </Container>
         )
       }
