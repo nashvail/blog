@@ -46,7 +46,7 @@ export default function NewsletterPrompt() {
   return (
     <Container>
       <LinkButton href={SUBSCRIBE_FORM_LINK} target="_blank" css={``}>
-        Subscribe to newsletter
+        Never miss an article
       </LinkButton>
     </Container>
   )
