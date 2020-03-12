@@ -81,13 +81,15 @@ export default () => (
     <SEO />
     <Header />
     <FilterNav />
-    <Featured
+
+    {/* <Featured
       type="NEW"
       link={link}
       title={title}
       cover={cover}
       spoiler={spoiler}
     />
+ */}
     <HomePage>
       <ArticlesGrid />
       <Footer />

@@ -4,6 +4,7 @@ keywords:
 - research
 path: "/blog/creativity-1"
 title: "The pain and paradoxes of creativity"
+date: '2020-03-16'
 categories: 
 - misc.
 ---
@@ -122,4 +123,4 @@ I don’t want you to leave this mind blurb of mine with definitive answers, bec
 
 We’re all different with faults and follies and gains distributed on a lottery. Instead of yearning for something you didn’t get, it does better to look into your bag and make something good of the junk you did get. As a specie, our differences in temperaments and interests is precisely why we have managed to do what we have done. We put a man on the moon for fuck’s sake, and that was about a 100 years ago. If we were a specie of everyone writing poems about the moon, we would’ve never stepped on it. So young, so beautiful, so ambitious, so wounded we are. There is chaos and beauty and there is no other place, no heaven we’d rather want to be in or we can. If a god ever shows up we’ll show him our scars, our betrayals and the human condition, we’ll also show him our music, our dance, our paintings, our best selling books, our dreamcatchers, we’ll show him people laughing in the face of mortality, lovers embracing each other in the face of inevitable separation and then we’ll ask him, wouldn’t you wish to be one of us? And he’ll probably say yes. Or, lmao fuck off.
 
-
+### Sources
