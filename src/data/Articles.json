@@ -1,5 +1,25 @@
 [
   {
+    "title": "The pain and paradoxes of creativity",
+    "publishDate": "2020-03-16",
+    "cover": "./impermanence.png",
+    "link": "/blog/creativity-1",
+    "spoiler": "Sometimes things pass, sometimes you do first.",
+    "category": [
+      "misc."
+    ]
+  },
+  {
+    "title": "Pockets of solitude",
+    "publishDate": "2019-11-13",
+    "cover": "./impermanence.png",
+    "link": "/blog/pockets-of-solitude",
+    "spoiler": "Sometimes things pass, sometimes you do first.",
+    "category": [
+      "misc."
+    ]
+  },
+  {
     "title": "Understanding impermanence",
     "publishDate": "2019-05-15",
     "cover": "./impermanence.png",
