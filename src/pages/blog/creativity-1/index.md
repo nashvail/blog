@@ -5,7 +5,7 @@ keywords:
 path: "/blog/creativity-1"
 title: "The pain and paradoxes of creativity"
 date: '2020-03-16'
-featuredImage: ./images/cover.png
+featuredImage: ./images/cover2.png
 categories: 
 - misc.
 ---
