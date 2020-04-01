@@ -112,7 +112,7 @@ const Hero = () => {
         <span className={s_.heroText1}>Pockets of</span>
         <span className={s_.heroText2}>Solitude</span>
       </div>
-      <Img fluid={data.file.childImageSharp.fluid} alt="Please work!" className={s_.image}/>
+      <Img fluid={data.file.childImageSharp.fluid} alt="Art" className={s_.image}/>
     </HeroContainer>
   )
 }
