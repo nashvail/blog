@@ -1,21 +1,24 @@
 .title1 {
   display: block;
   width: 100%;
-  text-align: center;
+  /* text-align: center; */
   font-family: Roboto, sans-serif;
-  color: #343F66;
+  color: #343f66;
   text-transform: uppercase;
+  font-size: 1rem;
 }
 
 .title2 {
+  z-index: 10000;
   font-family: Roboto, sans-serif;
-  font-size: 2.8rem;
+  font-size: 2.7rem;
   font-weight: 900;
-  color:#343F66;
+  color: #343f66;
   display: block;
   width: 100%;
-  text-align: center;
-  transform: rotateZ(8deg) translate(63px, 48px);
+  margin-top: -0.5rem;
+  /* text-align: center; */
+  /* transform: rotateZ(8deg) translate(60px, 43px); */
 }
 
 .mainArticle {
@@ -25,10 +28,38 @@
   grid-column-gap: 20px;
 }
 
-.mainArticle p {
+.mainArticle p, h2, h1 {
   grid-column: 5/13;
   font-size: 24px;
   line-height: 37px;
+}
+
+
+.mainArticle .quote {
+  position: relative;
+  display: block;
+  grid-column: 2/10;
+  font-size: 28px;
+  line-height: 44px;
+  margin: 2rem 0 2.5rem 0;
+  padding-left: 2rem;
+}
+
+.mainArticle .quote::before {
+  content: ' ';
+  display: block;
+  height: 100%;
+  width: 2px;
+  background: #c2c2c2;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.mainArticle .quote .cite {
+  display: block;
+  font-style: italic;
+  color: #616161;
 }
 
 

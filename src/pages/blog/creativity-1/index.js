@@ -9,6 +9,7 @@ import Constants from "../../../utils/Constants"
 // Components
 import Header from "../../../components/Header"
 import Footer from "../../../components/Footer"
+import ArticleContent from "./article-content"
 
 // CSS
 import s_ from "./styles.module.css"
@@ -50,8 +51,15 @@ const Hero = () => {
   return (
     <HeroContainer>
       <span className={s_.title1}>The Pain & Paradoxes of</span>
-      <span className={s_.title2}>CREATIVIT</span>
-      <Img fluid={data.file.childImageSharp.fluid} alt="Art" />
+      <span className={s_.title2}> CREATIVITY </span>
+      <Img
+        fluid={data.file.childImageSharp.fluid}
+        alt="Art"
+        css={`
+          z-index: -1;
+          margin-top: -3.8rem;
+        `}
+      />
     </HeroContainer>
   )
 }
@@ -59,21 +67,11 @@ const Hero = () => {
 function Paradoxes() {
   return (
     <>
-      <Header  sticky={false} />
+      <Header sticky={false} />
       <Container>
         <Hero />
-        <article className={s_.mainArticle}>
-          <p>
-            "Fuck you Isabel," my mind screeched as I was about to put a
-            spoonful of steaming hot Indian breakfast soup in my mouth. No
-            matter how much I enjoyed the sensation of something hot flooding
-            the in-betweens of my tongue and teeth on a cold winter morning, the
-            only thing that interested me then was where did "Isabel" come from?
-            And why did I curse her?
-          </p>
-          <p>I don't have a single friend or a family member with the name Isabel, neither have I ever met someone named Isabel.</p>
-          <p>Somewhere along the way I think the word Isabel embedded itself into my subconscious and got mixed with something else in there. And then, at the right moment - which is never for me to decide, but the subconscious itself - it decided to blurt itself out.</p>
-        </article>
+        <ArticleContent/>
+        <Footer css={`grid-column: 1/13`}/>
       </Container>
     </>
   )
