@@ -17,14 +17,16 @@ import s_ from "./styles.module.css"
 // Breakpoints
 const BREAKPOINTS = [
   "1300px",
-  "1185px"
+  "1185px",
+  "800px"
 ]
 
 // Widths
 const BODY_WIDTH = {
   before_first_breakpoint: "1250px",
   after_frist_breakpoint: "1145px",
-  after_second_breakpoint: "90%"
+  after_second_breakpoint: "75%",
+  after_third_breakpoint: "85%"
 }
 
 const Container = styled.main`
@@ -38,6 +40,10 @@ const Container = styled.main`
 
   @media screen and (max-width: ${BREAKPOINTS[1]}) {
     width: ${BODY_WIDTH["after_second_breakpoint"]};
+  }
+
+  @media screen and (max-width: ${BREAKPOINTS[2]}) {
+    width: ${BODY_WIDTH["after_third_breakpoint"]};
   }
 `
 

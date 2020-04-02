@@ -33,9 +33,11 @@ const SOURCES = [
 
 const Sources = () => (
   <section css={`grid-column: 5/13`}>
+  <ul>
     {SOURCES.map(function(source, key) {
-      return <a href={source.link} target="__blank"><h4>{source.name} - {source.authors}</h4></a>;
+      return <li><a href={source.link} target="__blank"><h4>{source.name} - {source.authors}</h4></a></li>;
     })}
+    </ul>
   </section>
 );
 
