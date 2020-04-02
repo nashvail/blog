@@ -23,8 +23,8 @@ const BREAKPOINTS = [
 
 // Widths
 const BODY_WIDTH = {
-  before_first_breakpoint: "1250px",
-  after_frist_breakpoint: "1145px",
+  before_first_breakpoint: "1140px",
+  after_frist_breakpoint: "1100px",
   after_second_breakpoint: "75%",
   after_third_breakpoint: "85%"
 }

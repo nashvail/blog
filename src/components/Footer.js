@@ -90,7 +90,7 @@ export default () => {
   return (
     <Footer>
       <FooterSeparator />
-      <span>© 2016 - 2019, Nash Vail </span>
+      <span>© 2016 - 2020, Nash Vail </span>
       <SocialLinks />
       <span
         css={`
