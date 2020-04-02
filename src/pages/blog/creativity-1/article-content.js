@@ -16,17 +16,17 @@ const SOURCES = [
   },
   {
     name: "Creativity and Mental Illness - Prevalence rates in writers and their first-degree relatives",
-    link: "https://www.google.com/images",
+    link: "https://www.ncbi.nlm.nih.gov/pubmed/3499088",
     authors: "Nancy C. Andreasen"
   },
   {
     name: "The relationship between creativity and mood disorders",
-    link: "https://www.google.com/images",
+    link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181877/",
     authors: ['Nancy C. Andreasen']
   },
   {
     name: "Creativity and mental disorder: family study of 300,000 people with severe mental disorder",
-    link: "https://www.google.com/images",
+    link: "https://www.ncbi.nlm.nih.gov/pubmed/21653945",
     authors: ['Simon Kyaga', 'Paul Linchtenstein', 'Marcus Boman', 'Christina Hultman', 'Niklas Langstrom', 'Mikael Landen']
   }
 ];
@@ -34,7 +34,7 @@ const SOURCES = [
 const Sources = () => (
   <section css={`grid-column: 5/13`}>
     {SOURCES.map(function(source, key) {
-      return <h4>{source.name} - {source.authors}</h4>;
+      return <a href={source.link} target="__blank"><h4>{source.name} - {source.authors}</h4></a>;
     })}
   </section>
 );
