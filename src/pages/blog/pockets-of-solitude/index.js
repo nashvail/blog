@@ -122,7 +122,7 @@ class PocketsOfSolitude extends React.Component {
     return (
       <>
         <SEO
-          title="Pockets of Solitude"
+          title="Pockets of Solitude - Nash Vail"
           keywords={['distraction', 'online', 'social', 'social media', 'alone', 'solitude']}
         />
         <Header />

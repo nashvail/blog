@@ -9,6 +9,7 @@ import Constants from "../../../utils/Constants"
 // Components
 import Header from "../../../components/Header"
 import Footer from "../../../components/Footer"
+import SEO from "../../../components/SEO"
 import ArticleContent from "./article-content"
 
 // CSS
@@ -86,6 +87,10 @@ const Hero = () => {
 function Paradoxes() {
   return (
     <>
+      <SEO
+        title="The Pain and Paradoxes of Creativity - Nash Vail"
+        keywords={['creativity', 'research', 'madness', 'what is creativity', 'creative', 'creation', 'essay', 'writers', 'poets', 'obsession']}
+      />
       <Header sticky={false} />
       <Container>
         <Hero />
