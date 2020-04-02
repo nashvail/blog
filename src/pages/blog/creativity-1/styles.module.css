@@ -5,6 +5,12 @@
 
 /* Others */
 
+h1 {
+  font-size: 1.8rem !important;
+  margin-bottom: 1.8rem !important;
+  margin-top: 1rem !important;
+}
+
 .firstcharacter {
   color: #903;
   float: left;
