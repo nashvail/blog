@@ -1,8 +1,43 @@
 import React from "react"
 
-
 // Import css
 import s_ from "./styles.module.css"
+
+const SOURCES = [
+  {
+    name: "Creativity as neuroscientific mystery",
+    link: "https://pdfs.semanticscholar.org/185d/3c3721bfe23dc63bc6b2954f865c81a82ebd.pdf",
+    authors: ['Margaret A. Boden']
+  },
+  {
+    name: "Research on Creativity",
+    link: "https://people.ok.ubc.ca/lgabora/#research_section",
+    authors: ['Liane Gabora']
+  },
+  {
+    name: "Creativity and Mental Illness - Prevalence rates in writers and their first-degree relatives",
+    link: "https://www.google.com/images",
+    authors: "Nancy C. Andreasen"
+  },
+  {
+    name: "The relationship between creativity and mood disorders",
+    link: "https://www.google.com/images",
+    authors: ['Nancy C. Andreasen']
+  },
+  {
+    name: "Creativity and mental disorder: family study of 300,000 people with severe mental disorder",
+    link: "https://www.google.com/images",
+    authors: ['Simon Kyaga', 'Paul Linchtenstein', 'Marcus Boman', 'Christina Hultman', 'Niklas Langstrom', 'Mikael Landen']
+  }
+];
+
+const Sources = () => (
+  <section css={`grid-column: 5/13`}>
+    {SOURCES.map(function(source, key) {
+      return <h4>{source.name} - {source.authors}</h4>;
+    })}
+  </section>
+);
 
 export default function ArticleContent() {
   return (
@@ -10,17 +45,17 @@ export default function ArticleContent() {
       <div className={s_.info}>
         <p>
           <b>Published:</b> 4th November, 2020
-          <br/>
+          <br />
           <b>Reading time:</b> 10 minutes
         </p>
       </div>
       <p>
-        "Fuck you Isabel," my mind screeched as I was about to put a spoonful of
-        steaming hot Indian breakfast soup in my mouth. No matter how much I
-        enjoyed the sensation of something hot flooding the in-betweens of my
-        tongue and teeth on a cold winter morning, the only thing that
-        interested me then was where did "Isabel" come from? And why did I curse
-        her?
+        <span className={s_.firstcharacter}>“F</span>uck you Isabel”, my mind
+        screeched as I was about to put a spoonful of steaming hot Indian
+        breakfast soup in my mouth. No matter how much I enjoyed the sensation
+        of something hot flooding the in-betweens of my tongue and teeth on a
+        cold winter morning, the only thing that interested me then was where
+        did "Isabel" come from? And why did I curse her?
       </p>
       <p>
         I don't have a single friend or a family member with the name Isabel,
@@ -33,9 +68,9 @@ export default function ArticleContent() {
         itself–it decided to blurt itself out.
       </p>
       <p className={s_.quote}>
-        "Every time you hear an echo from your Subconscious, you know yourself a
+        “Every time you hear an echo from your Subconscious, you know yourself a
         little better. A small echo may start an idea. A big echo may result in
-        a story.".
+        a story.”
         <span className={s_.cite}>Ray Bradbury, Zen in the art of writing</span>
       </p>
       <p>
@@ -46,11 +81,11 @@ export default function ArticleContent() {
       </p>
       <p>
         This doesn't mean creativity and creative contributions weren't
-        recognised. They were. Recognised <i>and</i> celebrated, but not understood.
-        Questions like, what is creativity? Why do some people find it a good
-        idea to spend years before a big break, and if not for a break, their
-        entire lives tortured on streets squiggling lines, splashing paint and
-        writing words?
+        recognised. They were. Recognised <i>and</i> celebrated, but not
+        understood. Questions like, what is creativity? Why do some people find
+        it a good idea to spend years before a big break, and if not for a
+        break, their entire lives tortured on streets squiggling lines,
+        splashing paint and writing words?
       </p>
       <p>
         And for those whose contributions do succeed and are recognised, how did
@@ -178,7 +213,7 @@ export default function ArticleContent() {
       </p>
       <p>
         The point is, if you try and put whatever you have made, or anyone else
-        has made into the H-P Creativity spectrum, it *will* find a place in it,
+        has made into the H-P Creativity spectrum, it <i>will</i> find a place in it,
         and in that, everyone again, is creative. The Dreamcatcher you designed
         last weekend can sit with Dostoyevsky's Crime and Punishment in the same
         spectrum just waaaaaay left near the Personal end.
@@ -198,8 +233,8 @@ export default function ArticleContent() {
         population.
       </p>
       <p>
-        The group being tested for the difference is called the **test group**,
-        or the oddballs. The other group is the **control group** , which is
+        The group being tested for the difference is called the <b>test group</b>,
+        or the oddballs. The other group is the <b>control group</b>, which is
         used as a benchmark to establish the difference.
       </p>
       <p>
@@ -264,7 +299,7 @@ export default function ArticleContent() {
         social interaction for enough time and they will start to wither too.
         Stop an O from making things and they will wither just the same. It's
         not that making stuff makes them happy, it's that not making stuff makes
-        them *really* unhappy.
+        them <i>really</i> unhappy.
       </p>
       <p>
         That's the line. There is the biological gap. I am okay not writing that
@@ -344,6 +379,8 @@ export default function ArticleContent() {
         then we’ll ask him, wouldn’t you wish to be one of us? And he’ll
         probably say yes.
       </p>
+      <hr css={`grid-column: 5/13`}/>
+      <Sources/>
     </article>
   )
 }
