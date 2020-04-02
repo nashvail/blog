@@ -1,9 +1,16 @@
+/* Variables */
+/* :root { */
+
+/* } */
+
+/* Others */
+
 .title1 {
   display: block;
   width: 100%;
   /* text-align: center; */
   font-family: Roboto, sans-serif;
-  color: #343f66;
+  color: #121212;
   text-transform: uppercase;
   font-size: 1rem;
 }
@@ -17,8 +24,6 @@
   display: block;
   width: 100%;
   margin-top: -0.5rem;
-  /* text-align: center; */
-  /* transform: rotateZ(8deg) translate(60px, 43px); */
 }
 
 .mainArticle {
@@ -34,6 +39,16 @@
   line-height: 37px;
 }
 
+.info {
+  display: block;
+  grid-column: 1/5;
+}
+
+.info p {
+  font-size: 0.9rem;
+  font-family: Roboto, sans-serif;
+  color: #616161;
+}
 
 .mainArticle .quote {
   position: relative;
@@ -64,6 +79,30 @@
 
 
 /* For the cover image */
-.gatsby-image-wrapper {
-  margin-top: -2rem;
+.coverImage {
+  z-index: -1;
+  margin-top: -3.8rem;
+}
+
+@media screen and (max-width: 1185px) {
+  .title1 {
+    text-align: center;
+  }
+
+  .title2 {
+    text-align: center;
+  }
+
+  .coverImage {
+    margin-top: 1.4rem;
+  }
+
+  .gatsby-image-wrapper {
+    margin-top: 0;
+  }
+
+  .mainArticle {
+    display: block;
+    /* background: red; */
+  }
 }

@@ -1,11 +1,19 @@
 import React from "react"
 
+
 // Import css
 import s_ from "./styles.module.css"
 
 export default function ArticleContent() {
   return (
     <article className={s_.mainArticle}>
+      <div className={s_.info}>
+        <p>
+          <b>Published:</b> 4th November, 2020
+          <br/>
+          <b>Reading time:</b> 10 minutes
+        </p>
+      </div>
       <p>
         "Fuck you Isabel," my mind screeched as I was about to put a spoonful of
         steaming hot Indian breakfast soup in my mouth. No matter how much I
@@ -21,8 +29,8 @@ export default function ArticleContent() {
       <p>
         Somewhere along the way I think the word Isabel embedded itself into my
         subconscious and got mixed with something else in there. And then, at
-        the right moment - which is never for me to decide, but the subconscious
-        itself - it decided to blurt itself out.
+        the right moment–which is never for me to decide, but the subconscious
+        itself–it decided to blurt itself out.
       </p>
       <p className={s_.quote}>
         "Every time you hear an echo from your Subconscious, you know yourself a
@@ -38,7 +46,7 @@ export default function ArticleContent() {
       </p>
       <p>
         This doesn't mean creativity and creative contributions weren't
-        recognised. They were. Recognised *and* celebrated, but not understood.
+        recognised. They were. Recognised <i>and</i> celebrated, but not understood.
         Questions like, what is creativity? Why do some people find it a good
         idea to spend years before a big break, and if not for a break, their
         entire lives tortured on streets squiggling lines, splashing paint and
@@ -103,7 +111,7 @@ export default function ArticleContent() {
       </p>
       <p>
         Such opinions on creativity makes you feel better and maybe that’s why
-        they sell. But, on a second thought they aren't *really* wrong. We
+        they sell. But, on a second thought they aren't <i>really</i> wrong. We
         humans, as a specie are creative. We rule this planet. Despite having 0
         actual in the wild surviving capabilities, no sharp teeth or nails,
         can't sprint for more than 5 minutes, can't climb trees quickly, can't
@@ -126,7 +134,7 @@ export default function ArticleContent() {
 
       <p className={s_.quote}>
         “The ability to generate ideas/artefacts that are new, surprising, and
-        valuable--is an aspect of human intelligence in general”
+        valuable – is an aspect of human intelligence in general”
         <span className={s_.cite}>- Nash</span>
       </p>
 

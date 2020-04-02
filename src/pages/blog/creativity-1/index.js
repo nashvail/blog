@@ -14,15 +14,31 @@ import ArticleContent from "./article-content"
 // CSS
 import s_ from "./styles.module.css"
 
+// Breakpoints
+const BREAKPOINTS = [
+  "1300px",
+  "1185px"
+]
+
 // Widths
 const BODY_WIDTH = {
   before_first_breakpoint: "1250px",
+  after_frist_breakpoint: "1145px",
+  after_second_breakpoint: "90%"
 }
 
 const Container = styled.main`
   margin: 0 auto;
   /* background: green; */
   width: ${BODY_WIDTH["before_first_breakpoint"]};
+
+  @media screen and (max-width: ${BREAKPOINTS[0]}) {
+    width: ${BODY_WIDTH["after_frist_breakpoint"]};
+  }
+
+  @media screen and (max-width: ${BREAKPOINTS[1]}) {
+    width: ${BODY_WIDTH["after_second_breakpoint"]};
+  }
 `
 
 const HeroContainer = styled.section`
@@ -55,10 +71,7 @@ const Hero = () => {
       <Img
         fluid={data.file.childImageSharp.fluid}
         alt="Art"
-        css={`
-          z-index: -1;
-          margin-top: -3.8rem;
-        `}
+        className={s_.coverImage}
       />
     </HeroContainer>
   )
