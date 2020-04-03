@@ -56,6 +56,7 @@ const ArticlesGrid = ({ children }) => (
               category
               spoiler
               publishDate
+              recent
               cover {
                 childImageSharp {
                   fluid(maxWidth: 800) {

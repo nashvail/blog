@@ -5,7 +5,7 @@ export function renderArticlePreviews(articles) {
   // articles is an array of json article objects
   let articlesArray = []
   articles.forEach(article => {
-    let { title, link, spoiler, category, publishDate, cover } = article.node
+    let { title, link, spoiler, category, publishDate, cover, recent } = article.node
 
     return articlesArray.push(
       <ArticlePreview
@@ -15,6 +15,7 @@ export function renderArticlePreviews(articles) {
         category={category}
         publishDate={publishDate}
         cover={cover.childImageSharp.fluid}
+        recent={recent}
       />
     )
   })

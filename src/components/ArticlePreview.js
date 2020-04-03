@@ -10,6 +10,9 @@ import Constants from "../utils/Constants"
 // Helpers
 import { isExternalLink, formatPostDate } from "../utils/helpers"
 
+// Local Components
+import Pill from "./Pill";
+
 // Styled Components
 const Container = styled.div`
   display: flex;
@@ -43,7 +46,9 @@ const Categories = ({ category }) => <Category>{category.join(" / ")}</Category>
 
 class ArticlePreview extends React.Component {
   render() {
-    let { link, title, spoiler, category, publishDate, cover } = this.props
+    let { link, title, spoiler, category, publishDate, cover, recent } = this.props
+
+    console.log(title, recent);
 
     let articleLink
     if (isExternalLink(link))
@@ -56,6 +61,7 @@ class ArticlePreview extends React.Component {
 
     return (
       <Container>
+        {recent && <Pill type="NEW"/>}
         <Img fluid={cover}/>
         <div css={`margin: 0.5rem`}/>
         <Categories category={category} />
