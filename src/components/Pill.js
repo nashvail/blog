@@ -32,6 +32,9 @@ const Container = styled.label`
   background: ${props => TYPE_COLORS[props.type]};
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.11);
   border-radius: 4px;
+  /* So that it is over the Article Preview */
+  position: absolute;
+  z-index: 9;
 `
 
 export default function Pill({ type }) {
