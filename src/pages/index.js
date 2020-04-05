@@ -5,14 +5,11 @@ import styled from "styled-components"
 import Header from "../components/Header"
 import FilterNav from "../components/FilterNav"
 import Constants from "../utils/Constants"
-import Featured from "../components/Featured"
 import Footer from "../components/Footer"
 import SEO from "../components/SEO"
 
 // Helpers
 import { renderArticlePreviews } from "../utils/helpers"
-
-import { title, link, spoiler, cover } from "./blog/pockets-of-solitude"
 
 // This is everything below the header
 const HomePage = styled.main`
@@ -82,15 +79,6 @@ export default () => (
     <SEO />
     <Header />
     <FilterNav />
-
-    {/* <Featured
-      type="NEW"
-      link={link}
-      title={title}
-      cover={cover}
-      spoiler={spoiler}
-    />
- */}
     <HomePage>
       <ArticlesGrid />
       <Footer />

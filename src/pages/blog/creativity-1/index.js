@@ -3,9 +3,6 @@ import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-// Constants
-import Constants from "../../../utils/Constants"
-
 // Components
 import Header from "../../../components/Header"
 import Footer from "../../../components/Footer"
