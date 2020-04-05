@@ -1,10 +1,10 @@
 [
   {
     "title": "The pain and paradoxes of creativity",
-    "publishDate": "2020-03-16",
+    "publishDate": "2020-04-06",
     "cover": "./thumbnail_creativity.png",
     "link": "/blog/creativity-1",
-    "spoiler": "Sometimes things pass, sometimes you do first.",
+    "spoiler": "Research on creativity complemented by my opinions and biases.",
     "category": [
       "misc."
     ],
@@ -15,7 +15,7 @@
     "publishDate": "2019-11-13",
     "cover": "./pocketsOS.png",
     "link": "/blog/pockets-of-solitude",
-    "spoiler": "Sometimes things pass, sometimes you do first.",
+    "spoiler": "How to stay sane in the face of brain mushing, mind numbing flood of useless information.",
     "category": [
       "misc."
     ]

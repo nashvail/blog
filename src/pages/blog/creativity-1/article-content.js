@@ -6,50 +6,68 @@ import s_ from "./styles.module.css"
 const SOURCES = [
   {
     name: "Creativity as neuroscientific mystery",
-    link: "https://pdfs.semanticscholar.org/185d/3c3721bfe23dc63bc6b2954f865c81a82ebd.pdf",
-    authors: ['Margaret A. Boden']
+    link:
+      "https://pdfs.semanticscholar.org/185d/3c3721bfe23dc63bc6b2954f865c81a82ebd.pdf",
+    authors: ["Margaret A. Boden"],
   },
   {
     name: "Research on Creativity",
     link: "https://people.ok.ubc.ca/lgabora/#research_section",
-    authors: ['Liane Gabora']
+    authors: ["Liane Gabora"],
   },
   {
-    name: "Creativity and Mental Illness - Prevalence rates in writers and their first-degree relatives",
+    name:
+      "Creativity and Mental Illness - Prevalence rates in writers and their first-degree relatives",
     link: "https://www.ncbi.nlm.nih.gov/pubmed/3499088",
-    authors: "Nancy C. Andreasen"
+    authors: "Nancy C. Andreasen",
   },
   {
     name: "The relationship between creativity and mood disorders",
     link: "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3181877/",
-    authors: ['Nancy C. Andreasen']
+    authors: ["Nancy C. Andreasen"],
   },
   {
-    name: "Creativity and mental disorder: family study of 300,000 people with severe mental disorder",
+    name:
+      "Creativity and mental disorder: family study of 300,000 people with severe mental disorder",
     link: "https://www.ncbi.nlm.nih.gov/pubmed/21653945",
-    authors: ['Simon Kyaga', 'Paul Linchtenstein', 'Marcus Boman', 'Christina Hultman', 'Niklas Langstrom', 'Mikael Landen']
-  }
-];
+    authors: [
+      "Simon Kyaga",
+      "Paul Linchtenstein",
+      "Marcus Boman",
+      "Christina Hultman",
+      "Niklas Langstrom",
+      "Mikael Landen",
+    ],
+  },
+]
 
 const Sources = () => (
-  <section css={`grid-column: 5/13`}>
-  <h2>Sources</h2>
-  <ul>
-    {SOURCES.map(function(source, key) {
-      return <li><a href={source.link} target="__blank">{source.name} - {source.authors}</a></li>;
-    })}
+  <section
+    css={`
+      grid-column: 5/13;
+    `}
+  >
+    <h2>Sources</h2>
+    <ul>
+      {SOURCES.map(function(source, key) {
+        return (
+          <li>
+            <a href={source.link} target="__blank">
+              {source.name} - {source.authors}
+            </a>
+          </li>
+        )
+      })}
     </ul>
   </section>
-);
+)
 
 export default function ArticleContent() {
   return (
     <article className={s_.mainArticle}>
       <div className={s_.info}>
         <p>
-          <b>Published:</b> 4th November, 2020
-          <br />
-          <b>Reading time:</b> 10 minutes
+          <b>Published:</b> 6th April, 2020
         </p>
       </div>
       <p>
@@ -69,6 +87,12 @@ export default function ArticleContent() {
         subconscious and got mixed with something else in there. And then, at
         the right moment–which is never for me to decide, but the subconscious
         itself–it decided to blurt itself out.
+      </p>
+      <p>
+        Blurting out of randomness is maybe just trash piling up in the head and
+        being vomited. But what if it is more? What if, it's the subconscious
+        trying to whisper an idea for a poem, a story, an app or a film? What if
+        it's the universe giving me a chance to be creative?
       </p>
       <p className={s_.quote}>
         “Every time you hear an echo from your Subconscious, you know yourself a
@@ -216,10 +240,10 @@ export default function ArticleContent() {
       </p>
       <p>
         The point is, if you try and put whatever you have made, or anyone else
-        has made into the H-P Creativity spectrum, it <i>will</i> find a place in it,
-        and in that, everyone again, is creative. The Dreamcatcher you designed
-        last weekend can sit with Dostoyevsky's Crime and Punishment in the same
-        spectrum just waaaaaay left near the Personal end.
+        has made into the H-P Creativity spectrum, it <i>will</i> find a place
+        in it, and in that, everyone again, is creative. The Dreamcatcher you
+        designed last weekend can sit with Dostoyevsky's Crime and Punishment in
+        the same spectrum just waaaaaay left near the Personal end.
       </p>
       <p>
         But why the gap when all of us are born creative? Is the self-help
@@ -236,9 +260,10 @@ export default function ArticleContent() {
         population.
       </p>
       <p>
-        The group being tested for the difference is called the <b>test group</b>,
-        or the oddballs. The other group is the <b>control group</b>, which is
-        used as a benchmark to establish the difference.
+        The group being tested for the difference is called the{" "}
+        <b>test group</b>, or the oddballs. The other group is the{" "}
+        <b>control group</b>, which is used as a benchmark to establish the
+        difference.
       </p>
       <p>
         For the 1987 research titled, Creativity and Mental Illness: Prevalence
@@ -382,8 +407,12 @@ export default function ArticleContent() {
         then we’ll ask him, wouldn’t you wish to be one of us? And he’ll
         probably say yes.
       </p>
-      <hr css={`grid-column: 5/13`}/>
-      <Sources/>
+      <hr
+        css={`
+          grid-column: 5/13;
+        `}
+      />
+      <Sources />
     </article>
   )
 }
