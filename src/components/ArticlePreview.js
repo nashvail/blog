@@ -57,8 +57,6 @@ class ArticlePreview extends React.Component {
       recent,
     } = this.props
 
-    console.log(title, recent)
-
     let articleLink
     if (isExternalLink(link))
       articleLink = (
