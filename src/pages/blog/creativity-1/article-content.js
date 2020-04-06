@@ -83,10 +83,10 @@ export default function ArticleContent() {
         neither have I ever met someone named Isabel.
       </p>
       <p>
-        Somewhere along the way I think the word Isabel embedded itself into my
-        subconscious and got mixed with something else in there. And then, at
-        the right moment–which is never for me to decide, but the subconscious
-        itself–it decided to blurt itself out.
+        Somewhere along the way, I think the word Isabel embedded itself into my
+        subconsciou and probably, got mixed with something else that was already
+        in there. Then, at the right moment–which is never for me to decide, but
+        the subconscious itself–it decided to blurt itself out.
       </p>
       <p>
         Blurting out of randomness is maybe just trash piling up in the head and
@@ -103,7 +103,7 @@ export default function ArticleContent() {
       <p>
         For a good part of and until the first half of the twentieth century,
         genesis of ideas, creativity and the creative individual were kept from
-        serious scientific research. Creativity was, so to say too complex and
+        serious scientific research. Creativity was, so to say, too complex and
         frivolous to be studied by the white coats.
       </p>
       <p>
@@ -115,19 +115,19 @@ export default function ArticleContent() {
         splashing paint and writing words?
       </p>
       <p>
-        And for those whose contributions do succeed and are recognised, how did
+        And those whose contributions do succeed and are recognised, how did
         they do it? How did they manifest in the world something that was only
-        in their heads, and how did that thing get in their heads in the first
+        in their heads? How did that thing get in their heads in the first
         place? And from the lives and accounts of such individuals why all of
         them agree that pushing something out of your skull and into the world
         often is damaging, or result of a damage, or, both.
       </p>
-
+      {/* 
       <p>
         Moreover, how do you even say if a random human picked out of the 7 plus
         billion lot is creative?
       </p>
-
+ */}
       <p>
         When the questions are abundant and the answers are few, we have a
         reputation of turning to god, religion, myths and our mothers.
@@ -155,11 +155,13 @@ export default function ArticleContent() {
       </p>
 
       <p>
-        And if you’re one of those who can’t ever write a poem or a book or
-        paint a picture, or sing an original lullaby to your cat, or even
-        consider doing anything close to it, then you don’t have a genius or a
-        muse. You are a piece of...
+        And if you’re one of those who can’t ever write a poem, a book or paint
+        a picture, or sing an original lullaby to your cat, then you don’t have
+        a genius or a muse. You are a piece of...
       </p>
+
+      <p>At least that's what the Romans said.</p>
+
       <p>
         When you wrap mysteries around myths this beautiful it takes Science a
         long time to come around and pry through it.
@@ -173,13 +175,13 @@ export default function ArticleContent() {
       </p>
       <p>
         Such opinions on creativity makes you feel better and maybe that’s why
-        they sell. But, on a second thought they aren't <i>really</i> wrong. We
-        humans, as a specie are creative. We rule this planet. Despite having 0
-        actual in the wild surviving capabilities, no sharp teeth or nails,
-        can't sprint for more than 5 minutes, can't climb trees quickly, can't
-        camouflage, can't survive cold without the aid of ripped off skin and
-        fur. Our infants are defenceless and can't walk for fucking years and
-        are annoying as shit. Despite all this..
+        they sell. But, on a second thought such opinions aren't <i>really</i>{" "}
+        wrong. We humans, as a specie are creative. We rule this planet. Despite
+        having 0 actual in the wild surviving capabilities, no sharp teeth or
+        nails, can't sprint for more than 5 minutes, can't climb trees quickly,
+        can't camouflage, can't survive cold without the aid of ripped off skin
+        and fur. Our infants are defenceless and can't walk for fucking years
+        and are annoying as shit. Despite all this..
       </p>
       <p>We rule this planet.</p>
       <p>
@@ -197,39 +199,39 @@ export default function ArticleContent() {
       <p className={s_.quote}>
         “The ability to generate ideas/artefacts that are new, surprising, and
         valuable – is an aspect of human intelligence in general”
-        <span className={s_.cite}>- Nash</span>
+        <span className={s_.cite}>- Margaret Boden</span>
       </p>
 
       <p>And that, could’ve been the end of the story.</p>
       <h1>The Production Gap</h1>
       <p>
         Even if we take "everyone is creative" to be true in a scientific sense.
-        There are still facts out there that makes accepting it a little uneasy.
-        Even though we're not ready to admit it to ourselves or to our friends
-        or to our children or to our friend's children that even if we're all
-        creative some of us make more things, do more things, make better
-        things, suffer more and suffer better.
+        There are still facts that makes accepting that a little uneasy. Maybe
+        we're not ready yet to admit it to ourselves or to our friends or to our
+        children or to our friend's children that even if we're all creative
+        some of us make more things, do more things, make better things, suffer
+        more and suffer better.
       </p>
 
       <p>
-        That gap of all of us being creative and some of us faring better at
-        being creative is understood by the self help industry as lack of
-        motivation.
+        That gap of all of us being creative and some of us faring better at it
+        is understood by the self help industry as lack of motivation.
       </p>
       <p>
-        Pick a few sentences out of the famous talks and quotes and you will
-        understand that all they are teaching is motivation, they are pushing
-        you to make more stuff, get that thing out of you. This, in itself has
-        whole another value of its own but that is not teaching how to be a
-        creative. Assuming that creativity can be taught in the first place.
+        Pick a few sentences out of the famous talks and quotes and you will see
+        that all they are teaching is motivation. They are pushing you to make
+        more stuff, get that thing out of you. This, in itself has whole another
+        value of its own but that is not teaching creativity is it? Assuming
+        that creativity can be taught in the first place.
       </p>
       <p>
-        In 2004 Boden published a study which had a segment talking about
-        classifying creative outputs. If result of a creative process is
+        In 2004 Margaret Boden published a study which had a segment talking
+        about classifying creative outputs. If result of a creative process is
         something that is new to all of humanity or makes an impact on the
-        course of civilisation it's H-creativity or Historical creativity. When
-        you make something that is new to just you, and doesn't have an impact
-        on the human civilisation, it's personal creativity or, P-creativity.
+        course of civilisation it's H-creativity or Historical creativity. And
+        when you make something that is new to just you, and doesn't have an
+        impact on the human civilisation, it's personal creativity or,
+        P-creativity.
       </p>
       <p>
         Now to be "more" correct not every creative output can be exclusively
@@ -243,13 +245,13 @@ export default function ArticleContent() {
         has made into the H-P Creativity spectrum, it <i>will</i> find a place
         in it, and in that, everyone again, is creative. The Dreamcatcher you
         designed last weekend can sit with Dostoyevsky's Crime and Punishment in
-        the same spectrum just waaaaaay left near the Personal end.
+        the same spectrum just way left near the Personal end.
       </p>
       <p>
-        But why the gap when all of us are born creative? Is the self-help
-        industry correct? There's just lack of motivation? Most of us just
-        aren't motivated enough to fully utilise our gifts or even recognise
-        them?
+        But why the gap–even in the H-P creativity spectrum–when all of us are
+        born creative? Is the self-help industry correct? There's just a lack of
+        motivation? Most of us just aren't motivated enough to fully utilise our
+        gifts or even recognise them?
       </p>
       <h1>The Biological Gap</h1>
 
@@ -270,7 +272,7 @@ export default function ArticleContent() {
         rates in writers and their first-degree relatives, Nancy Andreasen
         selected a test group of 27 men and 3 women writers. She made sure that
         the group represented a valid cross section of contemporary American
-        writers. These writers are our oddballs.
+        writers. These are our oddballs.
       </p>
       <p>
         The writers were matched for age, sex and educational status to an
@@ -305,11 +307,10 @@ export default function ArticleContent() {
       <p>
         Andreasen's and other similar studies suggest that the behavioural gap
         between the writers and the control group had something to do with
-        biological traits. And this lies in parallel with the school of thought
-        that creativity is a biological trait in the sense that not everyone is
-        creative but only a few of us are. We're born with it and in the end it
-        cannot be taught and the self-help industry teaching creativity is a
-        fluke all they're doing is what they do best, motivating you.
+        biological traits. This lies in parallel with the school of thought that
+        suggests creativity is a biological trait in the sense that not everyone
+        is creative but only a few of us are. We're born with it and in the end
+        it cannot be taught.
       </p>
       <p>All of this can be better understood like so.</p>
       <p>
@@ -343,9 +344,8 @@ export default function ArticleContent() {
       <p>
         To draw an approximate parallel, you can see obsessing over cleanliness
         is just another biological trait, some of us are born with it. I cannot
-        live with dishes in the sink, but maybe you can, even when there are
-        more dishes in the sink than the shelf, in which case I hope you burn in
-        hell.
+        live with dishes in the sink, but maybe you can, in which case I hope
+        you burn in hell.
       </p>
       <p>
         One very small window of the house of creativity opens towards the sea
@@ -360,7 +360,7 @@ export default function ArticleContent() {
         a pretty girl and some growing beside a gutter.
       </p>
       <p>
-        Similarly, if I ask you to recall someone creative you'd probably end up
+        If I ask you to recall someone creative you'd probably end up
         naming a celebrity, which isn't wrong but there are other people who are
         equally or more creative but aren't celebrities. They could be a
         waitress, or they could be rowing a boat across Venice singing an
@@ -372,8 +372,8 @@ export default function ArticleContent() {
         and applies the transitive law it has us believing creativity = success
         the entire time. Which is only true for a very very very small fraction
         of people who are creative and dare to monetise their creativity, or can
-        earn money being creatives. And then, there's a whole industry asking
-        you to be creative and a whole another set of people telling you it's
+        earn money being creatives. And then, there's a whole industry promising
+        to teach you creativity and a whole another set of people telling you it's
         biological, creativity can't really be taught. Whom will you trust? Best
         selling authors or the people whose minds screech fuck you to imaginary
         females while having soup for breakfast?
@@ -386,7 +386,7 @@ export default function ArticleContent() {
         of an ink soaked nib onto a fresh white hot paper. Only questions worth
         attempting to answer are the questions that sprout more. Because what
         will we do if we have answers to everything. Where is the god we’ll run
-        to with our bag full of answers saying “here, we now know everything
+        to with our bag full of answers saying “Here, we now know everything
         there is, now what?”.
       </p>
       <p>
@@ -404,7 +404,7 @@ export default function ArticleContent() {
         our music, our dance, our paintings, our best selling books, our
         dreamcatchers, we’ll show him people laughing in the face of mortality,
         lovers embracing each other in the face of inevitable separation and
-        then we’ll ask him, wouldn’t you wish to be one of us? And he’ll
+        then we’ll ask him, "Wouldn’t you wish to be one of us?" And he’ll
         probably say yes.
       </p>
       <hr

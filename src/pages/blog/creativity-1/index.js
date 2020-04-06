@@ -1,6 +1,7 @@
 import React from "react"
 import styled from "styled-components"
 import { useStaticQuery, graphql } from "gatsby"
+import { DiscussionEmbed } from "disqus-react"
 import Img from "gatsby-image"
 
 // Components
@@ -11,6 +12,14 @@ import ArticleContent from "./article-content"
 
 // CSS
 import s_ from "./styles.module.css"
+
+
+// Disqus config
+const disqusConfig = {
+  shortname: process.env.GATSBY_DISQUS_NAME,
+  config: { identifier: "/blog/creativity-1", title: "The pain & paradoxes of Creativity"},
+}
+
 
 // Breakpoints
 const BREAKPOINTS = [
@@ -92,6 +101,7 @@ function Paradoxes() {
       <Container>
         <Hero />
         <ArticleContent/>
+        <DiscussionEmbed {...disqusConfig}/>
         <Footer css={`grid-column: 1/13`}/>
       </Container>
     </>
