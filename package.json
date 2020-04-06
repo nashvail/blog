@@ -63,5 +63,8 @@
   },
   "bugs": {
     "url": "https://github.com/nashvail/blog/issues"
-  }
+  },
+  "resolutions": {
+    "sharp": "0.24.0"
+  },
 }
