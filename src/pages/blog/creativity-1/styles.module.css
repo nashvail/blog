@@ -129,3 +129,16 @@ h1 {
     margin-bottom: 2rem;
   }
 }
+
+@media screen and (max-width: 1000px) {
+  .mainArticle p, h2, h1 {
+    font-size: 1rem;
+    line-height: 160%;
+  }
+
+  .mainArticle .quote {
+   font-size: 24px;
+   line-height: 160%;
+  }
+
+}
