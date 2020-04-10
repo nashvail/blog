@@ -84,9 +84,9 @@ export default function ArticleContent() {
       </p>
       <p>
         Somewhere along the way, I think the word Isabel embedded itself into my
-        subconsciou and probably, got mixed with something else that was already
-        in there. Then, at the right moment–which is never for me to decide, but
-        the subconscious itself–it decided to blurt itself out.
+        subconscious and probably, got mixed with something else that was
+        already in there. Then, at the right moment–which is never for me to
+        decide, but the subconscious itself–it decided to blurt itself out.
       </p>
       <p>
         Blurting out of randomness is maybe just trash piling up in the head and
@@ -102,9 +102,9 @@ export default function ArticleContent() {
       </p>
       <p>
         For a good part of and until the first half of the twentieth century,
-        genesis of ideas, creativity and the creative individual were kept from
-        serious scientific research. Creativity was, so to say, too complex and
-        frivolous to be studied by the white coats.
+        the genesis of ideas, creativity and the creative individual were kept
+        from serious scientific research. Creativity was, so to say, too complex
+        and frivolous to be studied by the white coats.
       </p>
       <p>
         This doesn't mean creativity and creative contributions weren't
@@ -120,7 +120,7 @@ export default function ArticleContent() {
         in their heads? How did that thing get in their heads in the first
         place? And from the lives and accounts of such individuals why all of
         them agree that pushing something out of your skull and into the world
-        often is damaging, or result of a damage, or, both.
+        often is damaging, or the result of damage, or, both.
       </p>
       {/* 
       <p>
@@ -138,7 +138,7 @@ export default function ArticleContent() {
       </p>
 
       <p>
-        Up until the mid 20th century the concept of genius and the muse
+        Up until the mid 20th century, the concept of genius and the muse
         sufficed to explain creativity, the creative individual and creative
         outputs.
       </p>
@@ -151,7 +151,7 @@ export default function ArticleContent() {
         visits you and makes you make stuff. The day when you paint in a fury is
         the day when the muse was sat right on your shoulders. And when you
         waste the most creative part of your day producing utter shit, that day,
-        the muse didn't choose visit you.
+        the muse didn't choose to visit you.
       </p>
 
       <p>
@@ -174,8 +174,8 @@ export default function ArticleContent() {
         potential”.
       </p>
       <p>
-        Such opinions on creativity makes you feel better and maybe that’s why
-        they sell. But, on a second thought such opinions aren't <i>really</i>{" "}
+        Such opinions on creativity make you feel better and maybe that’s why
+        they sell. But, on second thought, such opinions aren't <i>really</i>{" "}
         wrong. We humans, as a specie are creative. We rule this planet. Despite
         having 0 actual in the wild surviving capabilities, no sharp teeth or
         nails, can't sprint for more than 5 minutes, can't climb trees quickly,
@@ -206,7 +206,7 @@ export default function ArticleContent() {
       <h1>The Production Gap</h1>
       <p>
         Even if we take "everyone is creative" to be true in a scientific sense.
-        There are still facts that makes accepting that a little uneasy. Maybe
+        There are still facts that make accepting that a little uneasy. Maybe
         we're not ready yet to admit it to ourselves or to our friends or to our
         children or to our friend's children that even if we're all creative
         some of us make more things, do more things, make better things, suffer
@@ -220,21 +220,21 @@ export default function ArticleContent() {
       <p>
         Pick a few sentences out of the famous talks and quotes and you will see
         that all they are teaching is motivation. They are pushing you to make
-        more stuff, get that thing out of you. This, in itself has whole another
-        value of its own but that is not teaching creativity is it? Assuming
-        that creativity can be taught in the first place.
+        more stuff, get that thing out of you. This, in itself, has whole
+        another value of its own but that is not teaching creativity is it?
+        Assuming that creativity can be taught in the first place.
       </p>
       <p>
         In 2004 Margaret Boden published a study which had a segment talking
-        about classifying creative outputs. If result of a creative process is
-        something that is new to all of humanity or makes an impact on the
+        about classifying creative outputs. If the result of a creative process
+        is something that is new to all of humanity or makes an impact on the
         course of civilisation it's H-creativity or Historical creativity. And
         when you make something that is new to just you, and doesn't have an
         impact on the human civilisation, it's personal creativity or,
         P-creativity.
       </p>
       <p>
-        Now to be "more" correct not every creative output can be exclusively
+        Now to be "more" correct, not every creative output can be exclusively
         put into a P or an H bucket. Things make more sense when you consider P
         and H creativity as extremes of a spectrum and not one of two trash
         cans, wet goes here and dry there. I didn't mean trash cans I meant
@@ -256,10 +256,10 @@ export default function ArticleContent() {
       <h1>The Biological Gap</h1>
 
       <p>
-        Two groups, preferably of equal sizes are considered when performing a
-        scientific research. A research, say to establish or to learn more about
-        the differences between a group of selected specimen and the rest of the
-        population.
+        Two groups, preferably of equal sizes are considered when performing
+        scientific research. Research, say to establish or to learn more about
+        the differences between a group of a selected specimen and the rest of
+        the population.
       </p>
       <p>
         The group being tested for the difference is called the{" "}
@@ -315,7 +315,7 @@ export default function ArticleContent() {
       <p>All of this can be better understood like so.</p>
       <p>
         A trait is a genetically determined characteristic. Extroversion is a
-        trait, introversion is a trait and some, including me would argue, being
+        trait, introversion is a trait and some, including me, would argue, being
         an asshole is a trait as well. We're all genetically predisposed without
         a single say to be introverted extroverted criminals sadists masochistic
         sanctimonious e.t.c e.t.c
@@ -334,7 +334,7 @@ export default function ArticleContent() {
         That's the line. There is the biological gap. I am okay not writing that
         poem I felt like writing, you'll be okay not completing that story that
         you started, you'll be just fine procrastinating buying paint to finish
-        your half painted piece because the paints ran dry. Everyday you will
+        your half-painted piece because the paints ran dry. Every day you will
         look at the half finished canvas and it will not affect your mental
         health. And even if you finish something, the feeling of it being not
         good enough will not make your cerebrum pound. But it will do all of
@@ -360,12 +360,11 @@ export default function ArticleContent() {
         a pretty girl and some growing beside a gutter.
       </p>
       <p>
-        If I ask you to recall someone creative you'd probably end up
-        naming a celebrity, which isn't wrong but there are other people who are
-        equally or more creative but aren't celebrities. They could be a
-        waitress, or they could be rowing a boat across Venice singing an
-        original poem. Rose is a famous red flower and celebrities are famous
-        creatives.
+        If I ask you to recall someone creative you'd probably end up naming a
+        celebrity, which isn't wrong but there are other people who are equally
+        or more creative but aren't celebrities. They could be a waitress, or
+        they could be rowing a boat across Venice singing an original poem. Rose
+        is a famous red flower and celebrities are famous creatives.
       </p>
       <p>
         Because your mind equates being creative to celebrity to success/money
@@ -373,15 +372,15 @@ export default function ArticleContent() {
         the entire time. Which is only true for a very very very small fraction
         of people who are creative and dare to monetise their creativity, or can
         earn money being creatives. And then, there's a whole industry promising
-        to teach you creativity and a whole another set of people telling you it's
-        biological, creativity can't really be taught. Whom will you trust? Best
-        selling authors or the people whose minds screech fuck you to imaginary
-        females while having soup for breakfast?
+        to teach you creativity and a whole another set of people telling you
+        it's biological, creativity can't really be taught. Whom will you trust?
+        Best selling authors or the people whose minds screech fuck you to
+        imaginary females while having soup for breakfast?
       </p>
       <p>
         I don’t want you to leave this mind blurb of mine with definitive
         answers, because I don't have any. I expect to leave you with questions
-        you never questioned before. Because questions means movement. If an
+        you never questioned before. Because questions mean movement. If an
         answer is a full stop, a question is a turn of a new page, the touching
         of an ink soaked nib onto a fresh white hot paper. Only questions worth
         attempting to answer are the questions that sprout more. Because what
@@ -395,7 +394,7 @@ export default function ArticleContent() {
         better to look into your bag and make something good of the junk you did
         get. As a specie, our differences in temperaments and interests is
         precisely why we have managed to do what we have done. We put a man on
-        the moon for fuck’s sake, and that was about a 100 years ago. If we were
+        the moon for fuck’s sake, and that was about 100 years ago. If we were
         a specie of everyone writing poems about the moon, we would’ve never
         stepped on it. So young, so beautiful, so ambitious, so wounded we are.
         There is chaos and beauty and there is no other place, no heaven we’d
